@@ -1,69 +1,41 @@
 # QQ堂怀旧版使用说明
 
-> **本项目永久免费，请勿付费购买。** 最新版本下载：<https://github.com/kuuhaku1314/qqtang/releases/latest>
+> **本项目永久免费，请勿付费购买。** 公开获取地址：<https://github.com/kuuhaku1314/qqtang>
 
-## 最简单的启动方式
+## 普通玩家
 
-1. 完整解压 `QQTang-Local` 文件夹，不要在压缩包中直接运行。
-2. 双击 `QQTang-Launcher.exe`。
-3. 在“服务端”区域选择“仅本机”，点击“启动服务端”。
-4. 在“游戏客户端”区域保持 `127.0.0.1`，点击“启动一个客户端”。
-5. 使用本地账号 `1000001`、初始密码 `123456` 登录。请勿输入真实 QQ 密码。
-6. 结束时分别点击“停止所有客户端”和“停止服务端”。
+完整解压 `QQTang-Local` 后双击 `QQTang-Launcher.exe`，启动本机服务端和客户端。默认账号为 `1000001`，初始密码为 `123456`；请勿输入真实 QQ 密码。重复点击“启动一个客户端”即可多开，启动器不设置固定客户端数量上限。
 
-## 服务端
+## TP 已完全移除
 
-服务端有三种模式：
+发布版 `Client.exe` 已重建为普通 PE 启动链，不再启动或依赖旧版腾讯 TP。原版 `ClientBase.dll`、`TerSafe.dll`、`TenSLX.dll`、`TP3Helper.exe` 与 `TesSafe.sys` 均未随包分发。包内同名 `TerSafe.dll` 是本项目生成的 2 KB 无保护协议 ABI 兼容层，只补齐老客户端模块之间仍会调用的对象和数据变换接口；它不含原版 TP 代码，不进行安全扫描，也不会启动保护服务。运行时不会安装、注册或加载 TP 内核驱动。
 
-- **仅本机**：监听 `127.0.0.1`，适合单机和本机多开。
-- **局域网**：监听 `0.0.0.0`，界面会列出应告诉好友的私有 IPv4。
-- **公网部署**：监听 `0.0.0.0`，界面显示填写的公网 IPv4 和需开放的端口。
+## 无界面服务端脚本
 
-“启动服务端”和“停止服务端”相互独立，界面会持续显示运行状态、客户端应填写的 IP、TCP/UDP 端口及 GM 地址。
+完整发布包现在同时提供：
 
-局域网主机首次启动时，Windows 可能显示系统自带的网络访问确认。请只在可信的“专用网络”上允许 `qqt-server-local.exe`。如果误点拒绝，请在 Windows“允许应用通过防火墙”中手动恢复。启动器本身不会创建防火墙规则、不会提权，也不会关闭安全功能。
+- `start-server-windows.cmd`：Windows AMD64
+- `start-server-linux-amd64.sh`：Linux AMD64 / x86_64
+- `start-server-linux-arm64.sh`：Linux ARM64 / aarch64
 
-## 客户端与多开
+Linux 使用示例：
 
-客户端服务器地址与服务端模式互相独立：
+```sh
+chmod +x start-server-linux-*.sh
+./start-server-linux-amd64.sh
+```
 
-- 玩本机服务器时填写 `127.0.0.1`。
-- 加入局域网好友时填写主机提供的私有 IPv4，不需要在自己电脑上开服务端。
-- 加入公网服务器时填写服务器主人提供的公网 IPv4。
+ARM64 主机运行 `./start-server-linux-arm64.sh`。三个脚本都会在前台运行，按 `Ctrl+C` 停止；也支持由 systemd、Docker 等通过 `SIGTERM` 托管。
 
-每点击一次“启动一个客户端”会增加一个实例；重复点击即可多开。启动器不设置固定客户端数量上限，实际可运行数量取决于电脑资源，房间人数仍服从具体地图上限。点击“停止所有客户端”会清理全部客户端及其辅助进程，但不会停止服务端。第二个默认账号是 `1000002`，初始密码同样为 `123456`。
+脚本读取 `configs/network.json`：`local` 只监听本机，`lan-host` 用于局域网主机，`remote-host` 用于公网服务器。后两种模式的 `server_ip` 与 `client_server_ip` 应填写玩家可访问的真实 IPv4。Linux 服务端仍需要完整发布包中的 `configs`、`data` 与 `runtime/client-patched` 静态配置，不能只复制服务端二进制。
 
-## GM 后台
+公网或局域网主机需自行放行 TCP `17000/18000/18001/18080/18443` 和 UDP `18000`。脚本不会自动修改防火墙、提权或关闭安全功能。
 
-- 本机地址为 `http://127.0.0.1:18100/gm/`，本机访问无需账号密码。
-- 只有勾选“允许其他电脑访问 GM”时才需要在启动器里设置账号密码；默认用户名为 `admin`。
-- 密码以 PBKDF2-SHA256 加盐哈希保存，不写入明文。
-- 公网管理建议再部署 HTTPS 反向代理。
+## 存档、GM 与日志
 
-## 新存档内容
+- 存档：`runtime/data/qqtang.sqlite`，升级或迁移前请自行备份。
+- GM：默认 `http://127.0.0.1:18100/gm/`；远程开放前必须设置强密码。
+- 服务端日志：`runtime/logs/server-local.jsonl`，图形启动还会写入 `local-server.stdout.log` 与 `local-server.stderr.log`。
+- 客户端日志：`runtime/logs/local-client-launch*.json` 与 `local-launcher*.stderr.log`。
 
-首次启动会创建 `runtime\data\qqtang.sqlite`。默认人物等级、经验和钱币保持项目配置不变；背包仅包含：
-
-- 1 张单人探险卡
-- 500 瓶大体力药水
-
-默认不写入时装。如需保留角色数据，请自行备份并转移 `runtime\data\qqtang.sqlite` 存档。
-
-## 公网端口
-
-公网服务器需由主机方在云安全组或路由器中放行：
-
-- TCP `17000/18000/18001/18080/18443`
-- UDP `18000`
-
-玩家客户端只做出站连接，不需要互相映射端口。
-
-## 故障排查
-
-启动器会把完整操作结果追加到 `runtime\logs\launcher-ui.log`，界面同时显示简短错误。常用日志：
-
-- 服务端：`local-server.stdout.log`、`local-server.stderr.log`
-- 客户端：`local-client-launch*.json`、`local-launcher*.stderr.log`
-- 兼容检查：双击 `check-compat.cmd`，查看 `windows-compatibility-report.json`
-
-不要关闭 Windows Defender、防火墙，也不要从第三方 DLL 网站下载系统文件。普通玩家只使用图形启动器即可。
+不要关闭 Windows Defender、防火墙，也不要从第三方 DLL 网站下载系统文件。
