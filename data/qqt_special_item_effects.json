@@ -1,0 +1,5111 @@
+{
+  "schema_version": 1,
+  "source": "installed v848 itemCFG plus v110 DealProp2/propdescrip",
+  "count": 265,
+  "items": [
+    {
+      "item_id": 99,
+      "name": "单人探险卡",
+      "description": "拥有此卡，可以进行单人探险喔。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "single_player_adventure",
+          "status": "implemented",
+          "evidence": "installed itemCFG plus native client single-player room gate"
+        }
+      ]
+    },
+    {
+      "item_id": 100,
+      "name": "防踢卡",
+      "description": "可以享受和至尊紫钻一样的防踢特权。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "kick_protection",
+          "trigger": "room_kick",
+          "status": "implemented",
+          "evidence": "installed itemCFG plus typed REQUEST_KICKOFF_PLAYER room policy"
+        }
+      ]
+    },
+    {
+      "item_id": 121,
+      "name": "VIP卡",
+      "description": "拥有此卡即是QQ糖王国贵族的身份，可以不需要积分建立任何地图，并且获胜奖励积分加倍。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "points_multiplier",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "win_points",
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG: winning reward points are doubled"
+        },
+        {
+          "kind": "map_access_override",
+          "trigger": "room_map_selection",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "bypass_points_requirement",
+          "status": "implemented",
+          "evidence": "installed itemCFG plus v848 mapDesc.py required-points field"
+        }
+      ]
+    },
+    {
+      "item_id": 199,
+      "name": "闪电卡",
+      "description": "功能道具！有了该卡片，能使自己在抛泡时带有炫目的闪电。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "role_client_effect",
+          "trigger": "native_map_action",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "bubble_throw_lightning",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG promises lightning while throwing a bubble; uiShop.py proves one durable role-bound platform selection, but the native battlefield map/action gate has not yet been recovered"
+        }
+      ]
+    },
+    {
+      "item_id": 204,
+      "name": "包子卡",
+      "description": "拥有该卡可以使自己获得的包子隐藏角色的几率达到50％以上哦！此卡片为功能类道具。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "hidden_role_chance",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "random_role_bun_head",
+          "chance_percent": 50,
+          "status": "implemented",
+          "evidence": "installed itemCFG plus server-owned competitive question-mark role resolution; the selected concrete role is carried by the ordinary GAME_BEGIN snapshot"
+        }
+      ]
+    },
+    {
+      "item_id": 294,
+      "name": "小喇叭",
+      "description": "有了小喇叭您就可以发送广播，让所有人倾听您的声音！",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "section_broadcast",
+          "trigger": "section_broadcast",
+          "target": "small_bugle",
+          "status": "implemented",
+          "evidence": "typed section-chat selector, per-message identity flag, atomic inventory debit, and section fan-out"
+        }
+      ]
+    },
+    {
+      "item_id": 402,
+      "name": "雪山来信",
+      "description": "从森林雪山传来消息：格里芬绑架了圣诞老人！拥有雪山来信，可以召唤BOSS大盗格里芬。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 403,
+      "name": "格里芬日记",
+      "description": "格里芬遗落的日记，提及了格里芬绑架圣诞老人吓唬糖果镇村民的计划。拥有格里芬日记，可以召唤BOSS圣诞格里芬。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 431,
+      "name": "年兽的皮",
+      "description": "小年兽的皮，可以用来装扮成年兽引诱大年兽出现",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 433,
+      "name": "年兽的角",
+      "description": "小年兽的头，可以用来装扮成年兽引诱大年兽出现",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 435,
+      "name": "麋鹿铃铛",
+      "description": "圣诞老人坐骑麋鹿的铃铛。拥有麋鹿铃铛，可以召唤BOSS鬼仆格里芬。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 436,
+      "name": "平安的祭品",
+      "description": "中国城居民供奉年兽的祭品，可以召唤BOSS小年兽。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 437,
+      "name": "珍贵的祭品",
+      "description": "小年兽为年兽收集的珍贵的祭品，可以召唤BOSS大年兽。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 453,
+      "name": "船长日志",
+      "description": "虎克船长的航海日志，里面记载着他的秘密。拥有船长日志，可以召唤BOSS虎克船长。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 460,
+      "name": "藏宝图",
+      "description": "虎克船长的藏宝图，标示着宝藏深埋在矿洞深处。拥有藏宝图，可以召唤BOSS大副。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 464,
+      "name": "世界杯门票",
+      "description": "拥有世界杯门票，可以召唤BOSS小小罗。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 467,
+      "name": "贝氏弯刀",
+      "description": "足球BOSS奖励道具。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "role_client_effect",
+          "trigger": "native_map_action",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "kick_bomb_02_action_effect",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed platform resource 19 is a kick-bomb Boss reward and uiShop.py proves one durable role-bound platform selection; the exact native map/action effect remains unproven"
+        }
+      ]
+    },
+    {
+      "item_id": 468,
+      "name": "少林金刚脚",
+      "description": "足球BOSS奖励道具。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "role_client_effect",
+          "trigger": "native_map_action",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "kick_bomb_01_action_effect",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed platform resource 20 is a kick-bomb Boss reward and uiShop.py proves one durable role-bound platform selection; the exact native map/action effect remains unproven and no numeric force bonus is applied server-side"
+        }
+      ]
+    },
+    {
+      "item_id": 469,
+      "name": "世界杯决赛门票",
+      "description": "拥有世界杯决赛门票，可以召唤BOSS鲁尼。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 1077,
+      "name": "盟约书",
+      "description": "成立家族的资格证明，拥有100份盟约书才能创建家族。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "kin_creation_qualification",
+          "trigger": "kin_creation",
+          "target": "ordinary_alliance_book",
+          "multiplier": 100,
+          "status": "implemented",
+          "evidence": "installed itemCFG creation requirement plus atomic kin creation validation"
+        }
+      ]
+    },
+    {
+      "item_id": 2235,
+      "name": "超级盟约书",
+      "description": "成立家族的资格证明，拥有1份超级盟约书就能创建家族，真是超级无敌啊！",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "kin_creation_qualification",
+          "trigger": "kin_creation",
+          "target": "super_alliance_book",
+          "multiplier": 1,
+          "status": "implemented",
+          "evidence": "installed itemCFG creation requirement plus atomic kin creation validation"
+        }
+      ]
+    },
+    {
+      "item_id": 2897,
+      "name": "竞技场参赛点",
+      "description": "参加竞技场的参赛点。紫钻参赛更有优惠哟。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "treasure_entry_points",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG; exact charge schedule remains version-dependent"
+        }
+      ]
+    },
+    {
+      "item_id": 3913,
+      "name": "五叶草糖泡[积分",
+      "description": "第一片叶子代表财富，第二片叶子代表爱情，第三片叶子代表健康，第四片叶子代表幸运，第五片叶子呢？那是心灵相通的许愿。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 3931,
+      "name": "太阳之光[积分",
+      "description": "我是你的太阳，带给你温暖和阳光，你是我的天使，让每天都令人向往。[携带此道具，所获积分增加1%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 1,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 3932,
+      "name": "月亮之光[积分",
+      "description": "我是你的月亮，带给你温馨与柔美，你是我的依赖，让每天都满载希望。[携带此道具，所获积分增加1%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 1,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 3947,
+      "name": "阿拉丁帽[积分",
+      "description": "它以神奇的情节成为一千零一夜中最璀璨的明珠，灯神的出现能给带来你好运。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 3993,
+      "name": "战神羽翼[积分",
+      "description": "轻展双翼，滑翔于天际，战神羽翼让您天下独尊。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 3996,
+      "name": "波塞冬之冠[积分",
+      "description": "驾驭着七大海区的神，是天神宙斯的弟弟，但始终不甘臣服，拥有支配一切水域的权力。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4038,
+      "name": "魔王头盔[积分",
+      "description": "他执掌着邪恶的一切力量，是魔界的霸主。[携带此道具，所获积分增加3%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4052,
+      "name": "糖泡天书",
+      "description": "聊天房间挂机，获得2倍经验。（在原有基础上加倍）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "experience_multiplier",
+          "trigger": "chat_idle_reward",
+          "scopes": [
+            "chat_room"
+          ],
+          "target": "competitive_experience",
+          "multiplier": 2,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG description; idle reward protocol not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4055,
+      "name": "真·糖泡天书",
+      "description": "聊天房间挂机，获得3倍经验。（在原有基础上加2倍）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "experience_multiplier",
+          "trigger": "chat_idle_reward",
+          "scopes": [
+            "chat_room"
+          ],
+          "target": "competitive_experience",
+          "multiplier": 3,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG description; idle reward protocol not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4058,
+      "name": "超·糖泡天书",
+      "description": "聊天房间挂机，获得5倍经验。（在原有基础上加4倍）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "experience_multiplier",
+          "trigger": "chat_idle_reward",
+          "scopes": [
+            "chat_room"
+          ],
+          "target": "competitive_experience",
+          "multiplier": 5,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG description; idle reward protocol not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4061,
+      "name": "甜蜜爱情卡",
+      "description": "获得双倍亲密度。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "intimacy_multiplier",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "multiplier": 2,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG promises double intimacy; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4072,
+      "name": "纸袋[积分",
+      "description": "用白描的手法勾勒你的表情，并非空洞与单调，有时，这能吸引更多的眼球。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4100,
+      "name": "蝙蝠幻影[积分",
+      "description": "一种恐怖的气氛被渲染，一个惊悚的夜晚被打开，蝙蝠的压抑给对手恐惧。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4103,
+      "name": "王中王头饰[积分",
+      "description": "百兽之王的头饰，主要能吓退对方的宠物，占进先机，由王中王开始。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4105,
+      "name": "超人内裤[积分",
+      "description": "我和超人的区别就是他把内裤穿在了下面。。。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4123,
+      "name": "可爱睡帽[积分",
+      "description": "印着小兔子的睡帽，男生女生都能穿哦！[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4136,
+      "name": "哈迪斯之冠[积分",
+      "description": "传说中统治冥界的君主，天神宙斯的胞弟。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4159,
+      "name": "时尚奶嘴[积分",
+      "description": "满堂尽带婴儿嘴，当奶嘴成为时尚，你会不会秀一把呢？[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4175,
+      "name": "幸运草幻影[积分",
+      "description": "四叶草的真挚伴随你远行，Q堂的幸运为你囊括，祝福你！[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4180,
+      "name": "神龙头盔[积分",
+      "description": "神龙机甲的终极头盔，能发挥神龙号的最大力量。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4183,
+      "name": "赤炎头盔[积分",
+      "description": "玄冰头盔升级版，由精钢在岩浆中锻造，抗燃烧能力极强。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4184,
+      "name": "金羽头盔[积分",
+      "description": "银羽头盔升级版，通体金色并赋予摧毁一切的力量。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4196,
+      "name": "追猎者发型[积分",
+      "description": "冰国军团的先锋会被授予军团追猎者的称号，他们有独特的装束，比如这发型。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4199,
+      "name": "紫金冠[积分",
+      "description": "还记得美猴王的紫金冠吗？两缕锦毛冲天，气派非凡，若你戴上它，定能成为大众焦点。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4204,
+      "name": "天使发卡[积分",
+      "description": "上帝说：惟有天使最纯洁。除了让羽翼带你飞翔，别忘记戴上天使发卡。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4205,
+      "name": "恶魔犄角[积分",
+      "description": "恶魔艾登坐骑的角，邪气很重，能增加回避能力和穿刺率，非忠实玩家不宜尝试。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4237,
+      "name": "糖泡卡",
+      "description": "购买糖泡抽奖卡，就有机会获得可乐QQ糖、七星龙珠、星座QQ糖……想要更炫的泡泡吗？快来试试您的手气！",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "lottery_ticket",
+          "trigger": "lottery",
+          "target": "bubble_cosmetic_lottery",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG identifies a lottery ticket; it is distinct from commodity 999 fruit-machine flow and its original reward protocol/pool is not proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4238,
+      "name": "翅膀卡",
+      "description": "购买翅膀抽奖卡，就有机会获得六翼天使翅膀、朱雀翅膀、搞鬼便便帽……还有各种幻影脚印！快来试试您的手气！",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "lottery_ticket",
+          "trigger": "lottery",
+          "target": "wing_cosmetic_lottery",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG identifies a lottery ticket; it is distinct from commodity 999 fruit-machine flow and its original reward protocol/pool is not proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4239,
+      "name": "大蝴蝶结[积分",
+      "description": "在发系戴一朵硕大的蝴蝶结一定很惹眼吧？绝对物超所值，让你先声夺人。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4277,
+      "name": "寒冰王发式[积分",
+      "description": "他的眼神满怀对冰的眷顾，在神计时代后期，是他的存在才使冰封世界安宁。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4278,
+      "name": "walkman一族[积分",
+      "description": "把MP3戴在头顶，让音乐跟你走，无限欢乐无限乐享，尽在walkman一族。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4280,
+      "name": "冰丝发式[积分",
+      "description": "精灵般的发线，透着神秘气息，冷艳之风叫人记忆犹新，如瀑布般的银丝是视觉和感觉的超脱。[携带此道具，所获积分增加3%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4304,
+      "name": "窗花幻影[积分",
+      "description": "这是一种民间艺术，这是一种文化传承，那些贴窗花过年的习俗又在风靡，你愿意落伍吗？[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4334,
+      "name": "10格宠物栏",
+      "description": "拥有10格宠物栏，可以同时召唤10个宠物。（3.2以前版本不支持此功能）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "account_capacity",
+          "trigger": "pet_adoption",
+          "target": "pet_slots",
+          "status": "implemented",
+          "evidence": "installed itemCFG capacity description plus PET_INFO 5+20 wire capacity"
+        }
+      ]
+    },
+    {
+      "item_id": 4335,
+      "name": "20格宠物栏",
+      "description": "拥有20格宠物栏，可以同时召唤20个宠物。（3.2以前版本不支持此功能）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "account_capacity",
+          "trigger": "pet_adoption",
+          "target": "pet_slots",
+          "status": "implemented",
+          "evidence": "installed itemCFG capacity description plus PET_INFO 5+20 wire capacity"
+        }
+      ]
+    },
+    {
+      "item_id": 4339,
+      "name": "牛牛帽[积分",
+      "description": "牛年来临，戴牛牛帽，还有谁能比你牛！[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4414,
+      "name": "勇者之盔[积分",
+      "description": "传说中解救梦幻岛的圣使勇者所戴头盔，也许没了当初的神秘，但很有收藏价值。[携带此道具，所获积分增加4%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 4,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4415,
+      "name": "赤鸾羽冠[积分",
+      "description": "南溟之深，栖有赤鸾。用赤鸾的羽毛编制成衣服或是帽子，能闪烁火光，十分珍贵.[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4416,
+      "name": "衰神头部[积分",
+      "description": "有种人很背，俗称衰神，一旦被他盯上，慢慢胶踩不停。装成衰神，诅咒你的敌人.[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4484,
+      "name": "比基尼幻影[积分",
+      "description": "只要对手很色，只要对手是沙滩美女，一定会被你迷惑。用这样的绝招，是不是很爽呢？[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4488,
+      "name": "西部牛仔[积分",
+      "description": "帅气的牛仔帽，带你驰骋美国西部草原[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4492,
+      "name": "超级赛亚人发[积分",
+      "description": "蕴含摧毁宇宙的强大力量，是能者的象征。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4493,
+      "name": "那美克星人帽[积分",
+      "description": "那美克星人的头部装饰道具，具有不可预测的能力。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4494,
+      "name": "可爱兔兔头[积分",
+      "description": "粉色小兔子，是可爱女生必备的装备。[携带此道具，所获积分增加3%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4523,
+      "name": "春之女神幻影[积分",
+      "description": "春之女神降临大地，带来万物苏醒的生机。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4552,
+      "name": "邪灵盔[积分",
+      "description": "是邪恶的化身，但同时拥有深不可测的强大力量。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4554,
+      "name": "爱的头纱[积分",
+      "description": "用天山雪蚕丝编织而成的头纱，象征纯洁无暇，是结婚必备用品之一。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4585,
+      "name": "翼神龙盔[积分",
+      "description": "三幻神之一的翼神龙，拥有不死之身。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4602,
+      "name": "羽叶幻影[积分",
+      "description": "柔软的羽毛，带你进入梦幻的境界。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4629,
+      "name": "小丑帽[积分",
+      "description": "搞怪的帽子里收藏了无数小魔术秘笈，戴上就可以传送欢乐。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4631,
+      "name": "TT帽[积分",
+      "description": "搞怪道具之一，但TT不是套套的意思哦[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4635,
+      "name": "包子头套[积分",
+      "description": "哇，哪里来的香喷喷的包子？我不客气了~~~[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 4724,
+      "name": "真心绝对[积分",
+      "description": "宝石打造的心，总那般牢固，跟随你的身后，让你把爱情稳稳抓住。[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 9001,
+      "name": "铁蛋",
+      "description": "你选择的是铁蛋，将会砸出不错的奖励，好锤子会增加奖励等级哦。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9002,
+      "name": "银蛋",
+      "description": "你选择的是银蛋，将会砸出精品奖励，一定要选择更好的锤子！",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9003,
+      "name": "金蛋",
+      "description": "你选择的是金蛋，里面装的都是极品道具，不使用金锤子将会终生遗憾！",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9004,
+      "name": "彩蛋",
+      "description": "你选择的是彩蛋 ，将会砸出活动道具，一定要选择金锤子来砸哦！",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9011,
+      "name": "铁锤",
+      "description": "铁锤，可以砸出一般奖励。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9012,
+      "name": "银锤",
+      "description": "银锤，可以砸出精品奖励。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9013,
+      "name": "金锤",
+      "description": "金锤，可以砸出极品奖励。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9020,
+      "name": "水晶之恋",
+      "description": "你问我爱你有多深，水晶代表我的心——求婚必备道具。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "marriage_proposal",
+          "trigger": "marriage_proposal",
+          "target": "proposal_qualification",
+          "status": "implemented",
+          "evidence": "typed spark request/answer flow plus atomic proposal-item debit on acceptance"
+        }
+      ]
+    },
+    {
+      "item_id": 9021,
+      "name": "水晶戒指",
+      "description": "纯净的水晶代表我们的初恋。亲密度加成1。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 1,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9022,
+      "name": "宝石戒指",
+      "description": "红色的宝石代表我们的热恋。亲密度加成2。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 2,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9023,
+      "name": "铂金戒指",
+      "description": "珍贵的铂金见证我们的爱情。亲密度加成3。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 3,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9024,
+      "name": "钻石戒指",
+      "description": "钻石恒久远，一颗永流传。亲密度加成4。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 4,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9025,
+      "name": "真爱戒指",
+      "description": "一颗永不褪色的心，一段永不褪色的情。亲密度加成5。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 5,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9026,
+      "name": "永恒爱神之戒",
+      "description": "我们接受爱神的祝福，让我成为你永恒的守护天使。亲密度加成10。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 10,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 12125,
+      "name": "一代宗师牌匾[积分",
+      "description": "当你傲视群雄时，是否略有遗憾，当你仰慕英雄时，是否有所感慨？一代宗师牌匾让你誉满Q堂，风光无限。[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 12138,
+      "name": "紫钻贵族名片[积分",
+      "description": "荣耀的紫钻贵族专属名片，在众人的目光中熠熠生辉，身份和地位的象征！[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 12139,
+      "name": "紫钻皇帝名片[积分",
+      "description": "至高无上的紫钻皇帝专属名片，在众人的目光中熠熠生辉，身份和地位的象征！[携带此道具，所获积分增加5%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 13028,
+      "name": "紫钻幻影[积分",
+      "description": "全是紫色的钻石环绕，你这个富翁让人瞠目结舌，想炫上一回吗？快来加入这特权一族吧！[携带此道具，所获积分增加2%。",
+      "source": "equipped_item",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 20003,
+      "name": "超级火焰药水",
+      "description": "(道具场专用道具) 糖泡威力，糖泡数量，人物速度小幅上升。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "超级火焰药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20006,
+      "name": "超级糖浆",
+      "description": "(道具场专用道具)　糖泡威力，糖泡数量，人物速度大幅上升。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "超级糖浆",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20007,
+      "name": "透明泡泡药水",
+      "description": "(道具场专用道具) 使自己的糖泡变为半透明状。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "透明泡泡药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20008,
+      "name": "眩晕陷阱",
+      "description": "(通用道具) 踩中后会触发一定范围的闪电攻击。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "眩晕陷阱",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20009,
+      "name": "减速陷阱",
+      "description": "(通用道具) 踩中后会触发一定范围的冰冻攻击。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "减速陷阱",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20010,
+      "name": "反向陷阱",
+      "description": "(道具场专用道具) 踩中的玩家反向一段时间。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "反向陷阱",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20011,
+      "name": "力量护符",
+      "description": "(道具场专用道具) 增加己方所有队员的糖泡威力。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "力量护符",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20012,
+      "name": "急速护符",
+      "description": "(道具场专用道具) 增加己方所有队员的移动速度。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "急速护符",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20013,
+      "name": "穿墙护符",
+      "description": "(道具场专用道具) 一定时间内能够穿越可破坏的物体。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "穿墙护符",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20014,
+      "name": "探测护符",
+      "description": "(道具场专用道具) 探知地图上的所有陷阱。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "探测护符",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20015,
+      "name": "恶魔卷轴",
+      "description": "(道具场专用道具) 使得对方所有玩家的操作反向。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "恶魔卷轴",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20016,
+      "name": "恐怖卷轴",
+      "description": "(道具场专用道具) 减少对方所有玩家的糖泡威力一短时间。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "恐怖卷轴",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20017,
+      "name": "冰冻卷轴",
+      "description": "(道具场专用道具) 从地下冒出的连续冰块，若击中玩家，使其减速一段时间。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "冰冻卷轴",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20018,
+      "name": "爆炸陷阱",
+      "description": "(道具场专用道具) 踩中后会触发一定范围的火焰攻击。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "爆炸陷阱",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20019,
+      "name": "冲刺药水",
+      "description": "(道具场专用道具) 玩家可瞬间冲刺一次。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "冲刺药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20020,
+      "name": "万能药水",
+      "description": "(通用道具)解除一切不良状态",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "万能药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20021,
+      "name": "抵御护符",
+      "description": "(道具场专用道具) 一段时间不受任何道具影响，包括有利道具。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "抵御护符",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20022,
+      "name": "叉子",
+      "description": "(道具场专用道具) 使人物能够从糖泡中钻出来。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "叉子",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20023,
+      "name": "电动钻头",
+      "description": "(道具场专用道具) 直接毁坏玩家面向的一个可破坏的物体。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "电动钻头",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20024,
+      "name": "飞镖",
+      "description": "(道具场专用道具) 可投掷，飞行中遇到糖泡会引爆糖泡。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "飞镖",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20025,
+      "name": "变身卷轴",
+      "description": "(道具场专用道具) 将对方的一个玩家变为小动物一段时间。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "变身卷轴",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20026,
+      "name": "生命护符",
+      "description": "(道具场专用道具) 能帮助角色低档一次攻击 。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "competitive_item_room"
+          ],
+          "target": "生命护符",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20027,
+      "name": "超强的泻药",
+      "description": "(探险模式专用道具) 体力降至最低，人物速度极大幅度增加。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "超强的泻药",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20028,
+      "name": "嘲笑药水",
+      "description": "(探险模式专用道具) 让怪物暂时主动攻击自己。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "嘲笑药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20030,
+      "name": "盖亚之种",
+      "description": "(探险模式专用道具) 一段时间提升自己的糖泡恢复速度。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "盖亚之种",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20031,
+      "name": "攻击陷阱",
+      "description": "(探险模式专用道具) 踩中后会发生爆炸。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "攻击陷阱",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20032,
+      "name": "过期的牛奶",
+      "description": "(探险模式专用道具) 体力降至最低，糖炮强度极大幅度增加",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "过期的牛奶",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20033,
+      "name": "寒冰抵抗药剂",
+      "description": "(探险模式专用道具) 一定时间内不受到冰冻的伤害，不会被减速。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "寒冰抵抗药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20034,
+      "name": "黑萎草",
+      "description": "(探险模式专用道具) 一定时间糖炮数量增加。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "黑萎草",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20035,
+      "name": "火焰抵抗药剂",
+      "description": "(探险模式专用道具) 一定时间内不受到火焰的伤害。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "火焰抵抗药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20036,
+      "name": "急救包",
+      "description": "(探险模式专用道具) 可以复活玩家所站格内已死亡的同伴并补充适量体力。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "急救包",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20037,
+      "name": "解毒药",
+      "description": "(探险模式专用道具) 一定时间内不受到毒药的伤害。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "解毒药",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20038,
+      "name": "酷比的力量",
+      "description": "(探险模式专用道具) 体力降至最低，糖炮恢复速度极大幅度增加。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "酷比的力量",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20039,
+      "name": "力量药水",
+      "description": "(探险模式专用道具) 一段时间提升自己的糖泡威力。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "力量药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20040,
+      "name": "玫瑰药水",
+      "description": "(探险模式专用道具) 让怪物暂时不再攻击自己。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "玫瑰药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20042,
+      "name": "闪电抵抗药剂",
+      "description": "(探险模式专用道具) 一定时间内不受到闪电的伤害，不会被眩晕。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "闪电抵抗药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20043,
+      "name": "大体力药水",
+      "description": "(探险模式专用道具) 可以恢复大量的玩家hp。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "大体力药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20044,
+      "name": "小体力药水",
+      "description": "(探险模式专用道具) 可以恢复少量的玩家hp。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "小体力药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20045,
+      "name": "中体力药水",
+      "description": "(探险模式专用道具) 可以恢复中量的玩家hp。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "中体力药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20046,
+      "name": "万能药剂",
+      "description": "(通用道具) 解除自己的不良状态。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "万能药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20047,
+      "name": "无敌药剂",
+      "description": "(探险模式专用道具) 一定时间内不受到任何伤害",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "无敌药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20048,
+      "name": "无限的糖浆",
+      "description": "(探险模式专用道具) 体力降至最低，糖炮数量极大幅度增加。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "无限的糖浆",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20050,
+      "name": "医疗包",
+      "description": "(探险模式专用道具) 可以复活玩家所站格内已死亡的同伴并补充少量体力。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "医疗包",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20058,
+      "name": "红色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放红色火焰（只能在道具场和探险地图使用）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "红色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20059,
+      "name": "蓝色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放蓝色火焰（只能在道具场和探险地图使用）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "蓝色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20060,
+      "name": "紫色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放紫色火焰（只能在道具场和探险地图使用）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "紫色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20061,
+      "name": "黄色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放黄色火焰（只能在道具场和探险地图使用）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "黄色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20062,
+      "name": "绿色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放绿色火焰（只能在道具场和探险地图使用）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "绿色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20063,
+      "name": "心型结婚礼花",
+      "description": "爱情的见证，绽放心型礼花（只能在道具场和探险地图使用）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "心型结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20064,
+      "name": "QQ堂礼花",
+      "description": "绽放QQ堂标志的礼花（只能在道具场和探险地图使用）",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "QQ堂礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20100,
+      "name": "小复活卡",
+      "description": "(探险模式专用) 复活自己，并恢复10%的hp。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "小复活卡",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20101,
+      "name": "大复活卡",
+      "description": "(探险模式专用) 复活自己，并恢复30%的hp。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "大复活卡",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 25072,
+      "name": "显赫的恶魔",
+      "description": "具有一个天赋的恶魔，可以使获得的积分增加5%。天赋效果和同类型技能效果叠加技能效果叠加，天赋不可能学到",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 25079,
+      "name": "琪琪",
+      "description": "具有两个天赋的恶魔，可以使在购买道具和比赛中获得的声望增加5%，获得的积分增加5%，天赋效果和同类型技能效果叠加",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 25096,
+      "name": "恩佐",
+      "description": "具有三个天赋的极品恶魔，可以使在购买道具和比赛中获得的声望增加5%，获得的积分增加5%，获得的勇气增加5%，天赋效果和同类型技能效果叠加",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 25114,
+      "name": "布鲁斯",
+      "description": "具有两个天赋的猪，可以使获得的勇气增加5%，获得的积分增加5%。天赋效果和同类型技能效果叠加",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "points_percent",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "points",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed itemCFG percentage description"
+        }
+      ]
+    },
+    {
+      "item_id": 27001,
+      "name": "糖币加加1级",
+      "description": "宠物一级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27002,
+      "name": "糖币加加2级",
+      "description": "宠物二级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27003,
+      "name": "糖币加加3级",
+      "description": "宠物三级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27004,
+      "name": "糖币加加4级",
+      "description": "宠物四级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27005,
+      "name": "糖币加加5级",
+      "description": "宠物五级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27006,
+      "name": "糖币加加6级",
+      "description": "宠物六级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27007,
+      "name": "糖币加加7级",
+      "description": "宠物七级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27008,
+      "name": "糖币加加8级",
+      "description": "宠物八级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27009,
+      "name": "糖币加加9级",
+      "description": "宠物九级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27010,
+      "name": "糖币加加10级",
+      "description": "宠物十级技能之一，增加所获得的糖币5%，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27011,
+      "name": "勇气加加1级",
+      "description": "宠物一级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27012,
+      "name": "勇气加加2级",
+      "description": "宠物二级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27013,
+      "name": "勇气加加3级",
+      "description": "宠物三级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27014,
+      "name": "勇气加加4级",
+      "description": "宠物四级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27015,
+      "name": "勇气加加5级",
+      "description": "宠物五级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27016,
+      "name": "勇气加加6级",
+      "description": "宠物六级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27017,
+      "name": "勇气加加7级",
+      "description": "宠物七级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27018,
+      "name": "勇气加加8级",
+      "description": "宠物八级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27019,
+      "name": "勇气加加9级",
+      "description": "宠物九级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27020,
+      "name": "勇气加加10级",
+      "description": "宠物十级技能之一，增加所获得的勇气3%，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27021,
+      "name": "积分加加1级",
+      "description": "宠物一级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27022,
+      "name": "积分加加2级",
+      "description": "宠物二级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27023,
+      "name": "积分加加3级",
+      "description": "宠物三级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27024,
+      "name": "积分加加4级",
+      "description": "宠物四级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27025,
+      "name": "积分加加5级",
+      "description": "宠物五级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27026,
+      "name": "积分加加6级",
+      "description": "宠物六级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27027,
+      "name": "积分加加7级",
+      "description": "宠物七级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27028,
+      "name": "积分加加8级",
+      "description": "宠物八级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27029,
+      "name": "积分加加9级",
+      "description": "宠物九级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27030,
+      "name": "积分加加10级",
+      "description": "宠物十级技能之一，增加所获得的积分3%，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 3,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27031,
+      "name": "声望加加1级",
+      "description": "宠物一级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27032,
+      "name": "声望加加2级",
+      "description": "宠物二级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27033,
+      "name": "声望加加3级",
+      "description": "宠物三级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27034,
+      "name": "声望加加4级",
+      "description": "宠物四级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27035,
+      "name": "声望加加5级",
+      "description": "宠物五级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27036,
+      "name": "声望加加6级",
+      "description": "宠物六级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27037,
+      "name": "声望加加7级",
+      "description": "宠物七级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27038,
+      "name": "声望加加8级",
+      "description": "宠物八级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27039,
+      "name": "声望加加9级",
+      "description": "宠物九级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27040,
+      "name": "声望加加10级",
+      "description": "宠物十级技能之一，增加所获得的声望3%，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 3,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27041,
+      "name": "材料多多1级",
+      "description": "宠物一级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27042,
+      "name": "材料多多2级",
+      "description": "宠物二级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27043,
+      "name": "材料多多3级",
+      "description": "宠物三级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27044,
+      "name": "材料多多4级",
+      "description": "宠物四级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27045,
+      "name": "材料多多5级",
+      "description": "宠物五级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27046,
+      "name": "材料多多6级",
+      "description": "宠物六级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27047,
+      "name": "材料多多7级",
+      "description": "宠物七级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27048,
+      "name": "材料多多8级",
+      "description": "宠物八级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27049,
+      "name": "材料多多9级",
+      "description": "宠物九级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27050,
+      "name": "材料多多10级",
+      "description": "宠物十级技能之一，有3%的概率使获得的材料翻倍，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27051,
+      "name": "积分多多1级",
+      "description": "宠物一级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27052,
+      "name": "积分多多2级",
+      "description": "宠物二级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27053,
+      "name": "积分多多3级",
+      "description": "宠物三级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27054,
+      "name": "积分多多4级",
+      "description": "宠物四级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27055,
+      "name": "积分多多5级",
+      "description": "宠物五级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27056,
+      "name": "积分多多6级",
+      "description": "宠物六级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27057,
+      "name": "积分多多7级",
+      "description": "宠物七级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27058,
+      "name": "积分多多8级",
+      "description": "宠物八级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27059,
+      "name": "积分多多9级",
+      "description": "宠物九级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27060,
+      "name": "积分多多10级",
+      "description": "宠物十级技能之一，有3%的概率使获得的积分翻倍，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+      "source": "pet_learned_skill",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27061,
+      "name": "勇气多多1级",
+      "description": "宠物一级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27062,
+      "name": "勇气多多2级",
+      "description": "宠物二级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27063,
+      "name": "勇气多多3级",
+      "description": "宠物三级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27064,
+      "name": "勇气多多4级",
+      "description": "宠物四级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27065,
+      "name": "勇气多多5级",
+      "description": "宠物五级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27066,
+      "name": "勇气多多6级",
+      "description": "宠物六级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27067,
+      "name": "勇气多多7级",
+      "description": "宠物七级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27068,
+      "name": "勇气多多8级",
+      "description": "宠物八级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27069,
+      "name": "勇气多多9级",
+      "description": "宠物九级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27070,
+      "name": "勇气多多10级",
+      "description": "宠物十级技能之一，有3%的概率使得获得的勇气翻倍，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27071,
+      "name": "亲密多多1级",
+      "description": "宠物一级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他一级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27072,
+      "name": "亲密多多2级",
+      "description": "宠物二级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他二级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27073,
+      "name": "亲密多多3级",
+      "description": "宠物三级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他三级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27074,
+      "name": "亲密多多4级",
+      "description": "宠物四级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他四级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27075,
+      "name": "亲密多多5级",
+      "description": "宠物五级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他五级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27076,
+      "name": "亲密多多6级",
+      "description": "宠物六级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他六级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27077,
+      "name": "亲密多多7级",
+      "description": "宠物七级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他七级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27078,
+      "name": "亲密多多8级",
+      "description": "宠物八级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他八级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27079,
+      "name": "亲密多多9级",
+      "description": "宠物九级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他九级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 27080,
+      "name": "亲密多多10级",
+      "description": "宠物十级技能之一，有3%的概率使得获得的亲密翻倍，同类型技能效果叠加，学习此技能以后不能学习其他十级技能。",
+      "source": "account_item",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "chance_percent": 3,
+          "multiplier": 2,
+          "status": "catalogued",
+          "evidence": "installed learned pet-skill description"
+        }
+      ]
+    },
+    {
+      "item_id": 28002,
+      "name": "富有的酷比",
+      "description": "具有天赋：糖币之光10%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 10,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28003,
+      "name": "尊崇的酷比",
+      "description": "具有天赋：声望之光5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28005,
+      "name": "勇敢的米多",
+      "description": "具有天赋：勇气之光5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28006,
+      "name": "勤劳的米多",
+      "description": "具有天赋：材料闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28008,
+      "name": "布鲁斯",
+      "description": "具有天赋：积分之光5%，勇气之光5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28010,
+      "name": "善战的恶魔",
+      "description": "具有天赋：积分之光5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28011,
+      "name": "好胜的恶魔",
+      "description": "具有天赋：积分闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28012,
+      "name": "琪琪",
+      "description": "具有天赋：声望之光5%，积分之光5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28013,
+      "name": "恩佐",
+      "description": "具有天赋：声望之光5%，积分之光5%，勇气之光5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28014,
+      "name": "爱情酷比",
+      "description": "具有天赋：声望之光5%，勇气之光5%，材料闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28015,
+      "name": "爱情米多",
+      "description": "具有天赋：声望之光5%，积分之光5%，积分闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28016,
+      "name": "黑暗火焰精灵",
+      "description": "恶魔的使者，拥有邪恶的力量。具有天赋：积分之光6%，勇气之光6%，积分闪耀6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28017,
+      "name": "光明火焰精灵",
+      "description": "天堂的使者，拥有正义的力量。具有天赋：积分之光6%，勇气之光6%，材料闪耀6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28019,
+      "name": "流光龙",
+      "description": "守卫稀世琥珀的神龙，乃流光琥珀套装之魂！具有天赋：声望之光6%，积分之光6%，勇气之光6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 6,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28020,
+      "name": "hello dog",
+      "description": "具有天赋：勇气之光6%，材料闪耀6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28023,
+      "name": "紫光龙",
+      "description": "精灵龙族兵种之一，流光龙进化而成。具有天赋：声望之光7%，积分之光7%，勇气之光7%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 7,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28024,
+      "name": "陆行鸟",
+      "description": "奔驰于陆地的巨鸟，战斗中能给予主人极大的帮助。具有天赋：声望之光7%，积分闪耀7%，勇气闪耀7%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 7,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "percent": 7,
+          "chance_percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "percent": 7,
+          "chance_percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28025,
+      "name": "粉便便",
+      "description": "大便都能跟着跑，还有谁能比我叼？具有天赋：声望之光6%，积分之光6%，材料闪耀6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 6,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28026,
+      "name": "熊猫大宝",
+      "description": "论可爱，熊猫属第一。具有天赋：糖币之光14%，积分闪耀7%，亲密闪耀7%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 14,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "percent": 7,
+          "chance_percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 7,
+          "chance_percent": 7,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28027,
+      "name": "咪咪猫",
+      "description": "具有天赋：声望之光4%，积分之光4%，勇气之光4%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 4,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 4,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 4,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28028,
+      "name": "爱心宝宝",
+      "description": "含着奶嘴，扭扭屁股的小胖娃。具有天赋：糖币之光10%，声望之光5%，亲密闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 10,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28029,
+      "name": "梦想宝宝",
+      "description": "扎着辫辫，摆摆屁股的小胖妞。具有天赋：糖币之光10%，材料闪耀5%，亲密闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 10,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28030,
+      "name": "咪咪猫",
+      "description": "具有天赋：声望之光6%，积分之光6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 6,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28031,
+      "name": "圣诞麋鹿",
+      "description": "圣诞老人给了它与众不同的能力，让节日的温馨快乐无处不在。具有天赋：积分之光7%，勇气之光7%，材料闪耀7%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 7,
+          "chance_percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28032,
+      "name": "机甲蝎",
+      "description": "威武刚猛的机甲宠物。具有天赋：糖币之光12%，声望之光6%，材料闪耀6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 12,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 6,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28033,
+      "name": "幸运牛娃娃",
+      "description": "喜欢撒娇装嫩，带给人们幸运。具有天赋：糖币之光12%，声望之光6%，勇气之光6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 12,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 6,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28034,
+      "name": "丘比特",
+      "description": "顽皮的小家伙，谁会是他的下一个目标？具有天赋：积分闪耀6%，勇气闪耀6%，亲密闪耀6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28035,
+      "name": "可爱的小猪",
+      "description": "具有天赋：亲密闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28036,
+      "name": "旺旺狗",
+      "description": "超级可爱无敌的hello dog！小名叫旺财。具有天赋：糖币之光10%，勇气之光5%，材料闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 10,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28037,
+      "name": "咪咪猫",
+      "description": "开始的时候是小咪咪，长大了就是大咪咪。具有天赋：糖币之光10%，声望之光5%，积分之光5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 10,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28038,
+      "name": "爱情Q哥哥",
+      "description": "有憨态可掬的外形，渴望美好的爱情。具有天赋：积分闪耀5%，材料闪耀5%，亲密闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28039,
+      "name": "爱情Q妹妹",
+      "description": "有憨态可掬的外形，渴望美好的爱情。具有天赋：声望之光5%，积分之光5%，亲密闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:deterministic_percent",
+          "percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28040,
+      "name": "NO.1神兽",
+      "description": "传说中的四大神兽之首。具有天赋：糖币之光12%，材料闪耀6%，亲密闪耀6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 12,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "材料:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28041,
+      "name": "神龙",
+      "description": "收集所有龙珠，便可召唤神龙。具有天赋：糖币之光14%，勇气闪耀7%，亲密闪耀7%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 14,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "percent": 7,
+          "chance_percent": 7,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 7,
+          "chance_percent": 7,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28045,
+      "name": "饲养快女",
+      "description": "让你成就明星梦，把时尚流转Q堂。具有天赋：糖币之光12%，勇气闪耀6%，亲密闪耀6%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "糖币:deterministic_percent",
+          "percent": 12,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "亲密:chance_double",
+          "percent": 6,
+          "chance_percent": 6,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    },
+    {
+      "item_id": 28046,
+      "name": "暗夜使者",
+      "description": "传说中暗夜恶魔饲养的蝙蝠，长大了可以变成吸血鬼。具有天赋：声望之光5%，积分闪耀5%，勇气闪耀5%。",
+      "source": "pet_innate_talent",
+      "rules": [
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "声望:deterministic_percent",
+          "percent": 5,
+          "status": "catalogued",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "积分:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        },
+        {
+          "kind": "pet_talent",
+          "trigger": "competitive_settlement",
+          "target": "勇气:chance_double",
+          "percent": 5,
+          "chance_percent": 5,
+          "status": "implemented",
+          "evidence": "installed pet-card talent description"
+        }
+      ]
+    }
+  ]
+}

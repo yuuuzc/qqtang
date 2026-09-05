@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "method": "pre_oep_mapped_image_with_rebuilt_imports",
+  "executable": "Client.exe",
+  "sha256": "c9a8fa4f39963b59932f9832c529602cd458f80ef1271bed61d6bf8ab0af82ef",
+  "entry_rva": "0x2203A0",
+  "imports": [
+    "ADVAPI32.dll",
+    "atl.dll",
+    "dinput.dll",
+    "GDI32.dll",
+    "IMM32.dll",
+    "KERNEL32.dll",
+    "MSVCP60.dll",
+    "msvcrt.dll",
+    "OLEAUT32.dll",
+    "SHELL32.dll",
+    "SHLWAPI.dll",
+    "USER32.dll",
+    "VERSION.dll",
+    "WINMM.dll",
+    "WS2_32.dll",
+    "boost_python.dll",
+    "OLE32.dll",
+    "python23.dll",
+    "zlib1.dll"
+  ],
+  "protection_imports_present": false
+}

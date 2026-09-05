@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "preferences": [
+    { "category": "item", "resource_id": 20027, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20028, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20030, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20032, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20033, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20034, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20035, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20036, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20037, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20038, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20039, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20042, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20043, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20044, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20045, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20047, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] },
+    { "category": "item", "resource_id": 20050, "decision": "prefer-local", "evidence": ["The complete 5.2 package provides a uniform 40x45 E-badged inventory icon; the CDN ZIP is a different 40x60/66x66 UI variant."] }
+  ]
+}

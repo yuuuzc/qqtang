@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "policy": "Only runtime/client-patched configuration files may be redirected. Original values remain in source/QQtang and runtime/client-original-copy.",
+  "configuration_endpoints": [
+    {
+      "file": "DirCfg.ini",
+      "purpose": "directory server candidate",
+      "original_hosts": ["101.227.130.250", "101.227.130.249"],
+      "ports": [80, 8000, 443],
+      "redirect_host": "127.0.0.1",
+      "redirect_ports": [18080, 18000, 18443],
+      "confidence": "confirmed-config-value-purpose-probable"
+    },
+    {
+      "file": "p2psvrInfo.ini",
+      "purpose": "TCP/UDP relay and STUN candidates",
+      "original_hosts": ["218.85.138.28", "202.104.193.7"],
+      "ports": [443, 8000],
+      "redirect_host": "127.0.0.1",
+      "redirect_ports": [18443, 18000],
+      "confidence": "confirmed-config-value"
+    },
+    {
+      "file": "caserver.ini",
+      "purpose": "CA service candidate",
+      "original_hosts": ["vnetca.qq.com", "219.133.38.254", "192.168.1.250"],
+      "ports": [80, 7000],
+      "redirect_host": "127.0.0.1",
+      "redirect_ports": [18080, 17000],
+      "confidence": "confirmed-config-value-purpose-probable"
+    },
+    {
+      "file": "webserver.ini",
+      "purpose": "web service candidate",
+      "original_hosts": ["VnetWebPro.qq.com", "61.152.88.210", "172.30.14.128"],
+      "ports": [80, 8080],
+      "redirect_host": "127.0.0.1",
+      "redirect_ports": [18080],
+      "confidence": "confirmed-config-value-purpose-probable"
+    }
+  ]
+}

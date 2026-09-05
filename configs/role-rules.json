@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "random_placeholder_role_id": 23,
+  "purple_diamond_identity_mask": 8192,
+  "normal_role_ids": [
+    9,
+    22,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    18,
+    19,
+    20,
+    21
+  ],
+  "adventure_random_extra_role_ids": [],
+  "competitive_random_extra_role_ids": [
+    10,
+    11
+  ],
+  "purple_diamond_role_ids": [
+    13,
+    14,
+    15,
+    16
+  ]
+}

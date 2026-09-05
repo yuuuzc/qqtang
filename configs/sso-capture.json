@@ -1,0 +1,14 @@
+{
+  "capture_root": "runtime/captures/sso",
+  "log_file": "runtime/logs/sso-capture-server.jsonl",
+  "max_packet_bytes": 1048576,
+  "idle_timeout_ms": 60000,
+  "listeners": [
+    {
+      "name": "legacy-sso-capture",
+      "network": "tcp",
+      "address": "127.0.0.1:19001",
+      "response": {}
+    }
+  ]
+}

@@ -1,0 +1,5664 @@
+{
+  "schema_version": 5,
+  "reference_policy": "historical-reference-curated-with-5.2-client-item-catalog; unknown entity mappings and conflicting reports are not promoted as facts",
+  "source_files": [
+    "source/doc/drop_rate.json",
+    "source/doc/qqtang_adventure_drops_reference_v1.json",
+    "docs/item-id-catalog.json",
+    "runtime/analysis/decoded-client-config/battlefields.csv"
+  ],
+  "npc_drop_pools": [
+    {
+      "id": "route-1-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-entity-medium; client-item-id-confirmed",
+      "notes": "魔法王国1。entity_id 未恢复，因此先作为路线级普通怪物候选，不伪造逐怪映射。",
+      "normal_items": [
+        {
+          "item_id": 30083,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "狩猎刀",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "透明的瓶子",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30091,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "干净的雨水",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "煮药的罐子",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30092,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "纯净水",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30093,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "植物的汁液",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30094,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "融化的雪水",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30007,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "草药",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30013,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "未成熟的蔬菜",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 26001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宠物体力药水",
+          "kind": "pet-food",
+          "reference": "explicit_entity_drops"
+        }
+      ]
+    },
+    {
+      "id": "route-1-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-boss-medium; client-item-id-confirmed",
+      "notes": "稀有装扮报告可能属于结算奖励且多数场景工厂不支持，本池只保留可安全落地的材料、粮食、技能书和宠物卡。",
+      "normal_items": [
+        {
+          "item_id": 30007,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 60,
+          "name": "草药",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30008,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "珍贵的草药",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30011,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "黑萎草叶子",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30016,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "美味的蔬菜",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "category_rates.common_consumable"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "堂币加加技能书"
+        },
+        {
+          "item_id": 27031,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "声望加加1级",
+          "kind": "pet-skill-book",
+          "reference": "声望加加技能书"
+        },
+        {
+          "item_id": 28001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 6,
+          "name": "普通的酷比",
+          "kind": "pet-card",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 28002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "富有的酷比",
+          "kind": "pet-card",
+          "reference": "explicit_entity_drops"
+        }
+      ]
+    },
+    {
+      "id": "route-2-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-entity-medium; client-item-id-confirmed",
+      "notes": "魔法王国2路线级普通怪物候选。",
+      "normal_items": [
+        {
+          "item_id": 30050,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "湿木头",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30058,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "金矿石",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30064,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "神奇果实",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30070,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "魔法碎片",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30071,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "魔法元素",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30082,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "锋利的小刀",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30076,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "手纸",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "explicit_entity_drops"
+        }
+      ]
+    },
+    {
+      "id": "route-2-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-boss-medium-with-conflicts; client-item-id-confirmed",
+      "notes": "冲突宠物报告降权；配方书保留为稀有候选。",
+      "normal_items": [
+        {
+          "item_id": 30058,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "金矿石",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30070,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "魔法碎片",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30071,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "魔法元素",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 27011,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "勇气加加1级",
+          "kind": "pet-skill-book",
+          "reference": "alternative_reports"
+        },
+        {
+          "item_id": 24056,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 5,
+          "name": "蓝水晶合成书",
+          "kind": "craft-recipe",
+          "reference": "alternative_reports"
+        },
+        {
+          "item_id": 24057,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 5,
+          "name": "紫水晶合成书",
+          "kind": "craft-recipe",
+          "reference": "alternative_reports"
+        },
+        {
+          "item_id": 28004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 6,
+          "name": "普通的米多",
+          "kind": "pet-card",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 28005,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "勇敢的米多",
+          "kind": "pet-card",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 28009,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "普通的恶魔",
+          "kind": "pet-card",
+          "reference": "alternative_reports"
+        }
+      ]
+    },
+    {
+      "id": "route-3-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-entity-medium; client-item-id-confirmed",
+      "notes": "机械世界路线级普通怪物候选；矿石粉末按客户端名称矿石粉沫解析。",
+      "normal_items": [
+        {
+          "item_id": 30038,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "掉落的羽毛",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30041,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "凤凰的羽毛",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30046,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "矿石粉沫",
+          "kind": "material",
+          "reference": "矿石粉末"
+        },
+        {
+          "item_id": 30045,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "散落的灰尘",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30055,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "金属1",
+          "kind": "material",
+          "reference": "client-safe-local-support"
+        },
+        {
+          "item_id": 30056,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "铁矿石",
+          "kind": "material",
+          "reference": "explicit_entity_drops:铁矿"
+        },
+        {
+          "item_id": 30057,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "银矿石",
+          "kind": "material",
+          "reference": "explicit_entity_drops:银矿"
+        },
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "explicit_entity_drops"
+        }
+      ]
+    },
+    {
+      "id": "route-3-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-boss-medium-with-conflicts; client-item-id-confirmed",
+      "notes": "机械世界Boss候选；冲突宠物/技能书仅低权重出现。",
+      "normal_items": [
+        {
+          "item_id": 30045,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 50,
+          "name": "散落的灰尘",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 30047,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "火药粉沫",
+          "kind": "material",
+          "reference": "alternative_reports"
+        },
+        {
+          "item_id": 30046,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "矿石粉沫",
+          "kind": "material",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 27041,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "材料多多1级",
+          "kind": "pet-skill-book",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 27051,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "积分多多1级",
+          "kind": "pet-skill-book",
+          "reference": "explicit_entity_drops"
+        },
+        {
+          "item_id": 28004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 5,
+          "name": "普通的米多",
+          "kind": "pet-card",
+          "reference": "alternative_reports"
+        },
+        {
+          "item_id": 28005,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "勇敢的米多",
+          "kind": "pet-card",
+          "reference": "alternative_reports"
+        },
+        {
+          "item_id": 28006,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "勤劳的米多",
+          "kind": "pet-card",
+          "reference": "alternative_reports"
+        },
+        {
+          "item_id": 28015,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "爱情米多",
+          "kind": "pet-card",
+          "reference": "explicit_entity_drops"
+        }
+      ]
+    },
+    {
+      "id": "route-4-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-map-level-medium; client-item-id-confirmed",
+      "notes": "黑龙王国公开资料仅支持地图级池。",
+      "normal_items": [
+        {
+          "item_id": 30068,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "魔法元素2",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30045,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "散落的灰尘",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30091,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "干净的雨水",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30088,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "宝石4",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30089,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宝石5",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30033,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "发光的珍珠",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30082,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "锋利的小刀",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30055,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "金属1",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30070,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "魔法碎片",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30044,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "冰沫",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        }
+      ]
+    },
+    {
+      "id": "route-4-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-map-level-medium; client-item-id-confirmed",
+      "notes": "Boss逐怪映射未知；合成书和宠物卡降权。",
+      "normal_items": [
+        {
+          "item_id": 30068,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 50,
+          "name": "魔法元素2",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30045,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 50,
+          "name": "散落的灰尘",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30088,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宝石4",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 30089,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "宝石5",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 24052,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 5,
+          "name": "橙水晶合成书",
+          "kind": "craft-recipe",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 24042,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 5,
+          "name": "闪电抵抗药剂合成书",
+          "kind": "craft-recipe",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 24056,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "蓝水晶合成书",
+          "kind": "craft-recipe",
+          "reference": "additional_reports"
+        },
+        {
+          "item_id": 24057,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "紫水晶合成书",
+          "kind": "craft-recipe",
+          "reference": "additional_reports"
+        },
+        {
+          "item_id": 28001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 5,
+          "name": "普通的酷比",
+          "kind": "pet-card",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 28012,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "琪琪",
+          "kind": "pet-card",
+          "reference": "additional_reports"
+        }
+      ]
+    },
+    {
+      "id": "route-5-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-map-level-medium; client-item-id-confirmed",
+      "notes": "迷之森林公开资料仅支持地图级池。",
+      "normal_items": [
+        {
+          "item_id": 30091,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "干净的雨水",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 473,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "精灵之羽",
+          "kind": "key-material",
+          "reference": "map_level_known_drops; version-sensitive"
+        },
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        }
+      ]
+    },
+    {
+      "id": "route-5-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-map-level-medium; local-level-substitution",
+      "notes": "资料称无装备；技能书使用最低级安全ID，不扩张为装扮池。",
+      "normal_items": [
+        {
+          "item_id": 30091,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 50,
+          "name": "干净的雨水",
+          "kind": "material",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 473,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "精灵之羽",
+          "kind": "key-material",
+          "reference": "map_level_known_drops; version-sensitive"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27011,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "勇气加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        }
+      ]
+    },
+    {
+      "id": "route-6-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-map-level-medium; client-item-id-confirmed",
+      "notes": "迷之沙漠路线级普通池；时空之沙保持低权重且标记版本冲突。",
+      "normal_items": [
+        {
+          "item_id": 26001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "宠物体力药水",
+          "kind": "pet-food",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 477,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "时空之沙",
+          "kind": "key-material",
+          "reference": "map_level_known_drops; low/version-conflict"
+        }
+      ]
+    },
+    {
+      "id": "route-6-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-map-level-medium-with-version-conflicts",
+      "notes": "宠物和圣诞包袱均降权；不把历史装备报告当5.2确定真值。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 25,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "category common_consumable"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 28012,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 5,
+          "name": "琪琪",
+          "kind": "pet-card",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 28008,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 5,
+          "name": "布鲁斯",
+          "kind": "pet-card",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 28013,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "恩佐",
+          "kind": "pet-card",
+          "reference": "map_level_known_drops"
+        },
+        {
+          "item_id": 92,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "圣诞包袱",
+          "kind": "avatar-cosmetic",
+          "reference": "equipment_reports; version-sensitive"
+        },
+        {
+          "item_id": 477,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "时空之沙",
+          "kind": "key-material",
+          "reference": "map_level_known_drops; low/version-conflict"
+        }
+      ]
+    },
+    {
+      "id": "route-7-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 33,
+      "confidence": "local-fallback-low; client-item-id-confirmed",
+      "notes": "迷之底缺少可靠公开表；不继承迷之沙漠，只提供低掉率的通用探险物品保底池。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 50,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "local-fallback; generic adventure category"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "local-fallback; generic adventure category"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "local-fallback; generic adventure category"
+        },
+        {
+          "item_id": 27011,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "勇气加加1级",
+          "kind": "pet-skill-book",
+          "reference": "local-fallback; generic adventure category"
+        }
+      ]
+    },
+    {
+      "id": "route-7-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 90,
+      "confidence": "local-fallback-low; client-item-id-confirmed",
+      "notes": "迷之底Boss表未知；使用低稀有度通用粮食、技能书和普通宠物卡，后续由5.2实测替换。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 50,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "local-fallback; generic adventure category"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "local-fallback; generic adventure category"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "local-fallback; generic adventure category"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "local-fallback; generic adventure category"
+        },
+        {
+          "item_id": 27011,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "勇气加加1级",
+          "kind": "pet-skill-book",
+          "reference": "local-fallback; generic adventure category"
+        },
+        {
+          "item_id": 28001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "普通的酷比",
+          "kind": "pet-card",
+          "reference": "local-fallback; generic common pet"
+        },
+        {
+          "item_id": 28004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "普通的米多",
+          "kind": "pet-card",
+          "reference": "local-fallback; generic common pet"
+        }
+      ]
+    },
+    {
+      "id": "route-8-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-map-level-medium; local-level-substitution",
+      "notes": "风暴海湾：资料仅确认宠物粮、宠物技能书和宠物类别。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27011,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "勇气加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        }
+      ]
+    },
+    {
+      "id": "route-8-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-category-medium; local-pet-substitution",
+      "notes": "宠物类别未给品种，使用客户端普通宠物卡低权重候选。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27011,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "勇气加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 28001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的酷比",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的米多",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28009,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "普通的恶魔",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28012,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "琪琪",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28013,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "恩佐",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        }
+      ]
+    },
+    {
+      "id": "route-9-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-map-level-medium; local-level-substitution",
+      "notes": "极昼平原：与后期冰系资料的类别边界一致。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27021,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "积分加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27031,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "声望加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        }
+      ]
+    },
+    {
+      "id": "route-9-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-category-medium; local-pet-substitution",
+      "notes": "同冰系通用Boss策略。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27021,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "积分加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27031,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "声望加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 28001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的酷比",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的米多",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28009,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "普通的恶魔",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28012,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "琪琪",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28013,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "恩佐",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        }
+      ]
+    },
+    {
+      "id": "route-10-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-map-level-medium; local-level-substitution",
+      "notes": "怒风峡谷：与后期冰系资料的类别边界一致。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27041,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "材料多多1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27051,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "积分多多1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        }
+      ]
+    },
+    {
+      "id": "route-10-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-category-medium; local-pet-substitution",
+      "notes": "同冰系通用Boss策略。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27041,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "材料多多1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27051,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "积分多多1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 28001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的酷比",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的米多",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28009,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "普通的恶魔",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28012,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "琪琪",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28013,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "恩佐",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        }
+      ]
+    },
+    {
+      "id": "route-11-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-map-level-medium; local-level-substitution",
+      "notes": "守望山麓：与后期冰系资料的类别边界一致。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 20,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27031,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "声望加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        }
+      ]
+    },
+    {
+      "id": "route-11-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-category-medium; local-pet-substitution",
+      "notes": "同冰系通用Boss策略。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 40,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "糖币加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27031,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "声望加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 28001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的酷比",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的米多",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28009,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "普通的恶魔",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28012,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "琪琪",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28013,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "恩佐",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        }
+      ]
+    },
+    {
+      "id": "route-12-normal",
+      "enabled": true,
+      "max_drop_count": 1,
+      "drop_chance_percent": 38,
+      "confidence": "historical-map-level-medium; local-level-substitution",
+      "notes": "永冬之巅：玩家资料称宠物粮食量较高，因此食品权重最高。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 50,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 30,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27021,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "积分加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27041,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "材料多多1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        }
+      ]
+    },
+    {
+      "id": "route-12-boss",
+      "enabled": true,
+      "max_drop_count": 3,
+      "drop_chance_percent": 95,
+      "confidence": "historical-category-medium; local-pet-substitution",
+      "notes": "永冬Boss通用类别池；不加入资料未支持的矿石/宝石。",
+      "normal_items": [
+        {
+          "item_id": 26002,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 50,
+          "name": "宠物粮食小",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26003,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 45,
+          "name": "宠物粮食中",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 26004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 35,
+          "name": "宠物粮食大",
+          "kind": "pet-food",
+          "reference": "generic宠物粮食"
+        },
+        {
+          "item_id": 27021,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "积分加加1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 27041,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 8,
+          "name": "材料多多1级",
+          "kind": "pet-skill-book",
+          "reference": "generic宠物技能书"
+        },
+        {
+          "item_id": 28001,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的酷比",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28004,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 4,
+          "name": "普通的米多",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28009,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 3,
+          "name": "普通的恶魔",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28012,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "琪琪",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        },
+        {
+          "item_id": 28013,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 2,
+          "name": "恩佐",
+          "kind": "pet-card",
+          "reference": "generic宠物"
+        }
+      ]
+    }
+  ],
+  "wall_drop_pools": [
+    {
+      "id": "route-1-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "notes": "每关最多5次独立墙内材料机会。",
+      "items": [
+        {
+          "item_id": 30067,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "魔法元素1",
+          "kind": "material",
+          "reference": "existing-client-validated-wall-policy"
+        },
+        {
+          "item_id": 30068,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "魔法元素2",
+          "kind": "material",
+          "reference": "existing-client-validated-wall-policy"
+        },
+        {
+          "item_id": 30069,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "魔法碎屑",
+          "kind": "material",
+          "reference": "existing-client-validated-wall-policy"
+        }
+      ]
+    },
+    {
+      "id": "route-2-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30043,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "小碎屑",
+          "kind": "material"
+        },
+        {
+          "item_id": 30044,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "冰沫",
+          "kind": "material"
+        },
+        {
+          "item_id": 30045,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "散落的灰尘",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-3-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30055,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "金属1",
+          "kind": "material"
+        },
+        {
+          "item_id": 30056,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "铁矿石",
+          "kind": "material"
+        },
+        {
+          "item_id": 30057,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "银矿石",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-4-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30031,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "小珍珠",
+          "kind": "material"
+        },
+        {
+          "item_id": 30032,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "大珍珠",
+          "kind": "material"
+        },
+        {
+          "item_id": 30033,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "发光的珍珠",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-5-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30049,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "木材1",
+          "kind": "material"
+        },
+        {
+          "item_id": 30050,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "湿木头",
+          "kind": "material"
+        },
+        {
+          "item_id": 30051,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "大树枝",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-6-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30061,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "果实1",
+          "kind": "material"
+        },
+        {
+          "item_id": 30062,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "果实2",
+          "kind": "material"
+        },
+        {
+          "item_id": 30063,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "果实3",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-7-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "notes": "迷之底墙体材料沿用独立本地基础材料策略，不代表怪物掉落。",
+      "items": [
+        {
+          "item_id": 30079,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "刀具1",
+          "kind": "material"
+        },
+        {
+          "item_id": 30080,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "刀具2",
+          "kind": "material"
+        },
+        {
+          "item_id": 30081,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "水果刀",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-8-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30091,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "干净的雨水",
+          "kind": "material"
+        },
+        {
+          "item_id": 30092,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "纯净水",
+          "kind": "material"
+        },
+        {
+          "item_id": 30093,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "植物的汁液",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-9-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30007,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "草药",
+          "kind": "material"
+        },
+        {
+          "item_id": 30008,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "珍贵的草药",
+          "kind": "material"
+        },
+        {
+          "item_id": 30009,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "奇怪的草药",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-10-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30013,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "未成熟的蔬菜",
+          "kind": "material"
+        },
+        {
+          "item_id": 30014,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "成熟的蔬菜",
+          "kind": "material"
+        },
+        {
+          "item_id": 30015,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "巨大的蔬菜",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-11-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30085,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "宝石1",
+          "kind": "material"
+        },
+        {
+          "item_id": 30086,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "宝石2",
+          "kind": "material"
+        },
+        {
+          "item_id": 30087,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "宝石3",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "route-12-wall",
+      "rolls": 5,
+      "drop_chance_percent": 35,
+      "confidence": "local-policy; no official per-wall table",
+      "items": [
+        {
+          "item_id": 30043,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "小碎屑",
+          "kind": "material"
+        },
+        {
+          "item_id": 30044,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "冰沫",
+          "kind": "material"
+        },
+        {
+          "item_id": 30094,
+          "quantity": 1,
+          "drop_time": 0,
+          "weight": 1,
+          "name": "融化的雪水",
+          "kind": "material"
+        }
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "map_id": 1601,
+      "expected_npc_deaths": 4,
+      "wall_drop_pool": "route-1-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30033,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 300,
+              "damage": 1,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30034,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 300,
+              "damage": 1,
+              "defense": 50,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30035,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 300,
+              "damage": 1,
+              "defense": 20,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30036,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 300,
+              "damage": 1,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1602,
+      "expected_npc_deaths": 23,
+      "wall_drop_pool": "route-1-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30000,
+          "boss_count": 10,
+          "combat_profiles": [
+            {
+              "count": 10,
+              "health": 1575,
+              "damage": 50,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30001,
+          "boss_count": 6,
+          "combat_profiles": [
+            {
+              "count": 6,
+              "health": 1575,
+              "damage": 50,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30002,
+          "boss_count": 7,
+          "combat_profiles": [
+            {
+              "count": 6,
+              "health": 1575,
+              "damage": 50,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 1575,
+              "damage": 50,
+              "defense": 25,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1603,
+      "expected_npc_deaths": 20,
+      "wall_drop_pool": "route-1-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30003,
+          "boss_count": 9,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 5400,
+              "damage": 85,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 7,
+              "health": 5400,
+              "damage": 85,
+              "defense": 0,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30004,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 5400,
+              "damage": 85,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 3,
+              "health": 5400,
+              "damage": 85,
+              "defense": 0,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30005,
+          "boss_count": 6,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 5400,
+              "damage": 85,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 4,
+              "health": 5400,
+              "damage": 85,
+              "defense": 0,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30006,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 15400,
+              "damage": 85,
+              "defense": 0,
+              "speed": 4,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-1-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1604,
+      "expected_npc_deaths": 18,
+      "wall_drop_pool": "route-1-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30007,
+          "boss_count": 8,
+          "combat_profiles": [
+            {
+              "count": 7,
+              "health": 8100,
+              "damage": 120,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 8100,
+              "damage": 120,
+              "defense": 10,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30008,
+          "boss_count": 9,
+          "combat_profiles": [
+            {
+              "count": 9,
+              "health": 8100,
+              "damage": 120,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30009,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 8100,
+              "damage": 120,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-1-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1605,
+      "expected_npc_deaths": 18,
+      "wall_drop_pool": "route-1-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30010,
+          "boss_count": 7,
+          "combat_profiles": [
+            {
+              "count": 6,
+              "health": 10800,
+              "damage": 155,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10800,
+              "damage": 155,
+              "defense": 10,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30011,
+          "boss_count": 10,
+          "combat_profiles": [
+            {
+              "count": 9,
+              "health": 10800,
+              "damage": 155,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10800,
+              "damage": 155,
+              "defense": 0,
+              "speed": 6,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30012,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 14800,
+              "damage": 200,
+              "defense": 0,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-1-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1606,
+      "expected_npc_deaths": 6,
+      "wall_drop_pool": "route-1-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30013,
+          "boss_count": 5,
+          "combat_profiles": [
+            {
+              "count": 5,
+              "health": 15000,
+              "damage": 190,
+              "defense": 0,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-1-normal"
+        },
+        {
+          "boss_id": 30014,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 20000,
+              "damage": 190,
+              "defense": 0,
+              "speed": 4,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-1-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1607,
+      "expected_npc_deaths": 12,
+      "wall_drop_pool": "route-2-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30045,
+          "boss_count": 11,
+          "combat_profiles": [
+            {
+              "count": 7,
+              "health": 15000,
+              "damage": 360,
+              "defense": 150,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 4,
+              "health": 21000,
+              "damage": 360,
+              "defense": 450,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30046,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 500,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-2-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1608,
+      "expected_npc_deaths": 13,
+      "wall_drop_pool": "route-2-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30047,
+          "boss_count": 6,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 5000,
+              "damage": 100,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 100,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 400,
+              "defense": 500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30048,
+          "boss_count": 6,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 6000,
+              "damage": 200,
+              "defense": 300,
+              "speed": 2,
+              "is_boss": false
+            },
+            {
+              "count": 2,
+              "health": 15000,
+              "damage": 450,
+              "defense": 500,
+              "speed": 2,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 16000,
+              "damage": 200,
+              "defense": 300,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30049,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 600,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1609,
+      "expected_npc_deaths": 10,
+      "wall_drop_pool": "route-2-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30050,
+          "boss_count": 5,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 5000,
+              "damage": 100,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 2,
+              "health": 15000,
+              "damage": 300,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30051,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 600,
+              "defense": 1000,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-2-boss"
+        },
+        {
+          "boss_id": 30052,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 6000,
+              "damage": 200,
+              "defense": 300,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1610,
+      "expected_npc_deaths": 11,
+      "wall_drop_pool": "route-2-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30053,
+          "boss_count": 6,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 6000,
+              "damage": 300,
+              "defense": 300,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 300,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 16000,
+              "damage": 300,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30054,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 8000,
+              "damage": 300,
+              "defense": 300,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 300,
+              "defense": 900,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 18000,
+              "damage": 300,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30055,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 700,
+              "defense": 1500,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-2-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1611,
+      "expected_npc_deaths": 8,
+      "wall_drop_pool": "route-2-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30056,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 20000,
+              "damage": 500,
+              "defense": 500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30057,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 500,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30058,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 700,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30059,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 700,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        },
+        {
+          "boss_id": 30060,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 700,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-2-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1612,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-3-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30037,
+          "boss_count": 8,
+          "combat_profiles": [
+            {
+              "count": 8,
+              "health": 10000,
+              "damage": 500,
+              "defense": 700,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-3-normal"
+        },
+        {
+          "boss_id": 30038,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 20000,
+              "damage": 1500,
+              "defense": 1000,
+              "speed": 1,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-3-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1613,
+      "expected_npc_deaths": 7,
+      "wall_drop_pool": "route-3-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30039,
+          "boss_count": 6,
+          "combat_profiles": [
+            {
+              "count": 6,
+              "health": 20000,
+              "damage": 600,
+              "defense": 600,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-3-normal"
+        },
+        {
+          "boss_id": 30040,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 1100,
+              "defense": 1100,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-3-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1614,
+      "expected_npc_deaths": 11,
+      "wall_drop_pool": "route-3-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30041,
+          "boss_count": 10,
+          "combat_profiles": [
+            {
+              "count": 10,
+              "health": 20000,
+              "damage": 700,
+              "defense": 700,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-3-normal"
+        },
+        {
+          "boss_id": 30042,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 25000,
+              "damage": 1200,
+              "defense": 1200,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-3-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1615,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-3-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30043,
+          "boss_count": 8,
+          "combat_profiles": [
+            {
+              "count": 8,
+              "health": 15000,
+              "damage": 800,
+              "defense": 1000,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-3-normal"
+        },
+        {
+          "boss_id": 30044,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 1300,
+              "defense": 1300,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-3-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1616,
+      "expected_npc_deaths": 15,
+      "wall_drop_pool": "route-4-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30061,
+          "boss_count": 8,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 300,
+              "damage": 0,
+              "defense": 0,
+              "speed": 0,
+              "is_boss": false
+            },
+            {
+              "count": 2,
+              "health": 300,
+              "damage": 0,
+              "defense": 20,
+              "speed": 0,
+              "is_boss": false
+            },
+            {
+              "count": 2,
+              "health": 500,
+              "damage": 0,
+              "defense": 0,
+              "speed": 0,
+              "is_boss": false
+            },
+            {
+              "count": 2,
+              "health": 500,
+              "damage": 0,
+              "defense": 20,
+              "speed": 0,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30062,
+          "boss_count": 7,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 300,
+              "damage": 1,
+              "defense": 0,
+              "speed": 0,
+              "is_boss": false
+            },
+            {
+              "count": 3,
+              "health": 500,
+              "damage": 1,
+              "defense": 0,
+              "speed": 0,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 500,
+              "damage": 1,
+              "defense": 0,
+              "speed": 1,
+              "is_boss": false
+            },
+            {
+              "count": 2,
+              "health": 500,
+              "damage": 1,
+              "defense": 20,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1617,
+      "expected_npc_deaths": 15,
+      "wall_drop_pool": "route-4-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30061,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 500,
+              "damage": 0,
+              "defense": 50,
+              "speed": 1,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 800,
+              "damage": 0,
+              "defense": 50,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30062,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 500,
+              "damage": 1,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 800,
+              "damage": 1,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30063,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 500,
+              "damage": 0,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 1000,
+              "damage": 0,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30064,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 500,
+              "damage": 0,
+              "defense": 0,
+              "speed": 2,
+              "is_boss": false
+            },
+            {
+              "count": 2,
+              "health": 2000,
+              "damage": 0,
+              "defense": 0,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30065,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 4000,
+              "damage": 0,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 0,
+              "defense": 500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1618,
+      "expected_npc_deaths": 12,
+      "wall_drop_pool": "route-4-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30061,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 6000,
+              "damage": 0,
+              "defense": 1500,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30065,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 0,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 0,
+              "defense": 1500,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 0,
+              "defense": 2000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30066,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 4000,
+              "damage": 600,
+              "defense": 500,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30067,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 6000,
+              "damage": 1000,
+              "defense": 1500,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30068,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 6000,
+              "damage": 800,
+              "defense": 1500,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1619,
+      "expected_npc_deaths": 12,
+      "wall_drop_pool": "route-4-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30061,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 6000,
+              "damage": 0,
+              "defense": 1500,
+              "speed": 1,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 0,
+              "defense": 2000,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30065,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 10000,
+              "damage": 0,
+              "defense": 2000,
+              "speed": 3,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 12000,
+              "damage": 0,
+              "defense": 2500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30066,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 8000,
+              "damage": 600,
+              "defense": 2000,
+              "speed": 2,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 600,
+              "defense": 2500,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30067,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 1000,
+              "defense": 2500,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30068,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 800,
+              "defense": 2000,
+              "speed": 4,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 800,
+              "defense": 2000,
+              "speed": 4,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 800,
+              "defense": 2500,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1620,
+      "expected_npc_deaths": 2,
+      "wall_drop_pool": "route-4-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30069,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 1200,
+              "defense": 3000,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-4-boss"
+        },
+        {
+          "boss_id": 30076,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 1200,
+              "defense": 4000,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-4-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1621,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-4-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30072,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 20000,
+              "damage": 800,
+              "defense": 3000,
+              "speed": 4,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 20000,
+              "damage": 800,
+              "defense": 4000,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30073,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 20000,
+              "damage": 1000,
+              "defense": 3000,
+              "speed": 4,
+              "is_boss": false
+            },
+            {
+              "count": 1,
+              "health": 20000,
+              "damage": 1000,
+              "defense": 4000,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30074,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 2000,
+              "defense": 4000,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        },
+        {
+          "boss_id": 30075,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 30000,
+              "damage": 2000,
+              "defense": 4000,
+              "speed": 1,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-4-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1622,
+      "expected_npc_deaths": 3,
+      "wall_drop_pool": "route-4-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30070,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 2000,
+              "defense": 4500,
+              "speed": 4,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-4-boss"
+        },
+        {
+          "boss_id": 30071,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 2000,
+              "defense": 4500,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-4-boss"
+        },
+        {
+          "boss_id": 30077,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 2400,
+              "defense": 5000,
+              "speed": 5,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-4-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1623,
+      "expected_npc_deaths": 12,
+      "wall_drop_pool": "route-5-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30078,
+          "boss_count": 6,
+          "combat_profiles": [
+            {
+              "count": 6,
+              "health": 500,
+              "damage": 10,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30080,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 750,
+              "damage": 50,
+              "defense": 100,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30082,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1000,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1624,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-5-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30078,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 500,
+              "damage": 10,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30080,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 750,
+              "damage": 50,
+              "defense": 100,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30082,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1000,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30084,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 2000,
+              "damage": 600,
+              "defense": 400,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1625,
+      "expected_npc_deaths": 10,
+      "wall_drop_pool": "route-5-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30079,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1000,
+              "damage": 50,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30080,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 750,
+              "damage": 50,
+              "defense": 100,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30081,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1500,
+              "damage": 200,
+              "defense": 400,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30082,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 1000,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30085,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 4000,
+              "damage": 600,
+              "defense": 1600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30086,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 4000,
+              "damage": 800,
+              "defense": 800,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1626,
+      "expected_npc_deaths": 8,
+      "wall_drop_pool": "route-5-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30082,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1000,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30083,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 2000,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30084,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 2000,
+              "damage": 600,
+              "defense": 400,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30087,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 800,
+              "defense": 3200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30089,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 16000,
+              "damage": 1000,
+              "defense": 6400,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-5-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1627,
+      "expected_npc_deaths": 8,
+      "wall_drop_pool": "route-5-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30084,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 2000,
+              "damage": 6000,
+              "defense": 400,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30085,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 600,
+              "defense": 1600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30086,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 800,
+              "defense": 800,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-5-normal"
+        },
+        {
+          "boss_id": 30088,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 1000,
+              "defense": 1600,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-5-boss"
+        },
+        {
+          "boss_id": 30090,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 16000,
+              "damage": 1400,
+              "defense": 3200,
+              "speed": 1,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-5-boss"
+        },
+        {
+          "boss_id": 30091,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 1800,
+              "defense": 8000,
+              "speed": 1,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-5-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1628,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-6-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30078,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 500,
+              "damage": 10,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30079,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1000,
+              "damage": 50,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30080,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 750,
+              "damage": 50,
+              "defense": 100,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30082,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1000,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1629,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-6-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30080,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 750,
+              "damage": 50,
+              "defense": 100,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30081,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1500,
+              "damage": 200,
+              "defense": 400,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30082,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 100,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30083,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 2000,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30084,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 2000,
+              "damage": 600,
+              "defense": 400,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1630,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-6-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30083,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 2000,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30084,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 2000,
+              "damage": 600,
+              "defense": 400,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30085,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 600,
+              "defense": 1600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30086,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 800,
+              "defense": 800,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30087,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 800,
+              "defense": 3200,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-6-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1631,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-6-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30085,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 600,
+              "defense": 1600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30086,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 4000,
+              "damage": 800,
+              "defense": 800,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30087,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 8000,
+              "damage": 800,
+              "defense": 3200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30088,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 1000,
+              "defense": 1600,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-6-boss"
+        },
+        {
+          "boss_id": 30089,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 16000,
+              "damage": 1000,
+              "defense": 6400,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-6-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1632,
+      "expected_npc_deaths": 7,
+      "wall_drop_pool": "route-6-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30082,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 1000,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30084,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 2000,
+              "damage": 600,
+              "defense": 400,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30086,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 800,
+              "defense": 800,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-6-normal"
+        },
+        {
+          "boss_id": 30090,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 16000,
+              "damage": 1400,
+              "defense": 3200,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-6-boss"
+        },
+        {
+          "boss_id": 30091,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 18000,
+              "defense": 8000,
+              "speed": 1,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-6-boss"
+        },
+        {
+          "boss_id": 30092,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 2000,
+              "defense": 10000,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-6-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1633,
+      "expected_npc_deaths": 9,
+      "wall_drop_pool": "route-7-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30078,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 500,
+              "damage": 10,
+              "defense": 50,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30079,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 1000,
+              "damage": 50,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30080,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 750,
+              "damage": 50,
+              "defense": 100,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30081,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 1500,
+              "damage": 200,
+              "defense": 400,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1634,
+      "expected_npc_deaths": 14,
+      "wall_drop_pool": "route-7-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30080,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 750,
+              "damage": 50,
+              "defense": 100,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30081,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1500,
+              "damage": 200,
+              "defense": 400,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30082,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 1000,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30083,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 2000,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30084,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 2000,
+              "damage": 600,
+              "defense": 400,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30087,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 800,
+              "defense": 3200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30088,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 8000,
+              "damage": 1000,
+              "defense": 1600,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-7-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1635,
+      "expected_npc_deaths": 7,
+      "wall_drop_pool": "route-7-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30082,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 1000,
+              "damage": 400,
+              "defense": 200,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30083,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 2000,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30085,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 4000,
+              "damage": 600,
+              "defense": 1600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30086,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 4000,
+              "damage": 800,
+              "defense": 800,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30089,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 16000,
+              "damage": 1000,
+              "defense": 6400,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-7-boss"
+        },
+        {
+          "boss_id": 30090,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 16000,
+              "damage": 1400,
+              "defense": 3200,
+              "speed": 1,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-7-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1636,
+      "expected_npc_deaths": 5,
+      "wall_drop_pool": "route-7-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30078,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 10000,
+              "damage": 0,
+              "defense": 10000,
+              "speed": 4,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30084,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 2000,
+              "damage": 600,
+              "defense": 400,
+              "speed": 2,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-7-normal"
+        },
+        {
+          "boss_id": 30091,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 1800,
+              "defense": 8000,
+              "speed": 2,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-7-boss"
+        },
+        {
+          "boss_id": 30093,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 2000,
+              "defense": 11000,
+              "speed": 4,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-7-boss"
+        }
+      ]
+    },
+    {
+      "map_id": 1637,
+      "expected_npc_deaths": 5,
+      "wall_drop_pool": "route-8-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30094,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 500,
+              "damage": 10,
+              "defense": 50,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        },
+        {
+          "boss_id": 30095,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 1000,
+              "damage": 50,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1638,
+      "expected_npc_deaths": 8,
+      "wall_drop_pool": "route-8-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30095,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 1000,
+              "damage": 50,
+              "defense": 200,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        },
+        {
+          "boss_id": 30097,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 1500,
+              "damage": 200,
+              "defense": 400,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        },
+        {
+          "boss_id": 30098,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 2500,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1639,
+      "expected_npc_deaths": 13,
+      "wall_drop_pool": "route-8-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30097,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 1500,
+              "damage": 200,
+              "defense": 400,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        },
+        {
+          "boss_id": 30098,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 2500,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        },
+        {
+          "boss_id": 30099,
+          "boss_count": 5,
+          "combat_profiles": [
+            {
+              "count": 5,
+              "health": 2000,
+              "damage": 200,
+              "defense": 600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        },
+        {
+          "boss_id": 30100,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 3000,
+              "damage": 400,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        },
+        {
+          "boss_id": 30102,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 10000,
+              "damage": 400,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-8-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1640,
+      "expected_npc_deaths": 10,
+      "wall_drop_pool": "route-9-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30097,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 1500,
+              "damage": 200,
+              "defense": 400,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-9-normal"
+        },
+        {
+          "boss_id": 30098,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 2500,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-9-normal"
+        },
+        {
+          "boss_id": 30099,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 2000,
+              "damage": 200,
+              "defense": 600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-9-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1641,
+      "expected_npc_deaths": 5,
+      "wall_drop_pool": "route-9-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30112,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 2500,
+              "damage": 300,
+              "defense": 600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-9-normal"
+        },
+        {
+          "boss_id": 30113,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 3000,
+              "damage": 400,
+              "defense": 900,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-9-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1642,
+      "expected_npc_deaths": 7,
+      "wall_drop_pool": "route-9-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30101,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 5000,
+              "damage": 600,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-9-normal"
+        },
+        {
+          "boss_id": 30105,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 20000,
+              "damage": 1400,
+              "defense": 5000,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-9-boss"
+        },
+        {
+          "boss_id": 30112,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 2500,
+              "damage": 300,
+              "defense": 600,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-9-normal"
+        },
+        {
+          "boss_id": 30113,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 3000,
+              "damage": 400,
+              "defense": 900,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-9-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1643,
+      "expected_npc_deaths": 8,
+      "wall_drop_pool": "route-10-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30109,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 4000,
+              "damage": 800,
+              "defense": 1200,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        },
+        {
+          "boss_id": 30113,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 3000,
+              "damage": 400,
+              "defense": 900,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1644,
+      "expected_npc_deaths": 6,
+      "wall_drop_pool": "route-10-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30100,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 3000,
+              "damage": 400,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        },
+        {
+          "boss_id": 30101,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 5000,
+              "damage": 600,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        },
+        {
+          "boss_id": 30110,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 5000,
+              "damage": 500,
+              "defense": 1500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        },
+        {
+          "boss_id": 30113,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 3000,
+              "damage": 400,
+              "defense": 900,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1645,
+      "expected_npc_deaths": 7,
+      "wall_drop_pool": "route-10-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30101,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 5000,
+              "damage": 600,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        },
+        {
+          "boss_id": 30103,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 28000,
+              "damage": 2000,
+              "defense": 7500,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-10-boss"
+        },
+        {
+          "boss_id": 30110,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 5000,
+              "damage": 500,
+              "defense": 1500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        },
+        {
+          "boss_id": 30113,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 3000,
+              "damage": 400,
+              "defense": 900,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-10-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1646,
+      "expected_npc_deaths": 8,
+      "wall_drop_pool": "route-11-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30096,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 3000,
+              "damage": 300,
+              "defense": 500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-11-normal"
+        },
+        {
+          "boss_id": 30110,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 5000,
+              "damage": 1000,
+              "defense": 1500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-11-normal"
+        },
+        {
+          "boss_id": 30114,
+          "boss_count": 4,
+          "combat_profiles": [
+            {
+              "count": 4,
+              "health": 2750,
+              "damage": 400,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-11-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1648,
+      "expected_npc_deaths": 7,
+      "wall_drop_pool": "route-11-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30106,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 32000,
+              "damage": 1800,
+              "defense": 8000,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-11-boss"
+        },
+        {
+          "boss_id": 30108,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 5000,
+              "damage": 600,
+              "defense": 1200,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-11-normal"
+        },
+        {
+          "boss_id": 30110,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 5000,
+              "damage": 1000,
+              "defense": 1500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-11-normal"
+        },
+        {
+          "boss_id": 30115,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 3500,
+              "damage": 600,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-11-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1649,
+      "expected_npc_deaths": 8,
+      "wall_drop_pool": "route-12-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30101,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 5000,
+              "damage": 600,
+              "defense": 800,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-12-normal"
+        },
+        {
+          "boss_id": 30110,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 5000,
+              "damage": 1000,
+              "defense": 1500,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-12-normal"
+        },
+        {
+          "boss_id": 30111,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 6400,
+              "damage": 1200,
+              "defense": 2000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-12-normal"
+        },
+        {
+          "boss_id": 30115,
+          "boss_count": 3,
+          "combat_profiles": [
+            {
+              "count": 3,
+              "health": 3500,
+              "damage": 600,
+              "defense": 1000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-12-normal"
+        }
+      ]
+    },
+    {
+      "map_id": 1650,
+      "expected_npc_deaths": 3,
+      "wall_drop_pool": "route-12-wall",
+      "npc_drop_groups": [
+        {
+          "boss_id": 30104,
+          "boss_count": 1,
+          "combat_profiles": [
+            {
+              "count": 1,
+              "health": 30000,
+              "damage": 2500,
+              "defense": 10000,
+              "speed": 3,
+              "is_boss": true
+            }
+          ],
+          "drop_pool": "route-12-boss"
+        },
+        {
+          "boss_id": 30111,
+          "boss_count": 2,
+          "combat_profiles": [
+            {
+              "count": 2,
+              "health": 6400,
+              "damage": 1200,
+              "defense": 2000,
+              "speed": 3,
+              "is_boss": false
+            }
+          ],
+          "drop_pool": "route-12-normal"
+        }
+      ]
+    }
+  ]
+}

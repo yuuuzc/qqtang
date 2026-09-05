@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "aliases": [
+    { "item_id": 3767, "relative_path": "object/eye/eye123.img", "tight_frame": true, "basis": "eye12.zip has no shop icon; its official FilePath installs eye123.img as the first exact appearance layer" },
+    { "item_id": 20046, "canonical_item_id": 20020, "basis": "DealProp2 defines both IDs as the same universal status-clearing medicine; only canonical item 20020 owns the P+E icon" },
+    { "item_id": 25001, "canonical_item_id": 28001, "basis": "DealProp2 runtime pet card maps to canonical petcard/1 with the same name" },
+    { "item_id": 25002, "canonical_item_id": 28002, "basis": "DealProp2 runtime pet card maps to canonical petcard/2 with the same name" },
+    { "item_id": 25003, "canonical_item_id": 28003, "basis": "DealProp2 runtime pet card maps to canonical petcard/3 with the same name" },
+    { "item_id": 25036, "canonical_item_id": 28004, "basis": "DealProp2 runtime pet card maps to canonical petcard/4 with the same name" },
+    { "item_id": 25037, "canonical_item_id": 28005, "basis": "DealProp2 runtime pet card maps to canonical petcard/5 with the same name" },
+    { "item_id": 25038, "canonical_item_id": 28006, "basis": "DealProp2 runtime pet card maps to canonical petcard/6 with the same name" },
+    { "item_id": 25106, "canonical_item_id": 28007, "basis": "DealProp2 runtime 普通的猪 maps to canonical 普通的小猪 petcard/7" },
+    { "item_id": 25114, "canonical_item_id": 28008, "basis": "DealProp2 runtime 布鲁斯 maps to canonical petcard/8" },
+    { "item_id": 25071, "canonical_item_id": 28009, "basis": "DealProp2 runtime pet card maps to canonical petcard/9 with the same name" },
+    { "item_id": 25072, "canonical_item_id": 28010, "basis": "DealProp2 adjacent devil talent card maps to canonical petcard/10" },
+    { "item_id": 25073, "canonical_item_id": 28011, "basis": "DealProp2 adjacent devil talent card maps to canonical petcard/11" },
+    { "item_id": 25079, "canonical_item_id": 28012, "basis": "DealProp2 runtime 琪琪 maps to canonical petcard/12" },
+    { "item_id": 25096, "canonical_item_id": 28013, "basis": "DealProp2 runtime 恩佐 maps to canonical petcard/13" }
+  ]
+}

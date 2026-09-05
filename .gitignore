@@ -1,0 +1,29 @@
+# User-supplied original client. Only its instructions belong in Git.
+/client/original/*
+!/client/original/README.md
+
+# Build inputs are intentionally versioned so a clone only needs the original
+# client. Generated release archives remain outside Git.
+# The following are unused local analysis tools and installer entry points.
+# Required xdis/Click/six/Colorama libraries remain versioned; see pytools/README.md.
+/build-assets/pytools/bin/
+/build-assets/pytools/spark_parser/
+/build-assets/pytools/spark_parser-*.dist-info/
+/build-assets/pytools/uncompyle6/
+/build-assets/pytools/uncompyle6-*.dist-info/
+
+# Generated products and local state.
+/release/
+/runtime/
+/.cache/
+/QQTang-Local.zip
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+*.dmp
+__pycache__/
+*.py[cod]
+.idea/

@@ -1,0 +1,40 @@
+{
+  "capture_root": "runtime/captures/echo-diagnostic",
+  "log_file": "runtime/logs/server-echo-v124.jsonl",
+  "max_packet_bytes": 1048576,
+  "idle_timeout_ms": 300000,
+  "listeners": [
+    {
+      "name": "directory-http-echo-diagnostic",
+      "network": "tcp",
+      "address": "127.0.0.1:18080",
+      "response": {
+        "echo_after_receive": true
+      }
+    },
+    {
+      "name": "directory-tls-capture",
+      "network": "tcp",
+      "address": "127.0.0.1:18443",
+      "response": {}
+    },
+    {
+      "name": "ca-secondary-capture",
+      "network": "tcp",
+      "address": "127.0.0.1:17000",
+      "response": {}
+    },
+    {
+      "name": "directory-game-capture",
+      "network": "tcp",
+      "address": "127.0.0.1:18000",
+      "response": {}
+    },
+    {
+      "name": "p2p-capture",
+      "network": "udp",
+      "address": "127.0.0.1:18000",
+      "response": {}
+    }
+  ]
+}

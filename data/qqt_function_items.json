@@ -1,0 +1,1574 @@
+{
+  "schema_version": 1,
+  "source": "installed v848 itemCFG platform/item/card categories",
+  "count": 81,
+  "items": [
+    {
+      "item_id": 121,
+      "resource_id": 1,
+      "category": "card",
+      "name": "VIP卡",
+      "description": "拥有此卡即是QQ糖王国贵族的身份，可以不需要积分建立任何地图，并且获胜奖励积分加倍。",
+      "class": "ownership_passive",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "points_multiplier",
+          "trigger": "competitive_settlement",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "win_points",
+          "multiplier": 2,
+          "status": "implemented",
+          "evidence": "installed itemCFG: winning reward points are doubled"
+        },
+        {
+          "kind": "map_access_override",
+          "trigger": "room_map_selection",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "bypass_points_requirement",
+          "status": "implemented",
+          "evidence": "installed itemCFG plus v848 mapDesc.py required-points field"
+        }
+      ]
+    },
+    {
+      "item_id": 1283,
+      "resource_id": 55,
+      "category": "card",
+      "name": "红宝石",
+      "description": "任务道具，非卖。",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 1284,
+      "resource_id": 56,
+      "category": "card",
+      "name": "黄宝石",
+      "description": "任务道具，非卖。",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 1285,
+      "resource_id": 57,
+      "category": "card",
+      "name": "绿宝石",
+      "description": "任务道具，非卖。",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 1576,
+      "resource_id": 91,
+      "category": "card",
+      "name": "情书碎片1",
+      "description": "一封陌生情书，没有文字、没有署名，只有一个红色的唇印，要找到完整的信件请进入任务系统，接受寻找情书碎片的系列任务.",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 1577,
+      "resource_id": 92,
+      "category": "card",
+      "name": "情书碎片2",
+      "description": "hi 还记得我吗？我们来到同一个地图，买过同一个天使翅膀，携手挑战同一个boss.",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 1578,
+      "resource_id": 93,
+      "category": "card",
+      "name": "情书碎片3",
+      "description": "我们都喜欢在深夜来到qq堂，一起体验机械世界的冰凉。后来你说，男女之间就象一场战争，象我们一直在玩的比武.",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 1579,
+      "resource_id": 94,
+      "category": "card",
+      "name": "情书碎片4",
+      "description": "我们吵架又和好，我们笑过也哭过。我们有各自的理想，但一同去寻找那个满是宝石的山洞是我们共同的梦想.",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 1580,
+      "resource_id": 95,
+      "category": "card",
+      "name": "情书碎片5",
+      "description": "最后一次见到你，是和你一起去抢包山。那天我们一直输，最后离开的时候你说，将来有一天，你会在这个地图里赢一束玫瑰送给我.",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 1581,
+      "resource_id": 96,
+      "category": "card",
+      "name": "情书碎片6",
+      "description": "我会在我们初识的那个地方等你。依旧是那张爱的考验地图，依旧是那个满天星辰的时间，依旧是那个背着天使翅膀的我.",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 4052,
+      "resource_id": 316,
+      "category": "card",
+      "name": "糖泡天书",
+      "description": "聊天房间挂机，获得2倍经验。（在原有基础上加倍）",
+      "class": "ownership_passive",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "experience_multiplier",
+          "trigger": "chat_idle_reward",
+          "scopes": [
+            "chat_room"
+          ],
+          "target": "competitive_experience",
+          "multiplier": 2,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG description; idle reward protocol not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4055,
+      "resource_id": 317,
+      "category": "card",
+      "name": "真·糖泡天书",
+      "description": "聊天房间挂机，获得3倍经验。（在原有基础上加2倍）",
+      "class": "ownership_passive",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "experience_multiplier",
+          "trigger": "chat_idle_reward",
+          "scopes": [
+            "chat_room"
+          ],
+          "target": "competitive_experience",
+          "multiplier": 3,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG description; idle reward protocol not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4058,
+      "resource_id": 318,
+      "category": "card",
+      "name": "超·糖泡天书",
+      "description": "聊天房间挂机，获得5倍经验。（在原有基础上加4倍）",
+      "class": "ownership_passive",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "experience_multiplier",
+          "trigger": "chat_idle_reward",
+          "scopes": [
+            "chat_room"
+          ],
+          "target": "competitive_experience",
+          "multiplier": 5,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG description; idle reward protocol not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4061,
+      "resource_id": 319,
+      "category": "card",
+      "name": "甜蜜爱情卡",
+      "description": "获得双倍亲密度。",
+      "class": "relationship",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "intimacy_multiplier",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "multiplier": 2,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG promises double intimacy; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9021,
+      "resource_id": 9021,
+      "category": "card",
+      "name": "水晶戒指",
+      "description": "纯净的水晶代表我们的初恋。亲密度加成1。",
+      "class": "relationship",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 1,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9022,
+      "resource_id": 9022,
+      "category": "card",
+      "name": "宝石戒指",
+      "description": "红色的宝石代表我们的热恋。亲密度加成2。",
+      "class": "relationship",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 2,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9023,
+      "resource_id": 9023,
+      "category": "card",
+      "name": "铂金戒指",
+      "description": "珍贵的铂金见证我们的爱情。亲密度加成3。",
+      "class": "relationship",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 3,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9024,
+      "resource_id": 9024,
+      "category": "card",
+      "name": "钻石戒指",
+      "description": "钻石恒久远，一颗永流传。亲密度加成4。",
+      "class": "relationship",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 4,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9025,
+      "resource_id": 9025,
+      "category": "card",
+      "name": "真爱戒指",
+      "description": "一颗永不褪色的心，一段永不褪色的情。亲密度加成5。",
+      "class": "relationship",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 5,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9026,
+      "resource_id": 9026,
+      "category": "card",
+      "name": "永恒爱神之戒",
+      "description": "我们接受爱神的祝福，让我成为你永恒的守护天使。亲密度加成10。",
+      "class": "relationship",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "marriage_ring_projection",
+          "trigger": "marriage_info",
+          "target": "ring_asset",
+          "status": "implemented",
+          "evidence": "marriage inventory synchronization projects item 9021..9026 directly to the client's official ring9021..ring9026 assets"
+        },
+        {
+          "kind": "intimacy_flat",
+          "trigger": "relationship_reward",
+          "target": "intimacy",
+          "amount": 10,
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG states the flat intimacy bonus; the authoritative intimacy reward transaction is not yet proven"
+        }
+      ]
+    },
+    {
+      "item_id": 99,
+      "resource_id": 99,
+      "category": "item",
+      "name": "单人探险卡",
+      "description": "拥有此卡，可以进行单人探险喔。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "single_player_adventure",
+          "status": "implemented",
+          "evidence": "installed itemCFG plus native client single-player room gate"
+        }
+      ]
+    },
+    {
+      "item_id": 473,
+      "resource_id": 473,
+      "category": "item",
+      "name": "精灵之羽",
+      "description": "常年居住在迷之森林的精灵身上的羽毛。",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 477,
+      "resource_id": 477,
+      "category": "item",
+      "name": "时空之沙",
+      "description": "常年流淌在迷之沙漠里特殊沙粒。",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 20020,
+      "resource_id": 20020,
+      "category": "item",
+      "name": "万能药水",
+      "description": "(通用道具)解除一切不良状态",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "万能药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20027,
+      "resource_id": 20027,
+      "category": "item",
+      "name": "超强的泻药",
+      "description": "(探险模式专用道具) 体力降至最低，人物速度极大幅度增加。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "超强的泻药",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20028,
+      "resource_id": 20028,
+      "category": "item",
+      "name": "嘲笑药水",
+      "description": "(探险模式专用道具) 让怪物暂时主动攻击自己。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "嘲笑药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20030,
+      "resource_id": 20030,
+      "category": "item",
+      "name": "盖亚之种",
+      "description": "(探险模式专用道具) 一段时间提升自己的糖泡恢复速度。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "盖亚之种",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20032,
+      "resource_id": 20032,
+      "category": "item",
+      "name": "过期的牛奶",
+      "description": "(探险模式专用道具) 体力降至最低，糖炮强度极大幅度增加",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "过期的牛奶",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20033,
+      "resource_id": 20033,
+      "category": "item",
+      "name": "寒冰抵抗药剂",
+      "description": "(探险模式专用道具) 一定时间内不受到冰冻的伤害，不会被减速。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "寒冰抵抗药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20034,
+      "resource_id": 20034,
+      "category": "item",
+      "name": "黑萎草",
+      "description": "(探险模式专用道具) 一定时间糖炮数量增加。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "黑萎草",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20035,
+      "resource_id": 20035,
+      "category": "item",
+      "name": "火焰抵抗药剂",
+      "description": "(探险模式专用道具) 一定时间内不受到火焰的伤害。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "火焰抵抗药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20036,
+      "resource_id": 20036,
+      "category": "item",
+      "name": "急救包",
+      "description": "(探险模式专用道具) 可以复活玩家所站格内已死亡的同伴并补充适量体力。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "急救包",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20037,
+      "resource_id": 20037,
+      "category": "item",
+      "name": "解毒药",
+      "description": "(探险模式专用道具) 一定时间内不受到毒药的伤害。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "解毒药",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20038,
+      "resource_id": 20038,
+      "category": "item",
+      "name": "酷比的力量",
+      "description": "(探险模式专用道具) 体力降至最低，糖炮恢复速度极大幅度增加。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "酷比的力量",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20039,
+      "resource_id": 20039,
+      "category": "item",
+      "name": "力量药水",
+      "description": "(探险模式专用道具) 一段时间提升自己的糖泡威力。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "力量药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20040,
+      "resource_id": 20040,
+      "category": "item",
+      "name": "玫瑰药水",
+      "description": "(探险模式专用道具) 让怪物暂时不再攻击自己。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "玫瑰药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20042,
+      "resource_id": 20042,
+      "category": "item",
+      "name": "闪电抵抗药剂",
+      "description": "(探险模式专用道具) 一定时间内不受到闪电的伤害，不会被眩晕。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "闪电抵抗药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20043,
+      "resource_id": 20043,
+      "category": "item",
+      "name": "大体力药水",
+      "description": "(探险模式专用道具) 可以恢复大量的玩家hp。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "大体力药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20044,
+      "resource_id": 20044,
+      "category": "item",
+      "name": "小体力药水",
+      "description": "(探险模式专用道具) 可以恢复少量的玩家hp。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "小体力药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20045,
+      "resource_id": 20045,
+      "category": "item",
+      "name": "中体力药水",
+      "description": "(探险模式专用道具) 可以恢复中量的玩家hp。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "中体力药水",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20047,
+      "resource_id": 20047,
+      "category": "item",
+      "name": "无敌药剂",
+      "description": "(探险模式专用道具) 一定时间内不受到任何伤害",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "无敌药剂",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20048,
+      "resource_id": 20048,
+      "category": "item",
+      "name": "无限的糖浆",
+      "description": "(探险模式专用道具) 体力降至最低，糖炮数量极大幅度增加。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "无限的糖浆",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20050,
+      "resource_id": 20050,
+      "category": "item",
+      "name": "医疗包",
+      "description": "(探险模式专用道具) 可以复活玩家所站格内已死亡的同伴并补充少量体力。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "医疗包",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20058,
+      "resource_id": 20058,
+      "category": "item",
+      "name": "红色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放红色火焰（只能在道具场和探险地图使用）",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "红色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20059,
+      "resource_id": 20059,
+      "category": "item",
+      "name": "蓝色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放蓝色火焰（只能在道具场和探险地图使用）",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "蓝色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20060,
+      "resource_id": 20060,
+      "category": "item",
+      "name": "紫色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放紫色火焰（只能在道具场和探险地图使用）",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "紫色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20061,
+      "resource_id": 20061,
+      "category": "item",
+      "name": "黄色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放黄色火焰（只能在道具场和探险地图使用）",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "黄色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20062,
+      "resource_id": 20062,
+      "category": "item",
+      "name": "绿色结婚礼花",
+      "description": "婚礼上用到的礼花，绽放绿色火焰（只能在道具场和探险地图使用）",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "绿色结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20063,
+      "resource_id": 20063,
+      "category": "item",
+      "name": "心型结婚礼花",
+      "description": "爱情的见证，绽放心型礼花（只能在道具场和探险地图使用）",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "心型结婚礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20064,
+      "resource_id": 20064,
+      "category": "item",
+      "name": "QQ堂礼花",
+      "description": "绽放QQ堂标志的礼花（只能在道具场和探险地图使用）",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure",
+            "competitive_item_room"
+          ],
+          "target": "QQ堂礼花",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20100,
+      "resource_id": 20100,
+      "category": "item",
+      "name": "小复活卡",
+      "description": "(探险模式专用) 复活自己，并恢复10%的hp。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "小复活卡",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 20101,
+      "resource_id": 20101,
+      "category": "item",
+      "name": "大复活卡",
+      "description": "(探险模式专用) 复活自己，并恢复30%的hp。",
+      "class": "prepared_match_prop",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "prepared_client_effect",
+          "trigger": "prepared_use",
+          "scopes": [
+            "adventure"
+          ],
+          "target": "大复活卡",
+          "status": "implemented",
+          "evidence": "installed itemCFG description plus REQUEST/NOTIFY_PREPARED_USE_PROP"
+        }
+      ]
+    },
+    {
+      "item_id": 100,
+      "resource_id": 16,
+      "category": "platform",
+      "name": "防踢卡",
+      "description": "可以享受和至尊紫钻一样的防踢特权。",
+      "class": "ownership_passive",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "kick_protection",
+          "trigger": "room_kick",
+          "status": "implemented",
+          "evidence": "installed itemCFG plus typed REQUEST_KICKOFF_PLAYER room policy"
+        }
+      ]
+    },
+    {
+      "item_id": 199,
+      "resource_id": 18,
+      "category": "platform",
+      "name": "闪电卡",
+      "description": "功能道具！有了该卡片，能使自己在抛泡时带有炫目的闪电。",
+      "class": "role_enabled_client_effect",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "role_client_effect",
+          "trigger": "native_map_action",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "bubble_throw_lightning",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG promises lightning while throwing a bubble; uiShop.py proves one durable role-bound platform selection, but the native battlefield map/action gate has not yet been recovered"
+        }
+      ]
+    },
+    {
+      "item_id": 204,
+      "resource_id": 17,
+      "category": "platform",
+      "name": "包子卡",
+      "description": "拥有该卡可以使自己获得的包子隐藏角色的几率达到50％以上哦！此卡片为功能类道具。",
+      "class": "ownership_passive",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "hidden_role_chance",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "random_role_bun_head",
+          "chance_percent": 50,
+          "status": "implemented",
+          "evidence": "installed itemCFG plus server-owned competitive question-mark role resolution; the selected concrete role is carried by the ordinary GAME_BEGIN snapshot"
+        }
+      ]
+    },
+    {
+      "item_id": 294,
+      "resource_id": 1,
+      "category": "platform",
+      "name": "小喇叭",
+      "description": "有了小喇叭您就可以发送广播，让所有人倾听您的声音！",
+      "class": "active_operation",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "section_broadcast",
+          "trigger": "section_broadcast",
+          "target": "small_bugle",
+          "status": "implemented",
+          "evidence": "typed section-chat selector, per-message identity flag, atomic inventory debit, and section fan-out"
+        }
+      ]
+    },
+    {
+      "item_id": 402,
+      "resource_id": 3,
+      "category": "platform",
+      "name": "雪山来信",
+      "description": "从森林雪山传来消息：格里芬绑架了圣诞老人！拥有雪山来信，可以召唤BOSS大盗格里芬。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 403,
+      "resource_id": 2,
+      "category": "platform",
+      "name": "格里芬日记",
+      "description": "格里芬遗落的日记，提及了格里芬绑架圣诞老人吓唬糖果镇村民的计划。拥有格里芬日记，可以召唤BOSS圣诞格里芬。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 435,
+      "resource_id": 4,
+      "category": "platform",
+      "name": "麋鹿铃铛",
+      "description": "圣诞老人坐骑麋鹿的铃铛。拥有麋鹿铃铛，可以召唤BOSS鬼仆格里芬。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 436,
+      "resource_id": 5,
+      "category": "platform",
+      "name": "平安的祭品",
+      "description": "中国城居民供奉年兽的祭品，可以召唤BOSS小年兽。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 437,
+      "resource_id": 6,
+      "category": "platform",
+      "name": "珍贵的祭品",
+      "description": "小年兽为年兽收集的珍贵的祭品，可以召唤BOSS大年兽。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 450,
+      "resource_id": 8,
+      "category": "platform",
+      "name": "藏宝图碎片",
+      "description": "碎片是藏宝图的一部分，30个碎片可以合成一张完整的藏宝图。拥有藏宝图，可以召唤BOSS大副。",
+      "class": "material_or_task",
+      "status": "catalogued"
+    },
+    {
+      "item_id": 453,
+      "resource_id": 9,
+      "category": "platform",
+      "name": "船长日志",
+      "description": "虎克船长的航海日志，里面记载着他的秘密。拥有船长日志，可以召唤BOSS虎克船长。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 460,
+      "resource_id": 11,
+      "category": "platform",
+      "name": "藏宝图",
+      "description": "虎克船长的藏宝图，标示着宝藏深埋在矿洞深处。拥有藏宝图，可以召唤BOSS大副。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 464,
+      "resource_id": 12,
+      "category": "platform",
+      "name": "世界杯门票",
+      "description": "拥有世界杯门票，可以召唤BOSS小小罗。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 467,
+      "resource_id": 19,
+      "category": "platform",
+      "name": "贝氏弯刀",
+      "description": "足球BOSS奖励道具。",
+      "class": "role_enabled_client_effect",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "role_client_effect",
+          "trigger": "native_map_action",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "kick_bomb_02_action_effect",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed platform resource 19 is a kick-bomb Boss reward and uiShop.py proves one durable role-bound platform selection; the exact native map/action effect remains unproven"
+        }
+      ]
+    },
+    {
+      "item_id": 468,
+      "resource_id": 20,
+      "category": "platform",
+      "name": "少林金刚脚",
+      "description": "足球BOSS奖励道具。",
+      "class": "role_enabled_client_effect",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "role_client_effect",
+          "trigger": "native_map_action",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "kick_bomb_01_action_effect",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed platform resource 20 is a kick-bomb Boss reward and uiShop.py proves one durable role-bound platform selection; the exact native map/action effect remains unproven and no numeric force bonus is applied server-side"
+        }
+      ]
+    },
+    {
+      "item_id": 469,
+      "resource_id": 13,
+      "category": "platform",
+      "name": "世界杯决赛门票",
+      "description": "拥有世界杯决赛门票，可以召唤BOSS鲁尼。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "boss_summon",
+          "status": "implemented",
+          "evidence": "installed itemCFG joined to the typed competitive Boss activation catalog"
+        }
+      ]
+    },
+    {
+      "item_id": 1077,
+      "resource_id": 7,
+      "category": "platform",
+      "name": "盟约书",
+      "description": "成立家族的资格证明，拥有100份盟约书才能创建家族。",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "kin_creation_qualification",
+          "trigger": "kin_creation",
+          "target": "ordinary_alliance_book",
+          "multiplier": 100,
+          "status": "implemented",
+          "evidence": "installed itemCFG creation requirement plus atomic kin creation validation"
+        }
+      ]
+    },
+    {
+      "item_id": 2235,
+      "resource_id": 15,
+      "category": "platform",
+      "name": "超级盟约书",
+      "description": "成立家族的资格证明，拥有1份超级盟约书就能创建家族，真是超级无敌啊！",
+      "class": "qualification",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "kin_creation_qualification",
+          "trigger": "kin_creation",
+          "target": "super_alliance_book",
+          "multiplier": 1,
+          "status": "implemented",
+          "evidence": "installed itemCFG creation requirement plus atomic kin creation validation"
+        }
+      ]
+    },
+    {
+      "item_id": 2897,
+      "resource_id": 21,
+      "category": "platform",
+      "name": "竞技场参赛点",
+      "description": "参加竞技场的参赛点。紫钻参赛更有优惠哟。",
+      "class": "qualification",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "match_requirement",
+          "trigger": "match_start",
+          "scopes": [
+            "competitive"
+          ],
+          "target": "treasure_entry_points",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG; exact charge schedule remains version-dependent"
+        }
+      ]
+    },
+    {
+      "item_id": 4237,
+      "resource_id": 22,
+      "category": "platform",
+      "name": "糖泡卡",
+      "description": "购买糖泡抽奖卡，就有机会获得可乐QQ糖、七星龙珠、星座QQ糖……想要更炫的泡泡吗？快来试试您的手气！",
+      "class": "active_operation",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "lottery_ticket",
+          "trigger": "lottery",
+          "target": "bubble_cosmetic_lottery",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG identifies a lottery ticket; it is distinct from commodity 999 fruit-machine flow and its original reward protocol/pool is not proven"
+        }
+      ]
+    },
+    {
+      "item_id": 4238,
+      "resource_id": 23,
+      "category": "platform",
+      "name": "翅膀卡",
+      "description": "购买翅膀抽奖卡，就有机会获得六翼天使翅膀、朱雀翅膀、搞鬼便便帽……还有各种幻影脚印！快来试试您的手气！",
+      "class": "active_operation",
+      "status": "needs_protocol_evidence",
+      "rules": [
+        {
+          "kind": "lottery_ticket",
+          "trigger": "lottery",
+          "target": "wing_cosmetic_lottery",
+          "status": "needs_protocol_evidence",
+          "evidence": "installed itemCFG identifies a lottery ticket; it is distinct from commodity 999 fruit-machine flow and its original reward protocol/pool is not proven"
+        }
+      ]
+    },
+    {
+      "item_id": 9001,
+      "resource_id": 9001,
+      "category": "platform",
+      "name": "铁蛋",
+      "description": "你选择的是铁蛋，将会砸出不错的奖励，好锤子会增加奖励等级哦。",
+      "class": "active_operation",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9002,
+      "resource_id": 9002,
+      "category": "platform",
+      "name": "银蛋",
+      "description": "你选择的是银蛋，将会砸出精品奖励，一定要选择更好的锤子！",
+      "class": "active_operation",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9003,
+      "resource_id": 9003,
+      "category": "platform",
+      "name": "金蛋",
+      "description": "你选择的是金蛋，里面装的都是极品道具，不使用金锤子将会终生遗憾！",
+      "class": "active_operation",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9004,
+      "resource_id": 9004,
+      "category": "platform",
+      "name": "彩蛋",
+      "description": "你选择的是彩蛋 ，将会砸出活动道具，一定要选择金锤子来砸哦！",
+      "class": "active_operation",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9011,
+      "resource_id": 9011,
+      "category": "platform",
+      "name": "铁锤",
+      "description": "铁锤，可以砸出一般奖励。",
+      "class": "active_operation",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9012,
+      "resource_id": 9012,
+      "category": "platform",
+      "name": "银锤",
+      "description": "银锤，可以砸出精品奖励。",
+      "class": "active_operation",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9013,
+      "resource_id": 9013,
+      "category": "platform",
+      "name": "金锤",
+      "description": "金锤，可以砸出极品奖励。",
+      "class": "active_operation",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "inventory_exchange",
+          "trigger": "break_egg",
+          "target": "egg_and_hammer_reward",
+          "status": "implemented",
+          "evidence": "typed REQUEST_BREAK_EGG/RESPONSE_BREAK_EGG, atomic egg+hammer debit and reward grant; reward policy is an editable local reconstruction"
+        }
+      ]
+    },
+    {
+      "item_id": 9020,
+      "resource_id": 9020,
+      "category": "platform",
+      "name": "水晶之恋",
+      "description": "你问我爱你有多深，水晶代表我的心——求婚必备道具。",
+      "class": "relationship",
+      "status": "implemented",
+      "rules": [
+        {
+          "kind": "marriage_proposal",
+          "trigger": "marriage_proposal",
+          "target": "proposal_qualification",
+          "status": "implemented",
+          "evidence": "typed spark request/answer flow plus atomic proposal-item debit on acceptance"
+        }
+      ]
+    }
+  ]
+}

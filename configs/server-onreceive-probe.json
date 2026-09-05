@@ -1,0 +1,38 @@
+{
+  "capture_root": "runtime/captures/onreceive-probe",
+  "log_file": "runtime/logs/server-onreceive-probe-v174.jsonl",
+  "max_packet_bytes": 1048576,
+  "idle_timeout_ms": 300000,
+  "listeners": [
+    {
+      "name": "directory-http-onreceive-probe",
+      "network": "tcp",
+      "address": "127.0.0.1:18080",
+      "response": { "on_connect_hex": "00" }
+    },
+    {
+      "name": "directory-tls-onreceive-probe",
+      "network": "tcp",
+      "address": "127.0.0.1:18443",
+      "response": { "on_connect_hex": "00" }
+    },
+    {
+      "name": "ca-secondary-onreceive-probe",
+      "network": "tcp",
+      "address": "127.0.0.1:17000",
+      "response": { "on_connect_hex": "00" }
+    },
+    {
+      "name": "directory-game-onreceive-probe",
+      "network": "tcp",
+      "address": "127.0.0.1:18000",
+      "response": { "on_connect_hex": "00" }
+    },
+    {
+      "name": "p2p-candidate",
+      "network": "udp",
+      "address": "127.0.0.1:18000",
+      "response": {}
+    }
+  ]
+}

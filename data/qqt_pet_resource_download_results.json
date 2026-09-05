@@ -1,0 +1,1510 @@
+{
+  "cdn_base_url": "http://qqt-img.qq.com/item/ItemZips",
+  "generated_utc": "2026-08-09T15:24:56.6706567Z",
+  "model_count": 124,
+  "results": [
+    {
+      "model_id": 1,
+      "source_zip": "pet/pet1.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "6CA9FC0C6B0BAF25F2E54F7291854D90031C4BF7704D1AC2F0C3D961F6106726",
+      "existing": [
+        "object/pet/pet1_stand.img",
+        "object/pet/pet1_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 2,
+      "source_zip": "pet/pet2.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "88F7EAFD003AF3861CF2E7CEC6E6DFDA8F6094EBEB8AE92ED6E2FC451515C028",
+      "existing": [
+        "object/pet/pet2_stand.img",
+        "object/pet/pet2_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 3,
+      "source_zip": "pet/pet3.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "4555A37DBBDD335D39A757CC8E97D8CFED78F2E972B861A7F8CD98076B65C64C",
+      "existing": [
+        "object/pet/pet3_stand.img",
+        "object/pet/pet3_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 4,
+      "source_zip": "pet/pet4.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "8D17E80507A92B72E6A2FC4700BDF780AE61347CFF04F583B9892A9E5B9D9603",
+      "existing": [
+        "object/pet/pet4_stand.img",
+        "object/pet/pet4_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 5,
+      "source_zip": "pet/pet5.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "F5E03A5C638F7235362D950C7DC7D1253D038381ED37F351553A2429B5B131F8",
+      "existing": [
+        "object/pet/pet5_stand.img",
+        "object/pet/pet5_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 6,
+      "source_zip": "pet/pet6.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "2CA5920565657C438FFF9D7B9F7BFCD8BDA9E4173B460D0D1C69504413CEE6A8",
+      "existing": [
+        "object/pet/pet6_stand.img",
+        "object/pet/pet6_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 7,
+      "source_zip": "pet/pet7.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "F757E534F4896D53B800B592FD87D128EB57F58C359C0BBD16D3665EFA06C6FC",
+      "existing": [
+        "object/pet/pet7_stand.img",
+        "object/pet/pet7_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 8,
+      "source_zip": "pet/pet8.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "A18BF3BE2EC945DB03D053FAAAF2ECFF3E43B1384B886BD4936C6F7C8746A6DC",
+      "existing": [
+        "object/pet/pet8_stand.img",
+        "object/pet/pet8_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 9,
+      "source_zip": "pet/pet9.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "55F431E8101705050F9811541E32D71A5A75CEB0800579B9CCC675DF4268A958",
+      "existing": [
+        "object/pet/pet9_stand.img",
+        "object/pet/pet9_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 10,
+      "source_zip": "pet/pet10.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "093B994A628E2E05F12368C99DEFB49B7C647534428DBC1272D43A58F6A15DED",
+      "existing": [
+        "object/pet/pet10_stand.img",
+        "object/pet/pet10_walk.img",
+        "res/uiRes/icon/pet/pet10.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 11,
+      "source_zip": "pet/pet11.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "902ECEA41E8BA0C5307C172B51E8E228C3560867EF2448A0D16656D156EE5F5A",
+      "existing": [
+        "object/pet/pet11_stand.img",
+        "object/pet/pet11_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 12,
+      "source_zip": "pet/pet12.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "764A262D631CB924582FBD6F9839EED12D869154AEBE9F27FAACCC57826A8891",
+      "existing": [
+        "object/pet/pet12_stand.img",
+        "object/pet/pet12_walk.img",
+        "res/uiRes/icon/pet/pet12.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 13,
+      "source_zip": "pet/pet13.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "697A12B24623C926202B0ADA9E08F5291A6E9E6FA4DFE86426E77EE9AE06F0DE",
+      "existing": [
+        "object/pet/pet13_stand.img",
+        "object/pet/pet13_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 14,
+      "source_zip": "pet/pet14.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "04136AB0A837F7CE5F602976A0E4EFF79823175C901540F47B9DDF3D2E19F7E8",
+      "existing": [
+        "object/pet/pet14_stand.img",
+        "object/pet/pet14_walk.img",
+        "res/uiRes/icon/pet/pet14.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 15,
+      "source_zip": "pet/pet15.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "FED3160D834BB7FB74D2220F613C75E3E6799DB70AFA5164A4984BBCFC640372",
+      "existing": [
+        "object/pet/pet15_stand.img",
+        "object/pet/pet15_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 16,
+      "source_zip": "pet/pet16.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "EB7A081223497F2F27A859370BA75C0D0BCEAF71D9BA103E37F569D79814F249",
+      "existing": [
+        "object/pet/pet16_stand.img",
+        "object/pet/pet16_walk.img",
+        "res/uiRes/icon/pet/pet16.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 17,
+      "source_zip": "pet/pet17.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "D5180456EFEA90455FC62CCB252DA94C70DD4FBE5688AC18E94327A14E263543",
+      "existing": [
+        "object/pet/pet17_stand.img",
+        "object/pet/pet17_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 18,
+      "source_zip": "pet/pet18.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "A9AC8DAB5BDF525168F1B18680C09062365624962102D7FD266807A0D3A79E58",
+      "existing": [
+        "object/pet/pet18_stand.img",
+        "object/pet/pet18_walk.img",
+        "res/uiRes/icon/pet/pet18.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 19,
+      "source_zip": "pet/pet19.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "4EBE233BBDCDB2510C1D0A9FB5B811FECAF3AE5B9197FCFAF4A39E849EC4706D",
+      "existing": [
+        "object/pet/pet19_stand.img",
+        "object/pet/pet19_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 20,
+      "source_zip": "pet/pet20.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "4F6F2BE167F0DFB7AF70B24E425351881F5DE72D0D3678FE00EE302A1DF6C334",
+      "existing": [
+        "object/pet/pet20_stand.img",
+        "object/pet/pet20_walk.img",
+        "res/uiRes/icon/pet/pet20.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 21,
+      "source_zip": "pet/pet21.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "E545186CDA5434E90287A5D153135E54427AA721C322B626AC98948D21D7F0DA",
+      "existing": [
+        "object/pet/pet21_stand.img",
+        "object/pet/pet21_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 22,
+      "source_zip": "pet/pet22.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "815DA23215996F1CA8BF89ADCF3E3443A1CF64DA17D264BD1D71B76F75416A7A",
+      "existing": [
+        "object/pet/pet22_stand.img",
+        "object/pet/pet22_walk.img",
+        "res/uiRes/icon/pet/pet22.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 23,
+      "source_zip": "pet/pet23.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "66A354F1EF8C4502392F4A7BB5F8F82A93731267D29A247E619704ADDDAA9F96",
+      "existing": [
+        "object/pet/pet23_stand.img",
+        "object/pet/pet23_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 24,
+      "source_zip": "pet/pet24.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "0AC4941BD508A4832A32CD39266B191CF5FF490690665B3E9CF8E028FF83F7B1",
+      "existing": [
+        "object/pet/pet24_stand.img",
+        "object/pet/pet24_walk.img",
+        "res/uiRes/icon/pet/pet24.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 25,
+      "source_zip": "pet/pet25.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "D5DC4F90F2955F68DF42C00F26C08C5D226B97DB2C1E1B09B74157DED229730B",
+      "existing": [
+        "object/pet/pet25_stand.img",
+        "object/pet/pet25_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 26,
+      "source_zip": "pet/pet26.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "0F28C8274EA42C74B13BC99C0FDF4982441BB0AE18795ACE44CE4E2E14AAC73F",
+      "existing": [
+        "object/pet/pet26_stand.img",
+        "object/pet/pet26_walk.img",
+        "res/uiRes/icon/pet/pet26.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 27,
+      "source_zip": "pet/pet27.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "800963C6ED87841EE5EFAE0C875344AA65521169B74B9FABD29FDD4AF14500B5",
+      "existing": [
+        "object/pet/pet27_stand.img",
+        "object/pet/pet27_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 28,
+      "source_zip": "pet/pet28.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "A8FAC05555546EA43D5D1CCCA060BC2E23CAF5FB0042344C6AA4433700CABAEC",
+      "existing": [
+        "object/pet/pet28_stand.img",
+        "object/pet/pet28_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 29,
+      "source_zip": "pet/pet29.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "69DBD37FA14A35C580AE0DF6720A6BA046A11C985DCE3F1895014DF47FF054F5",
+      "existing": [
+        "object/pet/pet29_stand.img",
+        "object/pet/pet29_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 30,
+      "source_zip": "pet/pet30.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "6B377ECC4EF621D72BE82EDDBECB79A9C404061F2C72AC3EF5BF270B0E5BC5D2",
+      "existing": [
+        "object/pet/pet30_stand.img",
+        "object/pet/pet30_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 31,
+      "source_zip": "pet/pet31.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "4B96B3784652C18F72D4DFA30DF6A8709D77B9F1F9BEDB90BB5B35A387246200",
+      "existing": [
+        "object/pet/pet31_stand.img",
+        "object/pet/pet31_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 32,
+      "source_zip": "pet/pet32.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "489EE7829AB63A41C1B430C6B93B08D3D1B0F0012A013070D2DC130EE41CE95B",
+      "existing": [
+        "object/pet/pet32_stand.img",
+        "object/pet/pet32_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 33,
+      "source_zip": "pet/pet33.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "746820D24E02547F2D0AD36DB2CDB3C11BF30E52F84B0A2A31AAF082611B7FE4",
+      "existing": [
+        "object/pet/pet33_stand.img",
+        "object/pet/pet33_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 34,
+      "source_zip": "pet/pet34.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "46A8BB2AAE06017D2B00E5D7F338E63832E96AFA7F6DA0785CCFB7EC312ABFC7",
+      "existing": [
+        "object/pet/pet34_stand.img",
+        "object/pet/pet34_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 35,
+      "source_zip": "pet/pet35.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "EF490FCE5C28776A6B2150C86D3EC6A32B99A96AB6EDC27EA70F7387D17EC44B",
+      "existing": [
+        "object/pet/pet35_stand.img",
+        "object/pet/pet35_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 36,
+      "source_zip": "pet/pet36.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "C5111306378487C8231438CABC517F44E43C5F8F79478525CF4BB7B381A63F5A",
+      "existing": [
+        "object/pet/pet36_stand.img",
+        "object/pet/pet36_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 37,
+      "source_zip": "pet/pet37.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "B3E529481A3F3BF52BC306A29A2B725E044E3308C4DC778B36D75A3576FB7013",
+      "existing": [
+        "object/pet/pet37_stand.img",
+        "object/pet/pet37_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 38,
+      "source_zip": "pet/pet38.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "5649D6C172AB56F434D175307ED7C8727CA125E3A1D0FA47881FA3D98CEFECA0",
+      "existing": [
+        "object/pet/pet38_stand.img",
+        "object/pet/pet38_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 39,
+      "source_zip": "pet/pet39.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "33396E441FEAC9CB2476FD1332C9EDAEFAA0140A6CF755D69FD9FA635C5C6E10",
+      "existing": [
+        "object/pet/pet39_stand.img",
+        "object/pet/pet39_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 40,
+      "source_zip": "pet/pet40.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "101B260AA9E1D1CC2191A330A91151DDDE943232E56F78F4F18BF7BB0909A208",
+      "existing": [
+        "object/pet/pet40_stand.img",
+        "object/pet/pet40_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 41,
+      "source_zip": "pet/pet41.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "1D379E8569BC4F6D691C816714EFDC22586B819CEE904F9D4654A0B385031503",
+      "existing": [
+        "object/pet/pet41_stand.img",
+        "object/pet/pet41_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 42,
+      "source_zip": "pet/pet42.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "5CBC76A4677F12F84BEEE0EEEEE51D33F5D12F5301A330461CB457B3DBF2687E",
+      "existing": [
+        "object/pet/pet42_stand.img",
+        "object/pet/pet42_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 43,
+      "source_zip": "pet/pet43.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "C0F7ABCB3A9E3004127C850A7DD90DCAE5D2817CD5278A787FC6BB6224CD9081",
+      "existing": [
+        "object/pet/pet43_stand.img",
+        "object/pet/pet43_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 44,
+      "source_zip": "pet/pet44.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "BDD9428435FD4DA39E627603738EAFA1703C03B616E59ED28A608B04848F3C94",
+      "existing": [
+        "object/pet/pet44_stand.img",
+        "object/pet/pet44_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 45,
+      "source_zip": "pet/pet45.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "16E73C602AC89CEC18C194465587E74139B17FD0B4E88609B9EF5454EA66D609",
+      "existing": [
+        "object/pet/pet45_stand.img",
+        "object/pet/pet45_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 46,
+      "source_zip": "pet/pet46.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "86F0DB281EF570609B94EAA4AAB6731DFD5F878ED1E5975850EF8B802945A89A",
+      "existing": [
+        "object/pet/pet46_stand.img",
+        "object/pet/pet46_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 47,
+      "source_zip": "pet/pet47.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "7376AB1103359C59D7D335BB775A8955FAF83C6A8202436A4322C1261122E925",
+      "existing": [
+        "object/pet/pet47_stand.img",
+        "object/pet/pet47_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 48,
+      "source_zip": "pet/pet48.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "55706F39F0D34E481DF608F41A05F89EAE10A7AF42DA329E9240D66E55C38CA0",
+      "existing": [
+        "object/pet/pet48_stand.img",
+        "object/pet/pet48_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 49,
+      "source_zip": "pet/pet49.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "60648F3698185DB313515F4B75CB81545DCC02AB9DE620B33017716ED39D3E5A",
+      "existing": [
+        "object/pet/pet49_stand.img",
+        "object/pet/pet49_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 50,
+      "source_zip": "pet/pet50.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "AE763FB41CDC9235C9A790E13E2A12ED87B26D1E982002EF7367426EA85D873B",
+      "existing": [
+        "object/pet/pet50_stand.img",
+        "object/pet/pet50_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 51,
+      "source_zip": "pet/pet51.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "20D7F8AB78066F84F77D1EE704EFB6F4396CDCF16086C2AEB7EADFF868180A89",
+      "existing": [
+        "object/pet/pet51_stand.img",
+        "object/pet/pet51_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 52,
+      "source_zip": "pet/pet52.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "F932646C26E395BF1947809BB04D93AAA832A51526ED27F4EF415BB5A9E7C92D",
+      "existing": [
+        "object/pet/pet52_stand.img",
+        "object/pet/pet52_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 53,
+      "source_zip": "pet/pet53.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "E1E29792C524AD2C19A147055C3FCF91BD0A6F41AB4686C39D1F9499103A3C10",
+      "existing": [
+        "object/pet/pet53_stand.img",
+        "object/pet/pet53_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 54,
+      "source_zip": "pet/pet54.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "B4E21EF38921B4A32C7F0230611DAD8FAE9405CA1A40D32E5A07A70BF3477B51",
+      "existing": [
+        "object/pet/pet54_stand.img",
+        "object/pet/pet54_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 55,
+      "source_zip": "pet/pet55.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "486E799E5591FB3FABE4D30203268E5805ADF4B1C1B1B16A053F1D088A64184E",
+      "existing": [
+        "object/pet/pet55_stand.img",
+        "object/pet/pet55_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 56,
+      "source_zip": "pet/pet56.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "396365D3929097933902BD2A547AFCDA6AFDBC144D7CDAD5B2C6C5E022C09C72",
+      "existing": [
+        "object/pet/pet56_stand.img",
+        "object/pet/pet56_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 57,
+      "source_zip": "pet/pet57.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "CC0B3C904487B7FEF085A85BA5903C726611DDFCE619DE3378DECD7C0B1660BC",
+      "existing": [
+        "object/pet/pet57_stand.img",
+        "object/pet/pet57_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 58,
+      "source_zip": "pet/pet58.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "6315FB9678AD7E6A73324BD5ADB636DB52681149F7EE4DBEFE6A865316B3BC9C",
+      "existing": [
+        "object/pet/pet58_stand.img",
+        "object/pet/pet58_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 59,
+      "source_zip": "pet/pet59.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "60FFC378D8340342062FA4242885A634E5607BDAF7AC7042E63FC7029CB39741",
+      "existing": [
+        "object/pet/pet59_stand.img",
+        "object/pet/pet59_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 60,
+      "source_zip": "pet/pet60.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "71F47A4C155A324AD104A79A6D97694281A6E7B6A04D1C530466915C58D95B47",
+      "existing": [
+        "object/pet/pet60_stand.img",
+        "object/pet/pet60_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 61,
+      "source_zip": "pet/pet61.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "C2FD03DC1C02D16062B4527B9E62B9E2839996D50D70EC05E819C5434046F506",
+      "existing": [
+        "object/pet/pet61_stand.img",
+        "object/pet/pet61_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 62,
+      "source_zip": "pet/pet62.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "74B4A3C6792A872C9CCCD8D1A6681F0EB1DD187D54D49B2F86B6841AA6E6F711",
+      "existing": [
+        "object/pet/pet62_stand.img",
+        "object/pet/pet62_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 63,
+      "source_zip": "pet/pet63.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "5A100FBEE2DE106F24FD0696062B5F2B967C784494169BC9F501BF20F932AB5C",
+      "existing": [
+        "object/pet/pet63_stand.img",
+        "object/pet/pet63_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 64,
+      "source_zip": "pet/pet64.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "891EB1394EEB3F9B2244CD43AA0B6E616949188060BB5239FC758642ED429356",
+      "existing": [
+        "object/pet/pet64_stand.img",
+        "object/pet/pet64_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 65,
+      "source_zip": "pet/pet65.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "96F6ABD6E9262BCB9CEFDB4FE5941142B9E3EFC0B1B524102958AC9F87EAC0AB",
+      "existing": [
+        "object/pet/pet65_stand.img",
+        "object/pet/pet65_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 66,
+      "source_zip": "pet/pet66.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "19F150D6DE238ED573FD7F9EBC5217C445938FC14599CDBFFA974A0F049DCAC2",
+      "existing": [
+        "object/pet/pet66_stand.img",
+        "object/pet/pet66_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 67,
+      "source_zip": "pet/pet67.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "87F3ABE0091C2176EEA4766F20E57EE9783606028579DDC60089D7B5786DE833",
+      "existing": [
+        "object/pet/pet67_stand.img",
+        "object/pet/pet67_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 68,
+      "source_zip": "pet/pet68.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "6F8F9BC958DD7934A30ABAA4D7C5D79428F4C1AFCE917D5865ACA30FC5825A82",
+      "existing": [
+        "object/pet/pet68_stand.img",
+        "object/pet/pet68_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 69,
+      "source_zip": "pet/pet69.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "76393B736FAD03537783F120F854F529AB4E7D98BC8FE323FD1E6C819C68F2D8",
+      "existing": [
+        "object/pet/pet69_stand.img",
+        "object/pet/pet69_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 70,
+      "source_zip": "pet/pet70.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "F4201BD3DD4BCF1878E146426C47E72ABB31CD5C997CDCB3D2460D010D1FEEC5",
+      "existing": [
+        "object/pet/pet70_stand.img",
+        "object/pet/pet70_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 71,
+      "source_zip": "pet/pet71.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "AF2C92D93DBC532DE2CE6AE06891014B402A9FEE05CB9CC08B3E790976FBC003",
+      "existing": [
+        "object/pet/pet71_stand.img",
+        "object/pet/pet71_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 72,
+      "source_zip": "pet/pet72.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "8EF370BD5A1F064773069D42112C43F212F62CC081C975CE6C1D36E3557FA435",
+      "existing": [
+        "object/pet/pet72_stand.img",
+        "object/pet/pet72_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 73,
+      "source_zip": "pet/pet73.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "0DBB08CA5139D92E4345F74869BCA58223D79C57991E88CBB051E6BF8B91FA9E",
+      "existing": [
+        "object/pet/pet73_stand.img",
+        "object/pet/pet73_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 74,
+      "source_zip": "pet/pet74.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "28390445A4C4800B200AD942FFE4D4D403D2A901F95A5CF1AF77FA85FB42D41E",
+      "existing": [
+        "object/pet/pet74_stand.img",
+        "object/pet/pet74_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 75,
+      "source_zip": "pet/pet75.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "E31880A189B3285C2EDA81E120B2CA1B73CDB23674A2B5C437F7FF7E42FF309E",
+      "existing": [
+        "object/pet/pet75_stand.img",
+        "object/pet/pet75_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 76,
+      "source_zip": "pet/pet76.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "8BF981C467AD7E2D20EE9A6096C2013C1E652E296D90C84244C1DC0A6B24D892",
+      "existing": [
+        "object/pet/pet76_stand.img",
+        "object/pet/pet76_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 77,
+      "source_zip": "pet/pet77.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "083FBB710FC768022389D78C7DE7EC64D8DEB7C4B19E3821F4896356CDBEF453",
+      "existing": [
+        "object/pet/pet77_stand.img",
+        "object/pet/pet77_walk.img",
+        "res/uiRes/icon/pet/pet77.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 78,
+      "source_zip": "pet/pet78.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "28C13D4DF0506FDA43565B224D29AA2B6768EE2B06479AA825DBC02D7CB0CF45",
+      "existing": [
+        "object/pet/pet78_stand.img",
+        "object/pet/pet78_walk.img",
+        "res/uiRes/icon/pet/pet78.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 79,
+      "source_zip": "pet/pet79.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "EB75AFD17AAC3377828022174A9F20B3961C5A6106681D6F856AD46930AC86BE",
+      "existing": [
+        "object/pet/pet79_stand.img",
+        "object/pet/pet79_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 80,
+      "source_zip": "pet/pet80.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "84A911E9F8AF84677335936CA716499083CC89EDE18F27B1B90B0092E47D27CF",
+      "existing": [
+        "object/pet/pet80_stand.img",
+        "object/pet/pet80_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 81,
+      "source_zip": "pet/pet81.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "07746D0A69CE938069DEB86D62E81D5EFD27063168B2D00711AB4A43806B4A8D",
+      "existing": [
+        "object/pet/pet81_stand.img",
+        "object/pet/pet81_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 82,
+      "source_zip": "pet/pet82.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "23B7342DC91B596E36896A45D06554B1A7ABA4458E9A445A84C7D1FAF61B0217",
+      "existing": [
+        "object/pet/pet82_stand.img",
+        "object/pet/pet82_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 83,
+      "source_zip": "pet/pet83.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "4B5F9886BD897743C32774136F639A1A6C3EE00271B8D23A23EC9B200E8C509B",
+      "existing": [
+        "object/pet/pet83_stand.img",
+        "object/pet/pet83_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 84,
+      "source_zip": "pet/pet84.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "8EF09A5D09277240E69C331D9EB71569D2C21A52006FF2921E63077211EE00CA",
+      "existing": [
+        "object/pet/pet84_stand.img",
+        "object/pet/pet84_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 85,
+      "source_zip": "pet/pet85.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "269B4BC7F36B7701FCD7FFA7AC9CE88E95262D70C74456E01D67A9B49F80B2E1",
+      "existing": [
+        "object/pet/pet85_stand.img",
+        "object/pet/pet85_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 86,
+      "source_zip": "pet/pet86.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "4EC571985921BDA00961A111553A8A325A6F50957D9221919E9EB26F4130FF66",
+      "existing": [
+        "object/pet/pet86_stand.img",
+        "object/pet/pet86_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 87,
+      "source_zip": "pet/pet87.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "1A3833C2CEA3C0EA094B6BF16DA09EC8E79B936E86EB7BA668AE2201458552EC",
+      "existing": [
+        "object/pet/pet87_stand.img",
+        "object/pet/pet87_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 88,
+      "source_zip": "pet/pet88.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "A16EC1221472336F53CC90D41CE5241082D0B26FE7793A4B002540F0A4232B80",
+      "existing": [
+        "object/pet/pet88_stand.img",
+        "object/pet/pet88_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 89,
+      "source_zip": "pet/pet89.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "1F6D7E215742CDCFBB9EEEDF2482E06938433D2609E7E3E47300B20577FBE3F3",
+      "existing": [
+        "object/pet/pet89_stand.img",
+        "object/pet/pet89_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 90,
+      "source_zip": "pet/pet90.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "59ABBD2FE24EB735F5906A6127BB4B2B04DFED43EDC292998B471E70A687D6FC",
+      "existing": [
+        "object/pet/pet90_stand.img",
+        "object/pet/pet90_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 91,
+      "source_zip": "pet/pet91.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "89F4976B8D2BE63B97BCFE73012999B53FA17874E12F49EC7084A56F9E9EA318",
+      "existing": [
+        "object/pet/pet91_stand.img",
+        "object/pet/pet91_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 92,
+      "source_zip": "pet/pet92.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "4CB822BA9C0C129C3529107A48609C4CFD0098F8F26B1F8F15D548137C616C5D",
+      "existing": [
+        "object/pet/pet92_stand.img",
+        "object/pet/pet92_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 93,
+      "source_zip": "pet/pet93.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "37F66DCA25B0D2374C997CBF2A92135EB772B4AAF6B0F6C7394EA7F586BDE6E6",
+      "existing": [
+        "object/pet/pet93_stand.img",
+        "object/pet/pet93_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 94,
+      "source_zip": "pet/pet94.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "CE5F53E291F3F8D903E6DB15A9D4ED6433662819931348E8D543AE4243930DEE",
+      "existing": [
+        "object/pet/pet94_stand.img",
+        "object/pet/pet94_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 95,
+      "source_zip": "pet/pet95.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "A289CE6CCE29DC8F38CE19540A51FAE2F40F0999B27050D4717B2E66A13AC6D3",
+      "existing": [
+        "object/pet/pet95_stand.img",
+        "object/pet/pet95_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 96,
+      "source_zip": "pet/pet96.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "0F9AE071B7373C509AD840932C5985E6E69BF37E79648C32F73888497CE0C153",
+      "existing": [
+        "object/pet/pet96_stand.img",
+        "object/pet/pet96_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 97,
+      "source_zip": "pet/pet97.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "3F88FE91DF56028D96536F863A46690EF97A821B65356A95985AABC636462DEA",
+      "existing": [
+        "object/pet/pet97_stand.img",
+        "object/pet/pet97_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 98,
+      "source_zip": "pet/pet98.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "8880736711C6451E63C59EABA95ABEAEE7E887202D70BAB19AE149A3E140545A",
+      "existing": [
+        "object/pet/pet98_stand.img",
+        "object/pet/pet98_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 100,
+      "source_zip": "pet/pet100.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "BFA1C8F460DF341A4C22D56B4F16CEDF25F4C477B827B9AB7E56185DA0D34156",
+      "existing": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 101,
+      "source_zip": "pet/pet101.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "DF23B8AF0DA6572BED0A16DC601090E9A72617A946B06827135B7E270056A8E3",
+      "existing": [
+        "object/pet/pet101_stand.img",
+        "object/pet/pet101_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 102,
+      "source_zip": "pet/pet102.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "B65B415F4C112815A9A57BE3E9E8BC41CAC9310E12CCC4A2B32987081483DD7F",
+      "existing": [
+        "object/pet/pet102_stand.img",
+        "object/pet/pet102_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 103,
+      "source_zip": "pet/pet103.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "F9F7905C86B5F2AED75868986F15D9131D727C76BBADA4DD43067AC15D693D41",
+      "existing": [
+        "object/pet/pet103_stand.img",
+        "object/pet/pet103_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 104,
+      "source_zip": "pet/pet104.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "837EA04F857E18877A2E571C5CFBA44B9B5909D0160378A7569A7E08911126B8",
+      "existing": [
+        "object/pet/pet104_stand.img",
+        "object/pet/pet104_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 105,
+      "source_zip": "pet/pet105.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "9BDCAF60E3F230E5C1565759DB53772AA91D1EFAE5E90E64A27ABBFD147F3374",
+      "existing": [
+        "object/pet/pet105_stand.img",
+        "object/pet/pet105_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 106,
+      "source_zip": "pet/pet106.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "AB84D23810BF527F9F512A435BBE62CF548973F7318B85E3773022B019743989",
+      "existing": [
+        "object/pet/pet106_stand.img",
+        "object/pet/pet106_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 107,
+      "source_zip": "pet/pet107.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "59FD1BBA44FAF972DC66DC725F9205CE6DC0C8A5A5CAA2F2B2ADA59C8B4A523A",
+      "existing": [
+        "object/pet/pet107_stand.img",
+        "object/pet/pet107_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 108,
+      "source_zip": "pet/pet108.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "6C8245DE12EE6C5F98C12B81BA054EFB0E43DBD8309EF8316F6EA195A46931DE",
+      "existing": [
+        "object/pet/pet108_stand.img",
+        "object/pet/pet108_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 109,
+      "source_zip": "pet/pet109.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "1C0746C5D3A522BD5CFCF1018B91604588BA818E57D96E31F6FD940A33223B97",
+      "existing": [
+        "object/pet/pet109_stand.img",
+        "object/pet/pet109_walk.img",
+        "res/uiRes/icon/pet/pet109.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 110,
+      "source_zip": "pet/pet110.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "28821A469006983A738CC6EB1E84A57B64E408F0EBF81DCA2DBA9B2066ED6AF6",
+      "existing": [
+        "object/pet/pet110_stand.img",
+        "object/pet/pet110_walk.img",
+        "res/uiRes/icon/pet/pet110.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 111,
+      "source_zip": "pet/pet111.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "8DC99BB2AB2DBFFE03334ECD6525639FDC0CFAB984FD2CF46954538C98B8C353",
+      "existing": [
+        "object/pet/pet111_stand.img",
+        "object/pet/pet111_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 112,
+      "source_zip": "pet/pet112.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "BABFC2DF16ECD8802806E9204A18DFB0EDB15B794F7D13F42322953585BCB3C7",
+      "existing": [
+        "object/pet/pet112_stand.img",
+        "object/pet/pet112_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 113,
+      "source_zip": "pet/pet113.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "1DDAF0787C1F48D47E4A8C94ABF2A35CD32F84CC222D7BEA0E19C474F2D2E7E9",
+      "existing": [
+        "object/pet/pet113_stand.img",
+        "object/pet/pet113_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 114,
+      "source_zip": "pet/pet114.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "A3E33C65F6F6C8D9DB349BA0EC3FAB6C84D60865EBACF8F53874E82285AE4975",
+      "existing": [
+        "object/pet/pet114_stand.img",
+        "object/pet/pet114_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 115,
+      "source_zip": "pet/pet115.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "44679875677EE37E7D3344BCB610C520C70DBA56F49B8FE4A0D0BCA2E5038114",
+      "existing": [
+        "object/pet/pet115_stand.img",
+        "object/pet/pet115_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 116,
+      "source_zip": "pet/pet116.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "E953E11A6622ED896E99BA5890AA52B2DD85D29A60B47CDF66E6E388864BFC5B",
+      "existing": [
+        "object/pet/pet116_stand.img",
+        "object/pet/pet116_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 117,
+      "source_zip": "pet/pet117.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "4358A97A4455E556FAFB27E1589F5D705BDBC9087783043C57E5C9143E624EBC",
+      "existing": [
+        "object/pet/pet117_stand.img",
+        "object/pet/pet117_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 118,
+      "source_zip": "pet/pet118.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "697BBD35E13FFD95437EB6433368022CBEEB44D6F3F7438707E88D2FC43622E3",
+      "existing": [
+        "object/pet/pet118_stand.img",
+        "object/pet/pet118_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 119,
+      "source_zip": "pet/pet119.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "27CDF49E872069DE05E4FD138D90831BFF57CF201FB1A4CCB5EE89A0B6EEA636",
+      "existing": [
+        "object/pet/pet119_stand.img",
+        "object/pet/pet119_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 120,
+      "source_zip": "pet/pet120.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "B2A2BA4C108084DFA102D7DAAB88FA287F85F2E514115B084D3FBD22E687589F",
+      "existing": [
+        "object/pet/pet120_stand.img",
+        "object/pet/pet120_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 121,
+      "source_zip": "pet/pet121.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "6A68DAF08BD3B659642DCEF3F2863D035415C1E5AF928A8F4FF7D80CAB89CC0F",
+      "existing": [
+        "object/pet/pet121_stand.img",
+        "object/pet/pet121_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 122,
+      "source_zip": "pet/pet122.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "556326F1DA4CB35C502F4E24AE66A75B27A79ED3260F130C4DDDD9CD105E5DDC",
+      "existing": [
+        "object/pet/pet122_stand.img",
+        "object/pet/pet122_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 123,
+      "source_zip": "pet/pet123.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "79CC616EBC07F1C684A34BF825620B076FA648EB3D34800A82835E261F09E8A4",
+      "existing": [
+        "object/pet/pet123_stand.img",
+        "object/pet/pet123_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 124,
+      "source_zip": "pet/pet124.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "C79DCB6A5E7A8D5D5241653565CE1260A79D84AFB998C60E601F59B38260F29E",
+      "existing": [
+        "object/pet/pet124_stand.img",
+        "object/pet/pet124_walk.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    },
+    {
+      "model_id": 125,
+      "source_zip": "pet/pet125.zip",
+      "download_state": "cached",
+      "install_state": "existing",
+      "sha256": "7B2C93BAF66BCF1DBB35AC15058DC0F0BE305FA3E08C4497CB9CD0D163C5EFA6",
+      "existing": [
+        "object/pet/pet125_stand.img",
+        "object/pet/pet125_walk.img",
+        "res/uiRes/icon/pet/pet125.img"
+      ],
+      "installation_evidence": "config/Dltype.xml QQT_avatar_zip: *_*.img -\u003e object/ZIP_FOLDER/../"
+    }
+  ],
+  "schema_version": 1
+}

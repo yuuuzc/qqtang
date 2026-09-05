@@ -1,0 +1,1349 @@
+{
+  "version": 110,
+  "recipes": [
+    {
+      "category": "药水",
+      "name": "全能药水",
+      "book_item_id": 24003,
+      "product_item_id": 20003,
+      "description": "(道具场专用) 糖泡威力，糖泡数量，移动速度小幅上升。",
+      "materials": [
+        {
+          "item_id": 30001,
+          "name": "透明的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30091,
+          "name": "干净的雨水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30013,
+          "name": "未成熟的蔬菜",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "超能药水",
+      "book_item_id": 24006,
+      "product_item_id": 20006,
+      "description": "(道具场专用) 糖泡威力，糖泡数量，移动速度大幅上升。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30038,
+          "name": "掉落的羽毛",
+          "quantity": 1
+        },
+        {
+          "item_id": 30014,
+          "name": "成熟的蔬菜",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "透明药水",
+      "book_item_id": 24007,
+      "product_item_id": 20007,
+      "description": "(道具场专用) 玩家的糖泡变为半透明。",
+      "materials": [
+        {
+          "item_id": 30043,
+          "name": "小碎屑",
+          "quantity": 1
+        },
+        {
+          "item_id": 30007,
+          "name": "草药",
+          "quantity": 1
+        },
+        {
+          "item_id": 30031,
+          "name": "小珍珠",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "陷阱",
+      "name": "眩晕陷阱",
+      "book_item_id": 24008,
+      "product_item_id": 20008,
+      "description": "(道具场和探险模式专用) 踩中的玩家眩晕一段时间。",
+      "materials": [
+        {
+          "item_id": 30069,
+          "name": "魔法碎屑",
+          "quantity": 1
+        },
+        {
+          "item_id": 30033,
+          "name": "发光的珍珠",
+          "quantity": 1
+        },
+        {
+          "item_id": 30081,
+          "name": "水果刀",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "陷阱",
+      "name": "减速陷阱",
+      "book_item_id": 24009,
+      "product_item_id": 20009,
+      "description": "(道具场和探险模式专用) 踩中的玩家减速一段时间。",
+      "materials": [
+        {
+          "item_id": 30069,
+          "name": "魔法碎屑",
+          "quantity": 1
+        },
+        {
+          "item_id": 30051,
+          "name": "大树枝",
+          "quantity": 1
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "陷阱",
+      "name": "反向陷阱",
+      "book_item_id": 24010,
+      "product_item_id": 20010,
+      "description": "(道具场专用) 踩中的玩家反向一段时间。",
+      "materials": [
+        {
+          "item_id": 30052,
+          "name": "坚硬的木头",
+          "quantity": 1
+        },
+        {
+          "item_id": 30064,
+          "name": "神奇果实",
+          "quantity": 1
+        },
+        {
+          "item_id": 30010,
+          "name": "毒草药",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "护符",
+      "name": "力量护符",
+      "book_item_id": 24011,
+      "product_item_id": 20011,
+      "description": "(道具场专用) 增加己方所有玩家的糖泡威力。",
+      "materials": [
+        {
+          "item_id": 30076,
+          "name": "手纸",
+          "quantity": 1
+        },
+        {
+          "item_id": 30046,
+          "name": "矿石粉沫",
+          "quantity": 1
+        },
+        {
+          "item_id": 30082,
+          "name": "锋利的小刀",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "护符",
+      "name": "急速护符",
+      "book_item_id": 24012,
+      "product_item_id": 20012,
+      "description": "(道具场专用) 增加己方所有玩家的移动速度。",
+      "materials": [
+        {
+          "item_id": 30076,
+          "name": "手纸",
+          "quantity": 1
+        },
+        {
+          "item_id": 30094,
+          "name": "融化的雪水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30040,
+          "name": "好看的羽毛",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "护符",
+      "name": "穿墙护符",
+      "book_item_id": 24013,
+      "product_item_id": 20013,
+      "description": "(道具场专用) 能够穿越可破坏的物体。",
+      "materials": [
+        {
+          "item_id": 30076,
+          "name": "手纸",
+          "quantity": 1
+        },
+        {
+          "item_id": 30040,
+          "name": "好看的羽毛",
+          "quantity": 1
+        },
+        {
+          "item_id": 30070,
+          "name": "魔法碎片",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "护符",
+      "name": "探测护符",
+      "book_item_id": 24014,
+      "product_item_id": 20014,
+      "description": "(道具场专用) 探知地图上的所有陷阱。",
+      "materials": [
+        {
+          "item_id": 30045,
+          "name": "散落的灰尘",
+          "quantity": 1
+        },
+        {
+          "item_id": 30093,
+          "name": "植物的汁液",
+          "quantity": 1
+        },
+        {
+          "item_id": 30015,
+          "name": "巨大的蔬菜",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "卷轴",
+      "name": "恶魔卷轴",
+      "book_item_id": 24015,
+      "product_item_id": 20015,
+      "description": "(道具场专用) 使得对方所有玩家的操作反向。",
+      "materials": [
+        {
+          "item_id": 30083,
+          "name": "狩猎刀",
+          "quantity": 1
+        },
+        {
+          "item_id": 30095,
+          "name": "神秘水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30011,
+          "name": "黑萎草叶子",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "卷轴",
+      "name": "恐怖卷轴",
+      "book_item_id": 24016,
+      "product_item_id": 20016,
+      "description": "(道具场专用) 减少对方所有玩家的糖泡威力。",
+      "materials": [
+        {
+          "item_id": 30052,
+          "name": "坚硬的木头",
+          "quantity": 1
+        },
+        {
+          "item_id": 30070,
+          "name": "魔法碎片",
+          "quantity": 1
+        },
+        {
+          "item_id": 30016,
+          "name": "美味的蔬菜",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "卷轴",
+      "name": "冰冻卷轴",
+      "book_item_id": 24017,
+      "product_item_id": 20017,
+      "description": "(道具场专用) 地下冒出冰块，被击中的玩家减速。",
+      "materials": [
+        {
+          "item_id": 30076,
+          "name": "手纸",
+          "quantity": 1
+        },
+        {
+          "item_id": 30094,
+          "name": "融化的雪水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30034,
+          "name": "怪物的内核",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "陷阱",
+      "name": "爆炸陷阱",
+      "book_item_id": 24018,
+      "product_item_id": 20018,
+      "description": "(道具场专用) 踩中的玩家挂掉。",
+      "materials": [
+        {
+          "item_id": 30069,
+          "name": "魔法碎屑",
+          "quantity": 1
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30081,
+          "name": "水果刀",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "冲刺药水",
+      "book_item_id": 24019,
+      "product_item_id": 20019,
+      "description": "(道具场专用) 玩家可以瞬间冲刺一次。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30014,
+          "name": "成熟的蔬菜",
+          "quantity": 1
+        },
+        {
+          "item_id": 30044,
+          "name": "冰沫",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "万能药剂",
+      "book_item_id": 24020,
+      "product_item_id": 20020,
+      "description": "(道具场和探险模式专用) 解除玩家的不良状态。",
+      "materials": [
+        {
+          "item_id": 30003,
+          "name": "大容量的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30051,
+          "name": "大树枝",
+          "quantity": 1
+        },
+        {
+          "item_id": 30009,
+          "name": "奇怪的草药",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "护符",
+      "name": "抵御护符",
+      "book_item_id": 24021,
+      "product_item_id": 20021,
+      "description": "(道具场专用) 暂时不受任何道具影响。",
+      "materials": [
+        {
+          "item_id": 30035,
+          "name": "夜光珠",
+          "quantity": 1
+        },
+        {
+          "item_id": 30065,
+          "name": "恶魔的果实",
+          "quantity": 1
+        },
+        {
+          "item_id": 30059,
+          "name": "珍惜矿石",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "工具",
+      "name": "叉子",
+      "book_item_id": 24022,
+      "product_item_id": 20022,
+      "description": "(道具场专用) 使玩家能够从糖泡中钻出来。",
+      "materials": [
+        {
+          "item_id": 30083,
+          "name": "狩猎刀",
+          "quantity": 1
+        },
+        {
+          "item_id": 30059,
+          "name": "珍惜矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30047,
+          "name": "火药粉沫",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "工具",
+      "name": "电钻",
+      "book_item_id": 24023,
+      "product_item_id": 20023,
+      "description": "(道具场专用) 摧毁玩家前方的可破坏物体。",
+      "materials": [
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30082,
+          "name": "锋利的小刀",
+          "quantity": 1
+        },
+        {
+          "item_id": 30094,
+          "name": "融化的雪水",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "工具",
+      "name": "飞镖",
+      "book_item_id": 24024,
+      "product_item_id": 20024,
+      "description": "(道具场专用) 引爆在飞行途中遇到的糖泡。",
+      "materials": [
+        {
+          "item_id": 30032,
+          "name": "大珍珠",
+          "quantity": 1
+        },
+        {
+          "item_id": 30050,
+          "name": "湿木头",
+          "quantity": 1
+        },
+        {
+          "item_id": 30038,
+          "name": "掉落的羽毛",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "卷轴",
+      "name": "变身卷轴",
+      "book_item_id": 24025,
+      "product_item_id": 20025,
+      "description": "(道具场专用) 将对方的一个玩家变为小动物。",
+      "materials": [
+        {
+          "item_id": 30077,
+          "name": "硬纸板",
+          "quantity": 1
+        },
+        {
+          "item_id": 30071,
+          "name": "魔法元素",
+          "quantity": 1
+        },
+        {
+          "item_id": 30041,
+          "name": "凤凰的羽毛",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "护符",
+      "name": "生命护符",
+      "book_item_id": 24026,
+      "product_item_id": 20026,
+      "description": "(道具场专用) 帮助玩家低档一次攻击。",
+      "materials": [
+        {
+          "item_id": 30077,
+          "name": "硬纸板",
+          "quantity": 1
+        },
+        {
+          "item_id": 30035,
+          "name": "火药粉沫",
+          "quantity": 1
+        },
+        {
+          "item_id": 30071,
+          "name": "魔法元素",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "食物",
+      "name": "超强的泻药",
+      "book_item_id": 24027,
+      "product_item_id": 20027,
+      "description": "(探险模式专用) hp减少，换取移动速度大幅增加。",
+      "materials": [
+        {
+          "item_id": 30004,
+          "name": "封印瓶",
+          "quantity": 1
+        },
+        {
+          "item_id": 30094,
+          "name": "融化的雪水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30045,
+          "name": "散落的灰尘",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "嘲笑药水",
+      "book_item_id": 24028,
+      "product_item_id": 20028,
+      "description": "(探险模式专用) 增加怪物对玩家的仇恨。",
+      "materials": [
+        {
+          "item_id": 30001,
+          "name": "透明的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30091,
+          "name": "干净的雨水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30031,
+          "name": "小珍珠",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "食物",
+      "name": "盖亚之种",
+      "book_item_id": 24030,
+      "product_item_id": 20030,
+      "description": "(探险模式专用) 一段时间内增加糖泡恢复速度。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30032,
+          "name": "大珍珠",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "陷阱",
+      "name": "攻击陷阱",
+      "book_item_id": 24031,
+      "product_item_id": 20031,
+      "description": "(探险模式专用) 踩中的玩家损失hp。",
+      "materials": [
+        {
+          "item_id": 30052,
+          "name": "坚硬的木头",
+          "quantity": 1
+        },
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30034,
+          "name": "怪物的内核",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "食物",
+      "name": "过期的牛奶",
+      "book_item_id": 24032,
+      "product_item_id": 20032,
+      "description": "(探险模式专用) hp减少，换取糖泡威力大幅增加。",
+      "materials": [
+        {
+          "item_id": 30004,
+          "name": "封印瓶",
+          "quantity": 1
+        },
+        {
+          "item_id": 30094,
+          "name": "融化的雪水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30045,
+          "name": "散落的灰尘",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "抗冰药剂",
+      "book_item_id": 24033,
+      "product_item_id": 20033,
+      "description": "(探险模式专用) 一定时间内不受到冰冻伤害，不会被减速。",
+      "materials": [
+        {
+          "item_id": 30003,
+          "name": "大容量的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30044,
+          "name": "冰沫",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "食物",
+      "name": "黑萎草",
+      "book_item_id": 24034,
+      "product_item_id": 20034,
+      "description": "(探险模式专用) 一段时间内增加糖泡数量。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30008,
+          "name": "珍贵的草药",
+          "quantity": 1
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "抗火药剂",
+      "book_item_id": 24035,
+      "product_item_id": 20035,
+      "description": "(探险模式专用) 一定时间内不受到火焰伤害。",
+      "materials": [
+        {
+          "item_id": 30003,
+          "name": "大容量的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30044,
+          "name": "冰沫",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "工具",
+      "name": "急救包",
+      "book_item_id": 24036,
+      "product_item_id": 20036,
+      "description": "(探险模式专用) 复活玩家所站格内已死亡的同伴，并恢复30%的hp。",
+      "materials": [
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30082,
+          "name": "锋利的小刀",
+          "quantity": 1
+        },
+        {
+          "item_id": 30014,
+          "name": "成熟的蔬菜",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "解毒药剂",
+      "book_item_id": 24037,
+      "product_item_id": 20037,
+      "description": "(探险模式专用) 解除玩家的中毒状态。",
+      "materials": [
+        {
+          "item_id": 30003,
+          "name": "大容量的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30008,
+          "name": "珍贵的草药",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "食物",
+      "name": "酷比的力量",
+      "book_item_id": 24038,
+      "product_item_id": 20038,
+      "description": "(探险模式专用) hp减少，换取糖泡恢复速度大幅增加。",
+      "materials": [
+        {
+          "item_id": 30004,
+          "name": "封印瓶",
+          "quantity": 1
+        },
+        {
+          "item_id": 30094,
+          "name": "融化的雪水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30045,
+          "name": "散落的灰尘",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "食物",
+      "name": "力量之源",
+      "book_item_id": 24039,
+      "product_item_id": 20039,
+      "description": "(探险模式专用) 一段时间内增加糖泡威力。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30014,
+          "name": "成熟的蔬菜",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "玫瑰药水",
+      "book_item_id": 24040,
+      "product_item_id": 20040,
+      "description": "(探险模式专用) 减少怪物对玩家的仇恨。",
+      "materials": [
+        {
+          "item_id": 30001,
+          "name": "透明的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30091,
+          "name": "干净的雨水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30013,
+          "name": "未成熟的蔬菜",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "抗电药剂",
+      "book_item_id": 24042,
+      "product_item_id": 20042,
+      "description": "(探险模式专用) 一定时间内不受到闪电伤害，不会被眩晕。",
+      "materials": [
+        {
+          "item_id": 30003,
+          "name": "大容量的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30044,
+          "name": "冰沫",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "大体力药水",
+      "book_item_id": 24043,
+      "product_item_id": 20043,
+      "description": "(探险模式专用) 恢复玩家的2000点hp。",
+      "materials": [
+        {
+          "item_id": 30003,
+          "name": "大容量的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30045,
+          "name": "散落的灰尘",
+          "quantity": 1
+        },
+        {
+          "item_id": 30091,
+          "name": "干净的雨水",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "小体力药水",
+      "book_item_id": 24044,
+      "product_item_id": 20044,
+      "description": "(探险模式专用) 恢复玩家的500点hp。",
+      "materials": [
+        {
+          "item_id": 30001,
+          "name": "透明的瓶子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30091,
+          "name": "干净的雨水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30013,
+          "name": "未成熟的蔬菜",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "中体力药水",
+      "book_item_id": 24045,
+      "product_item_id": 20045,
+      "description": "(探险模式专用) 恢复玩家的1000点hp。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 1
+        },
+        {
+          "item_id": 30091,
+          "name": "干净的雨水",
+          "quantity": 2
+        },
+        {
+          "item_id": 30007,
+          "name": "草药",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "category": "药水",
+      "name": "无敌药剂",
+      "book_item_id": 24047,
+      "product_item_id": 20047,
+      "description": "(探险模式专用) 一定时间内不受到任何伤害。",
+      "materials": [
+        {
+          "item_id": 30006,
+          "name": "潘多拉魔瓶",
+          "quantity": 1
+        },
+        {
+          "item_id": 30093,
+          "name": "植物的汁液",
+          "quantity": 2
+        },
+        {
+          "item_id": 30071,
+          "name": "魔法元素",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "食物",
+      "name": "无限的糖浆",
+      "book_item_id": 24048,
+      "product_item_id": 20048,
+      "description": "(探险模式专用) hp减少，换取糖泡数量大幅增加。",
+      "materials": [
+        {
+          "item_id": 30004,
+          "name": "封印瓶",
+          "quantity": 1
+        },
+        {
+          "item_id": 30094,
+          "name": "融化的雪水",
+          "quantity": 1
+        },
+        {
+          "item_id": 30045,
+          "name": "散落的灰尘",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "category": "工具",
+      "name": "医疗包",
+      "book_item_id": 24050,
+      "product_item_id": 20050,
+      "description": "(探险模式专用) 复活玩家所站格内已死亡的同伴，并恢复10%的hp。",
+      "materials": [
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 1
+        },
+        {
+          "item_id": 30045,
+          "name": "散落的灰尘",
+          "quantity": 1
+        },
+        {
+          "item_id": 30008,
+          "name": "珍贵的草药",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "category": "锻造宝石",
+      "name": "赤水晶",
+      "book_item_id": 24051,
+      "product_item_id": 20051,
+      "description": "神奇的七色水晶石，用来锻造道具。大概率锻造出1级2级特效和橙色蓝色。",
+      "materials": [
+        {
+          "item_id": 30056,
+          "name": "铁矿石",
+          "quantity": 300
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 100
+        },
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 60
+        }
+      ]
+    },
+    {
+      "category": "锻造宝石",
+      "name": "橙水晶",
+      "book_item_id": 24052,
+      "product_item_id": 20052,
+      "description": "神奇的七色水晶石，用来锻造道具。大概率锻造出2级特效和橙色绿色。",
+      "materials": [
+        {
+          "item_id": 30056,
+          "name": "铁矿石",
+          "quantity": 400
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 125
+        },
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 100
+        }
+      ]
+    },
+    {
+      "category": "锻造宝石",
+      "name": "黄水晶",
+      "book_item_id": 24053,
+      "product_item_id": 20053,
+      "description": "神奇的七色水晶石，用来锻造道具。大概率锻造出2级3级特效和绿色蓝色。",
+      "materials": [
+        {
+          "item_id": 30056,
+          "name": "铁矿石",
+          "quantity": 600
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 160
+        },
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 120
+        }
+      ]
+    },
+    {
+      "category": "锻造宝石",
+      "name": "绿水晶",
+      "book_item_id": 24054,
+      "product_item_id": 20054,
+      "description": "神奇的七色水晶石，用来锻造道具。大概率锻造出3级特效和绿色蓝色。",
+      "materials": [
+        {
+          "item_id": 30056,
+          "name": "铁矿石",
+          "quantity": 1200
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 320
+        },
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 240
+        }
+      ]
+    },
+    {
+      "category": "锻造宝石",
+      "name": "青水晶",
+      "book_item_id": 24055,
+      "product_item_id": 20055,
+      "description": "神奇的七色水晶石，用来锻造道具。大概率锻造出3级4级特效和橙色绿色。",
+      "materials": [
+        {
+          "item_id": 30056,
+          "name": "铁矿石",
+          "quantity": 2000
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 640
+        },
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 480
+        }
+      ]
+    },
+    {
+      "category": "锻造宝石",
+      "name": "蓝水晶",
+      "book_item_id": 24056,
+      "product_item_id": 20056,
+      "description": "神奇的七色水晶石，用来锻造道具。大概率锻造出4级特效和橙色蓝色。",
+      "materials": [
+        {
+          "item_id": 30056,
+          "name": "铁矿石",
+          "quantity": 4000
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 1500
+        },
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 1000
+        }
+      ]
+    },
+    {
+      "category": "锻造宝石",
+      "name": "紫水晶",
+      "book_item_id": 24057,
+      "product_item_id": 20057,
+      "description": "神奇的七色水晶石，用来锻造道具。大概率锻造出5极特效和紫色。",
+      "materials": [
+        {
+          "item_id": 30056,
+          "name": "铁矿石",
+          "quantity": 5000
+        },
+        {
+          "item_id": 30057,
+          "name": "银矿石",
+          "quantity": 3000
+        },
+        {
+          "item_id": 30058,
+          "name": "金矿石",
+          "quantity": 2000
+        }
+      ]
+    },
+    {
+      "category": "婚礼礼花",
+      "name": "红色礼花",
+      "book_item_id": 24058,
+      "product_item_id": 20058,
+      "description": "(道具场和探险模式专用) 婚礼上用的礼花，绽放红色火焰。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 250
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 500
+        },
+        {
+          "item_id": 30032,
+          "name": "大珍珠",
+          "quantity": 500
+        }
+      ]
+    },
+    {
+      "category": "婚礼礼花",
+      "name": "蓝色礼花",
+      "book_item_id": 24059,
+      "product_item_id": 20059,
+      "description": "(道具场和探险模式专用) 婚礼上用的礼花，绽放蓝色火焰。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 250
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 500
+        },
+        {
+          "item_id": 30032,
+          "name": "大珍珠",
+          "quantity": 500
+        }
+      ]
+    },
+    {
+      "category": "婚礼礼花",
+      "name": "紫色礼花",
+      "book_item_id": 24060,
+      "product_item_id": 20060,
+      "description": "(道具场和探险模式专用) 婚礼上用的礼花，绽放紫色火焰。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 250
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 500
+        },
+        {
+          "item_id": 30032,
+          "name": "大珍珠",
+          "quantity": 500
+        }
+      ]
+    },
+    {
+      "category": "婚礼礼花",
+      "name": "黄色礼花",
+      "book_item_id": 24061,
+      "product_item_id": 20061,
+      "description": "(道具场和探险模式专用) 婚礼上用的礼花，绽放黄色火焰。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 250
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 500
+        },
+        {
+          "item_id": 30032,
+          "name": "大珍珠",
+          "quantity": 500
+        }
+      ]
+    },
+    {
+      "category": "婚礼礼花",
+      "name": "绿色礼花",
+      "book_item_id": 24062,
+      "product_item_id": 20062,
+      "description": "(道具场和探险模式专用) 婚礼上用的礼花，绽放绿色火焰。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 250
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 500
+        },
+        {
+          "item_id": 30032,
+          "name": "大珍珠",
+          "quantity": 500
+        }
+      ]
+    },
+    {
+      "category": "婚礼礼花",
+      "name": "心型礼花",
+      "book_item_id": 24063,
+      "product_item_id": 20063,
+      "description": "(道具场和探险模式专用) 爱情的见证，绽放心型礼花。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 500
+        },
+        {
+          "item_id": 30091,
+          "name": "干净的雨水",
+          "quantity": 1000
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 1500
+        }
+      ]
+    },
+    {
+      "category": "婚礼礼花",
+      "name": "qq堂礼花",
+      "book_item_id": 24064,
+      "product_item_id": 20064,
+      "description": "(道具场和探险模式专用) 爱情的见证，绽放qq堂礼花。",
+      "materials": [
+        {
+          "item_id": 30002,
+          "name": "煮药的罐子",
+          "quantity": 500
+        },
+        {
+          "item_id": 30091,
+          "name": "干净的雨水",
+          "quantity": 1000
+        },
+        {
+          "item_id": 30092,
+          "name": "纯净水",
+          "quantity": 1500
+        }
+      ]
+    }
+  ]
+}

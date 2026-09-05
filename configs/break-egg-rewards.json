@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "egg_tiers": {
+    "9001": 1,
+    "9002": 2,
+    "9003": 3,
+    "9004": 4
+  },
+  "hammer_boost": {
+    "9011": 0,
+    "9012": 1,
+    "9013": 2
+  },
+  "reward_tiers": {
+    "1": [
+      { "item_id": 294, "quantity": 1, "weight": 3 },
+      { "item_id": 20020, "quantity": 1, "weight": 4 },
+      { "item_id": 20044, "quantity": 2, "weight": 5 }
+    ],
+    "2": [
+      { "item_id": 20043, "quantity": 2, "weight": 4 },
+      { "item_id": 20050, "quantity": 1, "weight": 3 },
+      { "item_id": 4237, "quantity": 1, "weight": 2 }
+    ],
+    "3": [
+      { "item_id": 121, "quantity": 1, "weight": 2 },
+      { "item_id": 467, "quantity": 1, "weight": 3 },
+      { "item_id": 468, "quantity": 1, "weight": 3 }
+    ],
+    "4": [
+      { "item_id": 20058, "quantity": 1, "weight": 1 },
+      { "item_id": 20059, "quantity": 1, "weight": 1 },
+      { "item_id": 20060, "quantity": 1, "weight": 1 },
+      { "item_id": 20061, "quantity": 1, "weight": 1 },
+      { "item_id": 20062, "quantity": 1, "weight": 1 },
+      { "item_id": 20063, "quantity": 1, "weight": 1 },
+      { "item_id": 20064, "quantity": 1, "weight": 1 }
+    ]
+  }
+}

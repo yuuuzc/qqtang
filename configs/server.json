@@ -1,0 +1,38 @@
+{
+  "capture_root": "runtime/captures",
+  "log_file": "runtime/logs/server.jsonl",
+  "max_packet_bytes": 1048576,
+  "idle_timeout_ms": 300000,
+  "listeners": [
+    {
+      "name": "directory-http-candidate",
+      "network": "tcp",
+      "address": "127.0.0.1:18080",
+      "response": {}
+    },
+    {
+      "name": "directory-tls-candidate",
+      "network": "tcp",
+      "address": "127.0.0.1:18443",
+      "response": {}
+    },
+    {
+      "name": "ca-secondary-candidate",
+      "network": "tcp",
+      "address": "127.0.0.1:17000",
+      "response": {}
+    },
+    {
+      "name": "directory-game-candidate",
+      "network": "tcp",
+      "address": "127.0.0.1:18000",
+      "response": {}
+    },
+    {
+      "name": "p2p-candidate",
+      "network": "udp",
+      "address": "127.0.0.1:18000",
+      "response": {}
+    }
+  ]
+}

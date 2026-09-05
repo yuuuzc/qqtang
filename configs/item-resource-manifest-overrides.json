@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "overrides": [
+    {
+      "category": "bomb",
+      "resource_id": 218,
+      "confidence": "high-adjacent-official-manifest-consensus",
+      "evidence": [
+        "bomb50.zip, bomb100.zip, bomb217.zip, bomb219.zip and bomb300.zip use the same two destination templates",
+        "bomb218.zip contains exactly bomb218.img and bomb218_stand.img under root bomb218/"
+      ],
+      "files": [
+        {
+          "source": "bomb218.img",
+          "archive_path": "bomb218/bomb218.img",
+          "destination": "res/uiRes/icon/bomb/bomb218.img"
+        },
+        {
+          "source": "bomb218_stand.img",
+          "archive_path": "bomb218/bomb218_stand.img",
+          "destination": "object/bomb/bomb218_stand.img"
+        }
+      ]
+    }
+  ]
+}

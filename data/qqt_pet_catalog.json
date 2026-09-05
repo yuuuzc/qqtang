@@ -1,0 +1,1762 @@
+{
+  "config_path": "config/PetCfg.ini",
+  "experience_thresholds": [
+    0,
+    180,
+    580,
+    1380,
+    2920,
+    5230,
+    8570,
+    16490,
+    29810,
+    51410
+  ],
+  "definitions": [
+    {
+      "pet_type_id": 25001,
+      "name": "普通的酷比",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 1,
+      "level_7_resource_id": 2,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet1_stand.img",
+        "object/pet/pet1_walk.img",
+        "object/pet/pet2_stand.img",
+        "object/pet/pet2_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25002,
+      "name": "富有的酷比",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 1,
+      "level_7_resource_id": 2,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet1_stand.img",
+        "object/pet/pet1_walk.img",
+        "object/pet/pet2_stand.img",
+        "object/pet/pet2_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25003,
+      "name": "尊崇的酷比",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 1,
+      "level_7_resource_id": 2,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet1_stand.img",
+        "object/pet/pet1_walk.img",
+        "object/pet/pet2_stand.img",
+        "object/pet/pet2_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25004,
+      "name": "爱情酷比",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 1,
+      "level_7_resource_id": 2,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet1_stand.img",
+        "object/pet/pet1_walk.img",
+        "object/pet/pet2_stand.img",
+        "object/pet/pet2_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25005,
+      "name": "黑暗火焰精灵",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 9,
+      "level_7_resource_id": 10,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet9_stand.img",
+        "object/pet/pet9_walk.img",
+        "object/pet/pet10_stand.img",
+        "object/pet/pet10_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25006,
+      "name": "光明火焰精灵",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 11,
+      "level_7_resource_id": 12,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet11_stand.img",
+        "object/pet/pet11_walk.img",
+        "object/pet/pet12_stand.img",
+        "object/pet/pet12_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25007,
+      "name": "小菜娃",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 13,
+      "level_7_resource_id": 14,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet13_stand.img",
+        "object/pet/pet13_walk.img",
+        "object/pet/pet14_stand.img",
+        "object/pet/pet14_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25008,
+      "name": "流光龙",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 15,
+      "level_7_resource_id": 16,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet15_stand.img",
+        "object/pet/pet15_walk.img",
+        "object/pet/pet16_stand.img",
+        "object/pet/pet16_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25009,
+      "name": "旺旺狗（第一代）",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 17,
+      "level_7_resource_id": 18,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet17_stand.img",
+        "object/pet/pet17_walk.img",
+        "object/pet/pet18_stand.img",
+        "object/pet/pet18_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25010,
+      "name": "Q哥哥",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 19,
+      "level_7_resource_id": 20,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet19_stand.img",
+        "object/pet/pet19_walk.img",
+        "object/pet/pet20_stand.img",
+        "object/pet/pet20_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25011,
+      "name": "Q妹妹",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 21,
+      "level_7_resource_id": 22,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet21_stand.img",
+        "object/pet/pet21_walk.img",
+        "object/pet/pet22_stand.img",
+        "object/pet/pet22_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25012,
+      "name": "紫光龙",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 23,
+      "level_7_resource_id": 24,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet23_stand.img",
+        "object/pet/pet23_walk.img",
+        "object/pet/pet24_stand.img",
+        "object/pet/pet24_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25013,
+      "name": "陆行鸟",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 25,
+      "level_7_resource_id": 26,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet25_stand.img",
+        "object/pet/pet25_walk.img",
+        "object/pet/pet26_stand.img",
+        "object/pet/pet26_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25014,
+      "name": "粉便便",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 27,
+      "level_7_resource_id": 28,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet27_stand.img",
+        "object/pet/pet27_walk.img",
+        "object/pet/pet28_stand.img",
+        "object/pet/pet28_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25015,
+      "name": "熊猫大宝",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 29,
+      "level_7_resource_id": 30,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet29_stand.img",
+        "object/pet/pet29_walk.img",
+        "object/pet/pet30_stand.img",
+        "object/pet/pet30_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25016,
+      "name": "咪咪猫（第一代）",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 31,
+      "level_7_resource_id": 32,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet31_stand.img",
+        "object/pet/pet31_walk.img",
+        "object/pet/pet32_stand.img",
+        "object/pet/pet32_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25017,
+      "name": "爱心宝宝",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 33,
+      "level_7_resource_id": 34,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet33_stand.img",
+        "object/pet/pet33_walk.img",
+        "object/pet/pet34_stand.img",
+        "object/pet/pet34_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25018,
+      "name": "梦想宝宝",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 35,
+      "level_7_resource_id": 36,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet35_stand.img",
+        "object/pet/pet35_walk.img",
+        "object/pet/pet36_stand.img",
+        "object/pet/pet36_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25019,
+      "name": "咪咪猫（第二代）",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 31,
+      "level_7_resource_id": 32,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet31_stand.img",
+        "object/pet/pet31_walk.img",
+        "object/pet/pet32_stand.img",
+        "object/pet/pet32_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25020,
+      "name": "圣诞麋鹿",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 37,
+      "level_7_resource_id": 38,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet37_stand.img",
+        "object/pet/pet37_walk.img",
+        "object/pet/pet38_stand.img",
+        "object/pet/pet38_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25021,
+      "name": "机甲蝎",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 39,
+      "level_7_resource_id": 40,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet39_stand.img",
+        "object/pet/pet39_walk.img",
+        "object/pet/pet40_stand.img",
+        "object/pet/pet40_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25022,
+      "name": "幸运牛娃娃",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 41,
+      "level_7_resource_id": 42,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet41_stand.img",
+        "object/pet/pet41_walk.img",
+        "object/pet/pet42_stand.img",
+        "object/pet/pet42_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25023,
+      "name": "丘比特",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 45,
+      "level_7_resource_id": 46,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet45_stand.img",
+        "object/pet/pet45_walk.img",
+        "object/pet/pet46_stand.img",
+        "object/pet/pet46_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25024,
+      "name": "旺旺狗（第二代）",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 17,
+      "level_7_resource_id": 18,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet17_stand.img",
+        "object/pet/pet17_walk.img",
+        "object/pet/pet18_stand.img",
+        "object/pet/pet18_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25025,
+      "name": "咪咪猫（第三代）",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 31,
+      "level_7_resource_id": 32,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet31_stand.img",
+        "object/pet/pet31_walk.img",
+        "object/pet/pet32_stand.img",
+        "object/pet/pet32_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25026,
+      "name": "爱情Q哥哥",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 19,
+      "level_7_resource_id": 20,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet19_stand.img",
+        "object/pet/pet19_walk.img",
+        "object/pet/pet20_stand.img",
+        "object/pet/pet20_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25027,
+      "name": "爱情Q妹妹",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 21,
+      "level_7_resource_id": 22,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet21_stand.img",
+        "object/pet/pet21_walk.img",
+        "object/pet/pet22_stand.img",
+        "object/pet/pet22_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25028,
+      "name": "NO.1神兽",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 43,
+      "level_7_resource_id": 44,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet43_stand.img",
+        "object/pet/pet43_walk.img",
+        "object/pet/pet44_stand.img",
+        "object/pet/pet44_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25029,
+      "name": "神龙",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 47,
+      "level_7_resource_id": 48,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet47_stand.img",
+        "object/pet/pet47_walk.img",
+        "object/pet/pet48_stand.img",
+        "object/pet/pet48_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25030,
+      "name": "火麒麟",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 49,
+      "level_7_resource_id": 50,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet49_stand.img",
+        "object/pet/pet49_walk.img",
+        "object/pet/pet50_stand.img",
+        "object/pet/pet50_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25031,
+      "name": "Q红毛",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 51,
+      "level_7_resource_id": 52,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet51_stand.img",
+        "object/pet/pet51_walk.img",
+        "object/pet/pet52_stand.img",
+        "object/pet/pet52_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25032,
+      "name": "河蟹（未上架）",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 53,
+      "level_7_resource_id": 54,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet53_stand.img",
+        "object/pet/pet53_walk.img",
+        "object/pet/pet54_stand.img",
+        "object/pet/pet54_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25033,
+      "name": "饲养快女",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 55,
+      "level_7_resource_id": 56,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet55_stand.img",
+        "object/pet/pet55_walk.img",
+        "object/pet/pet56_stand.img",
+        "object/pet/pet56_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25034,
+      "name": "暗夜使者",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 57,
+      "level_7_resource_id": 58,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet57_stand.img",
+        "object/pet/pet57_walk.img",
+        "object/pet/pet58_stand.img",
+        "object/pet/pet58_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25035,
+      "name": "囧囧有神",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 59,
+      "level_7_resource_id": 60,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet59_stand.img",
+        "object/pet/pet59_walk.img",
+        "object/pet/pet60_stand.img",
+        "object/pet/pet60_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25036,
+      "name": "普通的米多",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 3,
+      "level_7_resource_id": 4,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet3_stand.img",
+        "object/pet/pet3_walk.img",
+        "object/pet/pet4_stand.img",
+        "object/pet/pet4_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25037,
+      "name": "勇敢的米多",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 3,
+      "level_7_resource_id": 4,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet3_stand.img",
+        "object/pet/pet3_walk.img",
+        "object/pet/pet4_stand.img",
+        "object/pet/pet4_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25038,
+      "name": "勤劳的米多",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 3,
+      "level_7_resource_id": 4,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet3_stand.img",
+        "object/pet/pet3_walk.img",
+        "object/pet/pet4_stand.img",
+        "object/pet/pet4_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25039,
+      "name": "爱情米多",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 3,
+      "level_7_resource_id": 4,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet3_stand.img",
+        "object/pet/pet3_walk.img",
+        "object/pet/pet4_stand.img",
+        "object/pet/pet4_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25040,
+      "name": "嫦娥玉兔",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 61,
+      "level_7_resource_id": 62,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet61_stand.img",
+        "object/pet/pet61_walk.img",
+        "object/pet/pet62_stand.img",
+        "object/pet/pet62_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25041,
+      "name": "彩雀",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 63,
+      "level_7_resource_id": 64,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet63_stand.img",
+        "object/pet/pet63_walk.img",
+        "object/pet/pet64_stand.img",
+        "object/pet/pet64_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25042,
+      "name": "雪人",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 65,
+      "level_7_resource_id": 66,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet65_stand.img",
+        "object/pet/pet65_walk.img",
+        "object/pet/pet66_stand.img",
+        "object/pet/pet66_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25043,
+      "name": "白光虎",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 67,
+      "level_7_resource_id": 68,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet67_stand.img",
+        "object/pet/pet67_walk.img",
+        "object/pet/pet68_stand.img",
+        "object/pet/pet68_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25044,
+      "name": "乖乖虎",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 69,
+      "level_7_resource_id": 70,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet69_stand.img",
+        "object/pet/pet69_walk.img",
+        "object/pet/pet70_stand.img",
+        "object/pet/pet70_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25045,
+      "name": "小蝴蝶",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 71,
+      "level_7_resource_id": 72,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet71_stand.img",
+        "object/pet/pet71_walk.img",
+        "object/pet/pet72_stand.img",
+        "object/pet/pet72_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25046,
+      "name": "小雪兔",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 73,
+      "level_7_resource_id": 74,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet73_stand.img",
+        "object/pet/pet73_walk.img",
+        "object/pet/pet74_stand.img",
+        "object/pet/pet74_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25047,
+      "name": "肥松鼠",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 75,
+      "level_7_resource_id": 76,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet75_stand.img",
+        "object/pet/pet75_walk.img",
+        "object/pet/pet76_stand.img",
+        "object/pet/pet76_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25048,
+      "name": "飞骷髅",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 77,
+      "level_7_resource_id": 78,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet77_stand.img",
+        "object/pet/pet77_walk.img",
+        "object/pet/pet78_stand.img",
+        "object/pet/pet78_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25049,
+      "name": "小萝莉",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 79,
+      "level_7_resource_id": 80,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet79_stand.img",
+        "object/pet/pet79_walk.img",
+        "object/pet/pet80_stand.img",
+        "object/pet/pet80_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25050,
+      "name": "格里芬",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 81,
+      "level_7_resource_id": 82,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet81_stand.img",
+        "object/pet/pet81_walk.img",
+        "object/pet/pet82_stand.img",
+        "object/pet/pet82_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25051,
+      "name": "私房猫",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 83,
+      "level_7_resource_id": 84,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet83_stand.img",
+        "object/pet/pet83_walk.img",
+        "object/pet/pet84_stand.img",
+        "object/pet/pet84_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25052,
+      "name": "外星人",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 85,
+      "level_7_resource_id": 86,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet85_stand.img",
+        "object/pet/pet85_walk.img",
+        "object/pet/pet86_stand.img",
+        "object/pet/pet86_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25053,
+      "name": "贵妇犬",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 87,
+      "level_7_resource_id": 88,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet87_stand.img",
+        "object/pet/pet87_walk.img",
+        "object/pet/pet88_stand.img",
+        "object/pet/pet88_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25054,
+      "name": "肥胖龙",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 89,
+      "level_7_resource_id": 90,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet89_stand.img",
+        "object/pet/pet89_walk.img",
+        "object/pet/pet90_stand.img",
+        "object/pet/pet90_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25055,
+      "name": "新年兔子",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 91,
+      "level_7_resource_id": 92,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet91_stand.img",
+        "object/pet/pet91_walk.img",
+        "object/pet/pet92_stand.img",
+        "object/pet/pet92_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25056,
+      "name": "龙猫",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 93,
+      "level_7_resource_id": 94,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet93_stand.img",
+        "object/pet/pet93_walk.img",
+        "object/pet/pet94_stand.img",
+        "object/pet/pet94_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25057,
+      "name": "独角兽",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 95,
+      "level_7_resource_id": 96,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet95_stand.img",
+        "object/pet/pet95_walk.img",
+        "object/pet/pet96_stand.img",
+        "object/pet/pet96_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25058,
+      "name": "幽灵丸子",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 97,
+      "level_7_resource_id": 98,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet97_stand.img",
+        "object/pet/pet97_walk.img",
+        "object/pet/pet98_stand.img",
+        "object/pet/pet98_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25071,
+      "name": "普通的恶魔",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 5,
+      "level_7_resource_id": 6,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet5_stand.img",
+        "object/pet/pet5_walk.img",
+        "object/pet/pet6_stand.img",
+        "object/pet/pet6_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25072,
+      "name": "善战的恶魔",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 5,
+      "level_7_resource_id": 6,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet5_stand.img",
+        "object/pet/pet5_walk.img",
+        "object/pet/pet6_stand.img",
+        "object/pet/pet6_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25073,
+      "name": "好胜的恶魔",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 5,
+      "level_7_resource_id": 6,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet5_stand.img",
+        "object/pet/pet5_walk.img",
+        "object/pet/pet6_stand.img",
+        "object/pet/pet6_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25079,
+      "name": "尊崇的善战的恶魔",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 5,
+      "level_7_resource_id": 6,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet5_stand.img",
+        "object/pet/pet5_walk.img",
+        "object/pet/pet6_stand.img",
+        "object/pet/pet6_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25096,
+      "name": "尊崇的勇敢的善战的恶魔",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 5,
+      "level_7_resource_id": 6,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet5_stand.img",
+        "object/pet/pet5_walk.img",
+        "object/pet/pet6_stand.img",
+        "object/pet/pet6_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25106,
+      "name": "普通的小猪",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 7,
+      "level_7_resource_id": 8,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet7_stand.img",
+        "object/pet/pet7_walk.img",
+        "object/pet/pet8_stand.img",
+        "object/pet/pet8_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25107,
+      "name": "可爱的小猪",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 7,
+      "level_7_resource_id": 8,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet7_stand.img",
+        "object/pet/pet7_walk.img",
+        "object/pet/pet8_stand.img",
+        "object/pet/pet8_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25114,
+      "name": "勇敢的善战的小猪",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 7,
+      "level_7_resource_id": 8,
+      "source": "client-config",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet7_stand.img",
+        "object/pet/pet7_walk.img",
+        "object/pet/pet8_stand.img",
+        "object/pet/pet8_walk.img",
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25901,
+      "name": "毛毛兽",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 101,
+      "level_7_resource_id": 102,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet101_stand.img",
+        "object/pet/pet101_walk.img",
+        "object/pet/pet102_stand.img",
+        "object/pet/pet102_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25902,
+      "name": "树苗",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 103,
+      "level_7_resource_id": 104,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet103_stand.img",
+        "object/pet/pet103_walk.img",
+        "object/pet/pet104_stand.img",
+        "object/pet/pet104_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25903,
+      "name": "帝黑星",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 105,
+      "level_7_resource_id": 106,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet105_stand.img",
+        "object/pet/pet105_walk.img",
+        "object/pet/pet106_stand.img",
+        "object/pet/pet106_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25904,
+      "name": "哆唻咪海豚",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 107,
+      "level_7_resource_id": 108,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet107_stand.img",
+        "object/pet/pet107_walk.img",
+        "object/pet/pet108_stand.img",
+        "object/pet/pet108_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25905,
+      "name": "兔子酷比",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 109,
+      "level_7_resource_id": 110,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet109_stand.img",
+        "object/pet/pet109_walk.img",
+        "object/pet/pet110_stand.img",
+        "object/pet/pet110_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25906,
+      "name": "九尾狐",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 111,
+      "level_7_resource_id": 112,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet111_stand.img",
+        "object/pet/pet111_walk.img",
+        "object/pet/pet112_stand.img",
+        "object/pet/pet112_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25907,
+      "name": "糖果国王",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 113,
+      "level_7_resource_id": 114,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet113_stand.img",
+        "object/pet/pet113_walk.img",
+        "object/pet/pet114_stand.img",
+        "object/pet/pet114_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25908,
+      "name": "宝石小鬼",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 115,
+      "level_7_resource_id": 116,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet115_stand.img",
+        "object/pet/pet115_walk.img",
+        "object/pet/pet116_stand.img",
+        "object/pet/pet116_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25909,
+      "name": "圣诞老人",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 117,
+      "level_7_resource_id": 118,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet117_stand.img",
+        "object/pet/pet117_walk.img",
+        "object/pet/pet118_stand.img",
+        "object/pet/pet118_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25910,
+      "name": "胖小丁",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 119,
+      "level_7_resource_id": 120,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet119_stand.img",
+        "object/pet/pet119_walk.img",
+        "object/pet/pet120_stand.img",
+        "object/pet/pet120_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25911,
+      "name": "龙宝宝",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 121,
+      "level_7_resource_id": 122,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet121_stand.img",
+        "object/pet/pet121_walk.img",
+        "object/pet/pet122_stand.img",
+        "object/pet/pet122_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25912,
+      "name": "独角兽2",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 123,
+      "level_7_resource_id": 124,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet123_stand.img",
+        "object/pet/pet123_walk.img",
+        "object/pet/pet124_stand.img",
+        "object/pet/pet124_walk.img"
+      ]
+    },
+    {
+      "pet_type_id": 25913,
+      "name": "孙小圣",
+      "level_1_resource_id": 100,
+      "level_4_resource_id": 125,
+      "level_7_resource_id": 125,
+      "source": "local-client-extension",
+      "assignable": true,
+      "resource_status": "complete",
+      "installed_resources": [
+        "object/pet/pet100_stand.img",
+        "object/pet/pet100_walk.img",
+        "object/pet/pet125_stand.img",
+        "object/pet/pet125_walk.img"
+      ]
+    }
+  ],
+  "card_links": [
+    {
+      "item_id": 28001,
+      "resource_id": 1,
+      "pet_type_id": 25001,
+      "name": "普通的酷比",
+      "description": "没什么天赋。"
+    },
+    {
+      "item_id": 28002,
+      "resource_id": 2,
+      "pet_type_id": 25002,
+      "name": "富有的酷比",
+      "description": "具有天赋：糖币之光10%。"
+    },
+    {
+      "item_id": 28003,
+      "resource_id": 3,
+      "pet_type_id": 25003,
+      "name": "尊崇的酷比",
+      "description": "具有天赋：声望之光5%。"
+    },
+    {
+      "item_id": 28004,
+      "resource_id": 4,
+      "pet_type_id": 25036,
+      "name": "普通的米多",
+      "description": "没什么天赋。"
+    },
+    {
+      "item_id": 28005,
+      "resource_id": 5,
+      "pet_type_id": 25037,
+      "name": "勇敢的米多",
+      "description": "具有天赋：勇气之光5%。"
+    },
+    {
+      "item_id": 28006,
+      "resource_id": 6,
+      "pet_type_id": 25038,
+      "name": "勤劳的米多",
+      "description": "具有天赋：材料闪耀5%。"
+    },
+    {
+      "item_id": 28007,
+      "resource_id": 7,
+      "pet_type_id": 25106,
+      "name": "普通的小猪",
+      "description": "没什么天赋。"
+    },
+    {
+      "item_id": 28008,
+      "resource_id": 8,
+      "pet_type_id": 25114,
+      "name": "布鲁斯",
+      "description": "具有天赋：积分之光5%，勇气之光5%。"
+    },
+    {
+      "item_id": 28009,
+      "resource_id": 9,
+      "pet_type_id": 25071,
+      "name": "普通的恶魔",
+      "description": "没什么天赋。"
+    },
+    {
+      "item_id": 28010,
+      "resource_id": 10,
+      "pet_type_id": 25072,
+      "name": "善战的恶魔",
+      "description": "具有天赋：积分之光5%。"
+    },
+    {
+      "item_id": 28011,
+      "resource_id": 11,
+      "pet_type_id": 25073,
+      "name": "好胜的恶魔",
+      "description": "具有天赋：积分闪耀5%。"
+    },
+    {
+      "item_id": 28012,
+      "resource_id": 12,
+      "pet_type_id": 25079,
+      "name": "琪琪",
+      "description": "具有天赋：声望之光5%，积分之光5%。"
+    },
+    {
+      "item_id": 28013,
+      "resource_id": 13,
+      "pet_type_id": 25096,
+      "name": "恩佐",
+      "description": "具有天赋：声望之光5%，积分之光5%，勇气之光5%。"
+    },
+    {
+      "item_id": 28014,
+      "resource_id": 14,
+      "pet_type_id": 25004,
+      "name": "爱情酷比",
+      "description": "具有天赋：声望之光5%，勇气之光5%，材料闪耀5%。"
+    },
+    {
+      "item_id": 28015,
+      "resource_id": 15,
+      "pet_type_id": 25039,
+      "name": "爱情米多",
+      "description": "具有天赋：声望之光5%，积分之光5%，积分闪耀5%。"
+    },
+    {
+      "item_id": 28016,
+      "resource_id": 16,
+      "pet_type_id": 25005,
+      "name": "黑暗火焰精灵",
+      "description": "恶魔的使者，拥有邪恶的力量。具有天赋：积分之光6%，勇气之光6%，积分闪耀6%。"
+    },
+    {
+      "item_id": 28017,
+      "resource_id": 17,
+      "pet_type_id": 25006,
+      "name": "光明火焰精灵",
+      "description": "天堂的使者，拥有正义的力量。具有天赋：积分之光6%，勇气之光6%，材料闪耀6%。"
+    },
+    {
+      "item_id": 28018,
+      "resource_id": 18,
+      "pet_type_id": 25007,
+      "name": "小菜娃",
+      "description": "貌不惊人的小菜娃，探险宠物NO.1。具有天赋：菜根之力，菜芯之光，菜花之芬。"
+    },
+    {
+      "item_id": 28019,
+      "resource_id": 19,
+      "pet_type_id": 25008,
+      "name": "流光龙",
+      "description": "守卫稀世琥珀的神龙，乃流光琥珀套装之魂！具有天赋：声望之光6%，积分之光6%，勇气之光6%。"
+    },
+    {
+      "item_id": 28020,
+      "resource_id": 20,
+      "pet_type_id": 25009,
+      "name": "hello dog",
+      "description": "具有天赋：勇气之光6%，材料闪耀6%。"
+    },
+    {
+      "item_id": 28021,
+      "resource_id": 21,
+      "pet_type_id": 25010,
+      "name": "Q哥哥",
+      "description": "具有天赋：声望之光，积分之光，勇气之光。"
+    },
+    {
+      "item_id": 28022,
+      "resource_id": 22,
+      "pet_type_id": 25011,
+      "name": "Q妹妹",
+      "description": "具有天赋：声望之光，积分之光，勇气之光。"
+    },
+    {
+      "item_id": 28023,
+      "resource_id": 23,
+      "pet_type_id": 25012,
+      "name": "紫光龙",
+      "description": "精灵龙族兵种之一，流光龙进化而成。具有天赋：声望之光7%，积分之光7%，勇气之光7%。"
+    },
+    {
+      "item_id": 28024,
+      "resource_id": 24,
+      "pet_type_id": 25013,
+      "name": "陆行鸟",
+      "description": "奔驰于陆地的巨鸟，战斗中能给予主人极大的帮助。具有天赋：声望之光7%，积分闪耀7%，勇气闪耀7%。"
+    },
+    {
+      "item_id": 28025,
+      "resource_id": 25,
+      "pet_type_id": 25014,
+      "name": "粉便便",
+      "description": "大便都能跟着跑，还有谁能比我叼？具有天赋：声望之光6%，积分之光6%，材料闪耀6%。"
+    },
+    {
+      "item_id": 28026,
+      "resource_id": 26,
+      "pet_type_id": 25015,
+      "name": "熊猫大宝",
+      "description": "论可爱，熊猫属第一。具有天赋：糖币之光14%，积分闪耀7%，亲密闪耀7%。"
+    },
+    {
+      "item_id": 28027,
+      "resource_id": 27,
+      "pet_type_id": 25016,
+      "name": "咪咪猫",
+      "description": "具有天赋：声望之光4%，积分之光4%，勇气之光4%。"
+    },
+    {
+      "item_id": 28028,
+      "resource_id": 28,
+      "pet_type_id": 25017,
+      "name": "爱心宝宝",
+      "description": "含着奶嘴，扭扭屁股的小胖娃。具有天赋：糖币之光10%，声望之光5%，亲密闪耀5%。"
+    },
+    {
+      "item_id": 28029,
+      "resource_id": 29,
+      "pet_type_id": 25018,
+      "name": "梦想宝宝",
+      "description": "扎着辫辫，摆摆屁股的小胖妞。具有天赋：糖币之光10%，材料闪耀5%，亲密闪耀5%。"
+    },
+    {
+      "item_id": 28030,
+      "resource_id": 30,
+      "pet_type_id": 25019,
+      "name": "咪咪猫",
+      "description": "具有天赋：声望之光6%，积分之光6%。"
+    },
+    {
+      "item_id": 28031,
+      "resource_id": 31,
+      "pet_type_id": 25020,
+      "name": "圣诞麋鹿",
+      "description": "圣诞老人给了它与众不同的能力，让节日的温馨快乐无处不在。具有天赋：积分之光7%，勇气之光7%，材料闪耀7%。"
+    },
+    {
+      "item_id": 28032,
+      "resource_id": 32,
+      "pet_type_id": 25021,
+      "name": "机甲蝎",
+      "description": "威武刚猛的机甲宠物。具有天赋：糖币之光12%，声望之光6%，材料闪耀6%。"
+    },
+    {
+      "item_id": 28033,
+      "resource_id": 33,
+      "pet_type_id": 25022,
+      "name": "幸运牛娃娃",
+      "description": "喜欢撒娇装嫩，带给人们幸运。具有天赋：糖币之光12%，声望之光6%，勇气之光6%。"
+    },
+    {
+      "item_id": 28034,
+      "resource_id": 34,
+      "pet_type_id": 25023,
+      "name": "丘比特",
+      "description": "顽皮的小家伙，谁会是他的下一个目标？具有天赋：积分闪耀6%，勇气闪耀6%，亲密闪耀6%。"
+    },
+    {
+      "item_id": 28035,
+      "resource_id": 35,
+      "pet_type_id": 25107,
+      "name": "可爱的小猪",
+      "description": "具有天赋：亲密闪耀5%。"
+    },
+    {
+      "item_id": 28036,
+      "resource_id": 36,
+      "pet_type_id": 25024,
+      "name": "旺旺狗",
+      "description": "超级可爱无敌的hello dog！小名叫旺财。具有天赋：糖币之光10%，勇气之光5%，材料闪耀5%。"
+    },
+    {
+      "item_id": 28037,
+      "resource_id": 37,
+      "pet_type_id": 25025,
+      "name": "咪咪猫",
+      "description": "开始的时候是小咪咪，长大了就是大咪咪。具有天赋：糖币之光10%，声望之光5%，积分之光5%。"
+    },
+    {
+      "item_id": 28038,
+      "resource_id": 38,
+      "pet_type_id": 25026,
+      "name": "爱情Q哥哥",
+      "description": "有憨态可掬的外形，渴望美好的爱情。具有天赋：积分闪耀5%，材料闪耀5%，亲密闪耀5%。"
+    },
+    {
+      "item_id": 28039,
+      "resource_id": 39,
+      "pet_type_id": 25027,
+      "name": "爱情Q妹妹",
+      "description": "有憨态可掬的外形，渴望美好的爱情。具有天赋：声望之光5%，积分之光5%，亲密闪耀5%。"
+    },
+    {
+      "item_id": 28040,
+      "resource_id": 40,
+      "pet_type_id": 25028,
+      "name": "NO.1神兽",
+      "description": "传说中的四大神兽之首。具有天赋：糖币之光12%，材料闪耀6%，亲密闪耀6%。"
+    },
+    {
+      "item_id": 28041,
+      "resource_id": 41,
+      "pet_type_id": 25029,
+      "name": "神龙",
+      "description": "收集所有龙珠，便可召唤神龙。具有天赋：糖币之光14%，勇气闪耀7%，亲密闪耀7%。"
+    },
+    {
+      "item_id": 28042,
+      "resource_id": 42,
+      "pet_type_id": 25030,
+      "name": "至尊火麒麟",
+      "description": "上古神兽之一，能力超凡性格孤傲，只愿效命于他自己挑选的主人。"
+    },
+    {
+      "item_id": 28043,
+      "resource_id": 43,
+      "pet_type_id": 25031,
+      "name": "Q红毛",
+      "description": "没什么天赋。"
+    },
+    {
+      "item_id": 28044,
+      "resource_id": 44,
+      "pet_type_id": 25032,
+      "name": "pangxie",
+      "description": "无效的宠物"
+    },
+    {
+      "item_id": 28045,
+      "resource_id": 45,
+      "pet_type_id": 25033,
+      "name": "饲养快女",
+      "description": "让你成就明星梦，把时尚流转Q堂。具有天赋：糖币之光12%，勇气闪耀6%，亲密闪耀6%。"
+    },
+    {
+      "item_id": 28046,
+      "resource_id": 46,
+      "pet_type_id": 25034,
+      "name": "暗夜使者",
+      "description": "传说中暗夜恶魔饲养的蝙蝠，长大了可以变成吸血鬼。具有天赋：声望之光5%，积分闪耀5%，勇气闪耀5%。"
+    }
+  ],
+  "unmapped_models": []
+}
